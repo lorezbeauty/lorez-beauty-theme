@@ -1,0 +1,21 @@
+{%- comment -%}
+  Normalizes outdated free-shipping copy (€35) to current store policy (€50).
+  Usage: {% render 'shipping-copy-fix', html: product.description %}
+{%- endcomment -%}
+{%- assign fixed = html
+  | replace: 'Envío gratuito a partir de 35 €', 'Envío gratuito a partir de 50 €'
+  | replace: 'Envío gratuito a partir de 35€', 'Envío gratuito a partir de 50€'
+  | replace: 'envío gratuito a partir de 35 €', 'envío gratuito a partir de 50 €'
+  | replace: 'envío gratuito a partir de 35€', 'envío gratuito a partir de 50€'
+  | replace: 'a partir de 35 €', 'a partir de 50 €'
+  | replace: 'a partir de 35€', 'a partir de 50€'
+  | replace: 'desde 35 €', 'desde 50 €'
+  | replace: 'desde 35€', 'desde 50€'
+  | replace: 'superiores a 35 €', 'superiores a 50 €'
+  | replace: 'superiores a 35€', 'superiores a 50€'
+  | replace: 'inferiores a 35 €', 'inferiores a 50 €'
+  | replace: 'inferiores a 35€', 'inferiores a 50€'
+  | replace: 'from 35 €', 'from 50 €'
+  | replace: 'from €35', 'from €50'
+-%}
+{{- fixed -}}

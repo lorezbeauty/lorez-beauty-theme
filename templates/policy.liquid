@@ -1,0 +1,37 @@
+{% layout 'theme' %}
+
+<article class="policy-page page-width">
+  <header class="policy-page__header">
+    <h1 class="heading-lg">{{ policy.title }}</h1>
+  </header>
+  <div class="policy-page__body rte">
+    {%- capture policy_html -%}{{ policy.body }}{%- endcapture -%}
+    {% render 'shipping-copy-fix', html: policy_html %}
+  </div>
+</article>
+
+<style>
+  .policy-page {
+    padding: 48px 24px 80px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .policy-page__header {
+    margin-bottom: 32px;
+  }
+
+  .policy-page__body h2,
+  .policy-page__body h3 {
+    margin: 24px 0 12px;
+    font-family: var(--font-heading);
+    font-weight: 400;
+  }
+
+  .policy-page__body p,
+  .policy-page__body li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: var(--color-gray);
+  }
+</style>

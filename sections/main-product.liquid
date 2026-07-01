@@ -27,7 +27,7 @@
       </ul>
 
       {%- if product.description != blank -%}
-        <div class="product-page__description">{{ product.description }}</div>
+        <div class="product-page__description">{% render 'shipping-copy-fix', html: product.description %}</div>
       {%- endif -%}
 
       {% form 'product', product, class: 'product-page__form' %}
