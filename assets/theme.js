@@ -244,4 +244,19 @@
     window.addEventListener('scroll', showSticky, { passive: true });
     showSticky();
   }
+
+  /* Product gallery thumbnails */
+  document.querySelectorAll('[data-product-gallery]').forEach((gallery) => {
+    const slides = gallery.querySelectorAll('[data-gallery-slide]');
+    const thumbs = gallery.querySelectorAll('[data-gallery-thumb]');
+    if (!slides.length) return;
+
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        const index = thumb.dataset.index;
+        slides.forEach((slide) => slide.classList.toggle('is-active', slide.dataset.index === index));
+        thumbs.forEach((t) => t.classList.toggle('is-active', t.dataset.index === index));
+      });
+    });
+  });
 })();

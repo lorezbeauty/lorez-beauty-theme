@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "brand": "Lorez Beauty",
+    "category": "Clear Skin · Anti-acné · K-beauty",
+    "margin_formula": "sell_eur = round_up((cj_usd * 0.92 + 2.5) / 0.40, 0.95)",
+    "margin_target": "60%",
+    "checkout": "lorezbeauty.com only — no CJ redirect links",
+    "import_via": "CJ Dropshipping app → Import to Shopify → rename titles (hide EELHOE/HOYGI/Jaysuing)"
+  },
+  "products_to_remove_after_launch": [
+    "reusable-face-strap-v-line-mask-double-chin-reducer-chin-up-patch-chin-strap-v-shaped-belt-v-shaped-face-mask-for-sagging",
+    "6-piece-ice-roller-facial-skin-care-ice-roller-set-facial-roller-scraping-facial-tool-face-wash-skin-care-three-piece-set",
+    "100g-koec-azucar-glow-exfoliator-facial-sugar-scrub-exfoliation-hydration-brightening-cell-renewal-oil-control-natural-glow",
+    "5-10-20-30pcs-sadoer-collagen-face-mask-firming-moisturizing-repair-brightening-skincare-face-sheet-mask-facial-masks-skin-care",
+    "24k-pure-gold-moist-repair-mask-face-cream-collagen-anti-wrinkle-sleeping-mask-whitening-moisturizing-anti-aging-skin-care",
+    "60pcs-golden-moisturizing-eye-mask-relieve-eye-fatigue-nourish-eye-area-collagen-crystal-eye-mask-korean-skin-care-masks",
+    "saoder-q10-vitamin-c-facial-cleanser-face-wash-foam-facial-cleansing-mossee-moisturizing-brightening-facial-skin-care-products",
+    "zero-pore-toner-pads-control-oil-reduce-sebum-exfoliate-deep-clean-refines-pores-antioxidant-skincare-treatment-skincare-korean",
+    "centella-facial-care-combo-gentle-soothing-makeup-remover-oil-centella-cleanser-centella-serum-set-for-sensitive-skin-daily-care",
+    "50g-collagen-anti-wrinkle-firming-face-cream-deep-hydration-fade-fine-lines-lifting-anti-aging-whitening-korean-skin-care-cream",
+    "collagen-wrapping-mask-and-brush-set-rejuvenation-moisturize-brightening-korean-face-mask-make-glowy-skin-elasticity-facial-mask"
+  ],
+  "products_to_keep_temporarily": [
+    {
+      "handle": "korean-rice-extract-sunscreen-cream-spf50-hydrating-moisturizing-tone-up-primer-lightweight-concealer-even-skin-tone",
+      "reason": "SPF50 ochtendroutine — goede categorie, vervangen als betere CJ SPF met video gevonden"
+    },
+    {
+      "handle": "24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product",
+      "reason": "Lifestyle-foto's sterk — behouden tot CJ-vervanger live staat"
+    }
+  ],
+  "morning_routine": [
+    {
+      "step": "AM-1",
+      "title_es": "Gel Limpiador Tea Tree Anti-Acné",
+      "cj_sku": "CJST205726501AZ",
+      "cj_url": "https://cjdropshipping.com/product/acanthosis-nigricans-cleansing-lotion-moisturizes-and-exfoliates-p-2406100827461622300.html",
+      "cj_usd": 1.09,
+      "sell_eur": 22.95,
+      "compare_eur": 34.95,
+      "has_video": false,
+      "photo_quality": "medium",
+      "ingredients": "Tea tree oil, grapefruit extract, citric acid"
+    },
+    {
+      "step": "AM-2",
+      "title_es": "Sérum Vitamina C Iluminador",
+      "cj_sku": "CJJY213014501AZ",
+      "cj_url": "https://cjdropshipping.com/product/eelhoe-vitamin-c-serum-for-reducing-the-appearance-of-fine-lines-firming-and-moisturizing-the-skin-for-a-more-youthful-complexion-p-1831947819318923264.html",
+      "cj_usd": 9.99,
+      "sell_eur": 29.95,
+      "compare_eur": 44.95,
+      "has_video": true,
+      "photo_quality": "high",
+      "ingredients": "Vitamina C+E, aloe vera, ácido hialurónico"
+    },
+    {
+      "step": "AM-3",
+      "title_es": "Crema Hidratante Niacinamida",
+      "cj_sku": "CJMB213039501AZ",
+      "cj_url": "https://cjdropshipping.com/product/hoygi-anti-aging-face-cream-lightens-fine-lines-moisturizes-brightens-firms-firms-anti-wrinkle-cream-p-1831972500130385920.html",
+      "cj_usd": 9.99,
+      "sell_eur": 34.95,
+      "compare_eur": 49.95,
+      "has_video": true,
+      "photo_quality": "high",
+      "ingredients": "Niacinamida, ácido hialurónico, péptidos"
+    },
+    {
+      "step": "AM-4",
+      "title_es": "Protector Solar SPF50+ Arroz",
+      "source": "existing_shopify",
+      "handle": "korean-rice-extract-sunscreen-cream-spf50-hydrating-moisturizing-tone-up-primer-lightweight-concealer-even-skin-tone",
+      "sell_eur": 36.95,
+      "compare_eur": 52.95,
+      "has_video": false,
+      "photo_quality": "high"
+    }
+  ],
+  "evening_routine": [
+    {
+      "step": "PM-1",
+      "title_es": "Gel Limpiador Tea Tree Anti-Acné",
+      "cj_sku": "CJST205726501AZ",
+      "same_as": "AM-1"
+    },
+    {
+      "step": "PM-2",
+      "title_es": "Sérum Niacinamida Equilibrante",
+      "cj_sku": "CJJY213018801AZ",
+      "cj_url": "https://cjdropshipping.com/product/eelhoe-ginseng-essence-for-fading-fine-lines-firming-face-and-moisturizing-skin-serum-p-1831951857473179648.html",
+      "cj_usd": 9.99,
+      "sell_eur": 29.95,
+      "compare_eur": 44.95,
+      "has_video": true,
+      "photo_quality": "high",
+      "ingredients": "Niacinamida, ginseng, ácido hialurónico"
+    },
+    {
+      "step": "PM-3",
+      "title_es": "Crema Reparadora Noche",
+      "cj_sku": "CJMB213039501AZ",
+      "same_as": "AM-3"
+    },
+    {
+      "step": "PM-4",
+      "title_es": "Parches Anti-Acné Estrella (SOS)",
+      "cj_sku": "JAA02-A054",
+      "cj_url": "https://cjdropshipping.com/product/jaysuing-star-colored-acne-stickers-repair-acne-pits-marks-fade-acne-spots-blemishes-cover-acne-pimples-p-1831959345182429184.html",
+      "cj_usd": 3.5,
+      "sell_eur": 14.95,
+      "compare_eur": 22.95,
+      "has_video": false,
+      "photo_quality": "high",
+      "ingredients": "Hidrocoloide, tea tree, hamamelis"
+    }
+  ],
+  "weekly_treatment": [
+    {
+      "step": "W-1",
+      "title_es": "Caja Mascarillas Colágeno x4",
+      "cj_sku": "CJMB205489701AZ",
+      "cj_url": "https://cjdropshipping.com/product/face-mask-shrink-pore-moisturizing-refreshing-brightening-firming-lift-nourish-skin-care-deep-hydration-moisturizer-p-1798685003774304256.html",
+      "cj_usd": 10.95,
+      "sell_eur": 27.95,
+      "compare_eur": 39.95,
+      "has_video": true,
+      "photo_quality": "high",
+      "variant": "A Box (4 uds)"
+    },
+    {
+      "step": "W-2",
+      "title_es": "Mascarilla Jelly Peel-Off Cereza",
+      "cj_sku": "CJYD203349801AZ",
+      "cj_url": "https://cjdropshipping.com/product/cherry-flower-seaweed-mask-hydrating-jelly-glue-soft-mask-powder-p-1789583725731262464.html",
+      "cj_usd": 1.74,
+      "sell_eur": 24.95,
+      "compare_eur": 36.95,
+      "has_video": true,
+      "photo_quality": "high"
+    },
+    {
+      "step": "W-3",
+      "title_es": "Mascarilla Peel-Off Oro 24K",
+      "source": "existing_shopify",
+      "handle": "24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product",
+      "sell_eur": 29.95,
+      "compare_eur": 49.95,
+      "has_video": false,
+      "photo_quality": "high"
+    }
+  ],
+  "kits": {
+    "kit_manana": {
+      "title": "Kit Rutina Mañana Clear Skin",
+      "steps": ["AM-1", "AM-2", "AM-3", "AM-4"],
+      "sell_eur": 114.95,
+      "compare_eur": 148.80
+    },
+    "kit_noche": {
+      "title": "Kit Rutina Noche Clear Skin",
+      "steps": ["PM-1", "PM-2", "PM-3", "PM-4"],
+      "sell_eur": 89.95,
+      "compare_eur": 102.80
+    },
+    "kit_completo": {
+      "title": "Kit Clear Skin Completo AM + PM + Semanal",
+      "unique_products": 9,
+      "sell_eur": 209.95,
+      "compare_eur": 252.55
+    }
+  },
+  "shopify_import_steps": [
+    "1. Log in op cjdropshipping.com",
+    "2. Zoek elk product via cj_url of SKU hierboven",
+    "3. Klik 'List to Store' / Import naar Shopify (ibrcsh-ir)",
+    "4. In Shopify: hernoem titels naar Lorez (geen EELHOE/HOYGI/Jaysuing)",
+    "5. Upload CJ-video als productmedia (Download op CJ productpagina)",
+    "6. Vervang eerste foto als verpakking te 'dropship' oogt — gebruik lifestyle/video frame",
+    "7. Pas beschrijving aan: Envío gratuito desde €50",
+    "8. Koppel varianten opnieuw in CJ → Product connection",
+    "9. Test add-to-cart op lorezbeauty.com",
+    "10. Archiveer oude producten uit products_to_remove_after_launch"
+  ]
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorez Beauty — Rutina Clear Skin | España y México</title>
+  <meta name="description" content="Rutina anti-acné con oro de 24 quilates. Envío a España y México. K-beauty premium de Lorez Beauty.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="preview.css?v=4">
+  <style>
+    .product-card__media img:only-child { opacity: 1; position: static; }
+    .routine-split { padding: 80px var(--gutter); background: var(--color-white); }
+    .routine-split__header { text-align: center; max-width: 720px; margin: 0 auto 40px; }
+    .routine-split__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 48px; max-width: var(--page-width); margin: 0 auto; }
+    @media (max-width: 900px) { .routine-split__grid { grid-template-columns: 1fr; } }
+    .routine-block { background: var(--color-cream); padding: 32px; }
+    .routine-block__title { font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 8px; }
+    .routine-block__list { list-style: none; margin-top: 20px; }
+    .routine-block__list li { padding: 12px 0; border-bottom: 1px solid var(--color-light-gray); font-size: 0.875rem; display: flex; justify-content: space-between; gap: 16px; }
+    .routine-block__list strong { font-weight: 500; }
+    .product-card__badge { font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-warm-gray); margin-bottom: 6px; }
+    .kit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 960px; margin: 32px auto 0; }
+    @media (max-width: 768px) { .kit-grid { grid-template-columns: 1fr; } }
+    .kit-card { border: 1px solid rgba(255,255,255,0.2); padding: 24px; text-align: center; }
+    .kit-card__price { font-family: var(--font-serif); font-size: 1.5rem; margin: 12px 0; }
+  </style>
+  <script src="assets/theme.js" defer></script>
+</head>
+<body>
+
+  <div class="announcement-bar" data-announcement>
+    Compra 2 y llévate 1 GRATIS · Código LOREZ · Envío a España y México
+    <button class="announcement-bar__close" data-announcement-close aria-label="Cerrar">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l12 12M13 1L1 13"/></svg>
+    </button>
+  </div>
+
+  <header class="header header--transparent" data-header>
+    <div class="header__inner">
+      <div class="header__left">
+        <button class="header__menu-btn" data-menu-open>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          Menú
+        </button>
+      </div>
+      <div class="header__logo">
+        <a href="https://lorezbeauty.com"><span class="header__logo-text">Lorez Beauty</span></a>
+      </div>
+      <div class="header__right">
+        <button class="header__icon" data-search-open>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        </button>
+        <a href="#" class="header__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+        </a>
+        <a href="https://lorezbeauty.com/cart" class="header__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-drawer" data-menu-drawer>
+    <div class="menu-drawer__overlay"></div>
+    <div class="menu-drawer__panel">
+      <button class="menu-drawer__close" data-menu-close>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l12 12M13 1L1 13"/></svg>
+        Cerrar
+      </button>
+      <nav>
+        <a href="#routine" class="menu-drawer__nav-link">Rutina Anti-Acné</a>
+        <a href="#productos" class="menu-drawer__nav-link">Productos</a>
+        <a href="#kit" class="menu-drawer__nav-link">Kit Completo</a>
+        <a href="#" class="menu-drawer__nav-link">Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="search-overlay" data-search-overlay>
+    <button class="search-overlay__close" data-search-close>Cerrar</button>
+    <div class="search-overlay__inner">
+      <input type="search" class="search-overlay__input" placeholder="Buscar productos">
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="https://cdn.shopify.com/s/files/1/1054/1108/4625/files/S403ad290db3545e1987e8cc71e5d4614Z.webp?v=1782122298" alt="Ritual de skincare Lorez Beauty">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow eyebrow">Lorez Beauty · Clear Skin</p>
+        <h1 class="hero__title heading-display">Rutina mañana y noche Clear Skin</h1>
+        <p class="hero__subtitle">Nuevos productos CJ con video · Compra solo en Lorez Beauty</p>
+        <a href="#kit" class="btn btn--white" id="hero-kit-btn">Kit completo — <span data-price data-price-eur="209.95">€209,95</span></a>
+      </div>
+    </section>
+
+    <!-- Market & shipping -->
+    <section class="market-shipping" data-market-shipping>
+      <div class="market-bar">
+        <p class="market-bar__label">Enviamos a</p>
+        <div class="market-bar__toggle" role="group" aria-label="Enviamos a">
+          <button type="button" class="market-bar__btn is-active" data-market="es" aria-pressed="true">España</button>
+          <button type="button" class="market-bar__btn" data-market="mx" aria-pressed="false">México</button>
+        </div>
+      </div>
+      <div class="market-shipping__grid">
+        <div class="market-shipping__card is-visible" data-market-panel="es">
+          <p class="market-shipping__flag">🇪🇸</p>
+          <h3 class="market-shipping__title">España · Entrega rápida</h3>
+          <p class="market-shipping__text">2–5 días laborables · Península e Islas Baleares</p>
+          <p class="market-shipping__text">Envío gratuito en pedidos superiores a €50</p>
+          <p class="market-shipping__text market-shipping__note">Tarjeta, PayPal y Bizum</p>
+        </div>
+        <div class="market-shipping__card" data-market-panel="mx">
+          <p class="market-shipping__flag">🇲🇽</p>
+          <h3 class="market-shipping__title">México · Envío internacional</h3>
+          <p class="market-shipping__text">7–14 días hábiles · Todo el país</p>
+          <p class="market-shipping__text">Envío gratuito en pedidos superiores a $999 MXN</p>
+          <p class="market-shipping__text market-shipping__note">Tarjeta, PayPal y Mercado Pago</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Routine steps overview -->
+    <section class="routine-steps" id="routine">
+      <div class="routine-steps__header">
+        <p class="eyebrow routine-steps__eyebrow">Nueva colección 2026</p>
+        <h2 class="heading-lg">Rutina completa: mañana, noche y tratamiento semanal</h2>
+        <p class="routine-steps__subtitle">9 productos seleccionados en CJ · Con video y fotos lifestyle · 60% margen</p>
+      </div>
+      <div class="routine-steps__grid">
+        <div class="routine-step"><p class="routine-step__num">MAÑANA</p><p class="routine-step__time">4 pasos</p><h3 class="routine-step__title">Proteger & luminosidad</h3><p class="routine-step__desc">Limpiar → Vitamina C → Hidratar → SPF50</p></div>
+        <div class="routine-step"><p class="routine-step__num">NOCHE</p><p class="routine-step__time">4 pasos</p><h3 class="routine-step__title">Reparar & calmar</h3><p class="routine-step__desc">Limpiar → Niacinamida → Crema → Parches SOS</p></div>
+        <div class="routine-step"><p class="routine-step__num">SEMANAL</p><p class="routine-step__time">1–2×</p><h3 class="routine-step__title">Tratamiento profundo</h3><p class="routine-step__desc">Mascarillas colágeno, jelly peel-off, oro 24K</p></div>
+      </div>
+    </section>
+
+    <!-- AM / PM detail -->
+    <section class="routine-split">
+      <div class="routine-split__header">
+        <h2 class="heading-lg">Cómo usar tu rutina</h2>
+      </div>
+      <div class="routine-split__grid">
+        <div class="routine-block">
+          <p class="eyebrow">☀️ Rutina mañana</p>
+          <h3 class="routine-block__title">4 pasos · 5 minutos</h3>
+          <ol class="routine-block__list">
+            <li><strong>Gel Tea Tree</strong> <span>Limpiar</span></li>
+            <li><strong>Sérum Vitamina C</strong> <span>Iluminar</span></li>
+            <li><strong>Crema Niacinamida</strong> <span>Hidratar</span></li>
+            <li><strong>SPF50 Arroz</strong> <span>Proteger</span></li>
+          </ol>
+        </div>
+        <div class="routine-block">
+          <p class="eyebrow">🌙 Rutina noche</p>
+          <h3 class="routine-block__title">4 pasos · 5 minutos</h3>
+          <ol class="routine-block__list">
+            <li><strong>Gel Tea Tree</strong> <span>Limpiar</span></li>
+            <li><strong>Sérum Niacinamida</strong> <span>Equilibrar</span></li>
+            <li><strong>Crema Reparadora</strong> <span>Regenerar</span></li>
+            <li><strong>Parches estrella</strong> <span>SOS granos</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="collection-showcase" id="productos">
+      <div class="collection-showcase__header">
+        <p class="collection-showcase__eyebrow eyebrow">Compra en lorezbeauty.com</p>
+        <h2 class="collection-showcase__title heading-lg">Nueva rutina Clear Skin</h2>
+        <p class="heading-md" style="font-style:italic;font-weight:300;">Sin enlaces CJ · Pago seguro en nuestra tienda · Envío gratis desde €50</p>
+      </div>
+      <div class="carousel" data-carousel>
+        <div class="carousel__track-wrapper">
+          <div class="carousel__track" data-carousel-track>
+            <div class="carousel__slide" data-carousel-slide>
+              <article class="product-card">
+                <div class="product-card__link" style="cursor:default;">
+                  <div class="product-card__media"><img src="https://images.unsplash.com/photo-1556228720-dcaaeca9e5d9?w=800&q=80" alt="Gel Tea Tree"></div>
+                  <div class="product-card__info">
+                    <p class="product-card__badge">🎬 CJ · Mañana & Noche</p>
+                    <p class="product-card__step">Paso 1 · Limpiar</p>
+                    <h3 class="product-card__title">Gel Limpiador Tea Tree Anti-Acné</h3>
+                    <p class="product-card__price"><span class="product-card__compare" data-price-eur="34.95">€34,95</span><span data-price data-price-eur="22.95">€22,95</span></p>
+                  </div>
+                </div>
+                <button class="btn product-card__btn" data-pending-product>Gel Tea Tree</button>
+              </article>
+            </div>
+            <div class="carousel__slide" data-carousel-slide>
+              <article class="product-card">
+                <div class="product-card__link" style="cursor:default;">
+                  <div class="product-card__media"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&q=80" alt="Sérum Vitamina C"></div>
+                  <div class="product-card__info">
+                    <p class="product-card__badge">🎬 Video CJ · Mañana</p>
+                    <p class="product-card__step">Paso 2 AM · Iluminar</p>
+                    <h3 class="product-card__title">Sérum Vitamina C Iluminador</h3>
+                    <p class="product-card__price"><span class="product-card__compare" data-price-eur="44.95">€44,95</span><span data-price data-price-eur="29.95">€29,95</span></p>
+                  </div>
+                </div>
+                <button class="btn product-card__btn" data-pending-product>Sérum Vitamina C</button>
+              </article>
+            </div>
+            <div class="carousel__slide" data-carousel-slide>
+              <article class="product-card">
+                <a href="https://lorezbeauty.com/products/korean-rice-extract-sunscreen-cream-spf50-hydrating-moisturizing-tone-up-primer-lightweight-concealer-even-skin-tone" class="product-card__link">
+                  <div class="product-card__media"><img src="https://cdn.shopify.com/s/files/1/1054/1108/4625/files/Sff124c5f74a744808b5ea3c1700c4ee7c.webp?v=1782119807" alt="SPF50"></div>
+                  <div class="product-card__info">
+                    <p class="product-card__badge">☀️ Mañana · En tienda</p>
+                    <p class="product-card__step">Paso 4 AM · Proteger</p>
+                    <h3 class="product-card__title">Protector Solar SPF50+ Arroz</h3>
+                    <p class="product-card__price"><span class="product-card__compare" data-price-eur="52.95">€52,95</span><span data-price data-price-eur="36.95">€36,95</span></p>
+                  </div>
+                </a>
+                <button class="btn product-card__btn" data-add-cart="54114589016401">Añadir al carrito</button>
+              </article>
+            </div>
+            <div class="carousel__slide" data-carousel-slide>
+              <article class="product-card">
+                <div class="product-card__link" style="cursor:default;">
+                  <div class="product-card__media"><img src="https://images.unsplash.com/photo-1570172619644-dfd155f3406e?w=800&q=80" alt="Sérum Niacinamida"></div>
+                  <div class="product-card__info">
+                    <p class="product-card__badge">🎬 Video CJ · Noche</p>
+                    <p class="product-card__step">Paso 2 PM · Equilibrar</p>
+                    <h3 class="product-card__title">Sérum Niacinamida Equilibrante</h3>
+                    <p class="product-card__price"><span class="product-card__compare" data-price-eur="44.95">€44,95</span><span data-price data-price-eur="29.95">€29,95</span></p>
+                  </div>
+                </div>
+                <button class="btn product-card__btn" data-pending-product>Sérum Niacinamida</button>
+              </article>
+            </div>
+            <div class="carousel__slide" data-carousel-slide>
+              <article class="product-card">
+                <div class="product-card__link" style="cursor:default;">
+                  <div class="product-card__media"><img src="https://images.unsplash.com/photo-1620916566398-39f1140f2263?w=800&q=80" alt="Crema Niacinamida"></div>
+                  <div class="product-card__info">
+                    <p class="product-card__badge">🎬 Video CJ · AM & PM</p>
+                    <p class="product-card__step">Paso 3 · Hidratar</p>
+                    <h3 class="product-card__title">Crema Hidratante Niacinamida</h3>
+                    <p class="product-card__price"><span class="product-card__compare" data-price-eur="49.95">€49,95</span><span data-price data-price-eur="34.95">€34,95</span></p>
+                  </div>
+                </div>
+                <button class="btn product-card__btn" data-pending-product>Crema Niacinamida</button>
+              </article>
+            </div>
+            <div class="carousel__slide" data-carousel-slide>
+              <article class="product-card">
+                <div class="product-card__link" style="cursor:default;">
+                  <div class="product-card__media"><img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=800&q=80" alt="Parches"></div>
+                  <div class="product-card__info">
+                    <p class="product-card__badge">⭐ SOS · Noche</p>
+                    <p class="product-card__step">Parches estrella</p>
+                    <h3 class="product-card__title">Parches Anti-Acné Estrella</h3>
+                    <p class="product-card__price"><span class="product-card__compare" data-price-eur="22.95">€22,95</span><span data-price data-price-eur="14.95">€14,95</span></p>
+                  </div>
+                </div>
+                <button class="btn product-card__btn" data-pending-product>Parches Anti-Acné</button>
+              </article>
+            </div>
+            <div class="carousel__slide" data-carousel-slide>
+              <article class="product-card">
+                <div class="product-card__link" style="cursor:default;">
+                  <div class="product-card__media"><img src="https://images.unsplash.com/photo-1570554880001-e80d825349a2?w=800&q=80" alt="Mascarillas colágeno"></div>
+                  <div class="product-card__info">
+                    <p class="product-card__badge">🎬 Video Gallery · Semanal</p>
+                    <p class="product-card__step">Caja x4</p>
+                    <h3 class="product-card__title">Mascarillas Colágeno x4</h3>
+                    <p class="product-card__price"><span class="product-card__compare" data-price-eur="39.95">€39,95</span><span data-price data-price-eur="27.95">€27,95</span></p>
+                  </div>
+                </div>
+                <button class="btn product-card__btn" data-pending-product>Mascarillas Colágeno</button>
+              </article>
+            </div>
+            <div class="carousel__slide" data-carousel-slide>
+              <article class="product-card">
+                <div class="product-card__link" style="cursor:default;">
+                  <div class="product-card__media"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80" alt="Mascarilla jelly"></div>
+                  <div class="product-card__info">
+                    <p class="product-card__badge">🎬 Video CJ · Semanal</p>
+                    <p class="product-card__step">Peel-off jelly</p>
+                    <h3 class="product-card__title">Mascarilla Jelly Peel-Off Cereza</h3>
+                    <p class="product-card__price"><span class="product-card__compare" data-price-eur="36.95">€36,95</span><span data-price data-price-eur="24.95">€24,95</span></p>
+                  </div>
+                </div>
+                <button class="btn product-card__btn" data-pending-product>Mascarilla Jelly</button>
+              </article>
+            </div>
+            <div class="carousel__slide" data-carousel-slide>
+              <article class="product-card">
+                <a href="https://lorezbeauty.com/products/24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product" class="product-card__link">
+                  <div class="product-card__media"><img src="https://cdn.shopify.com/s/files/1/1054/1108/4625/files/Sae0b240e32fd4a29ab5bd62f66495933H.webp?v=1782122501" alt="Peel-Off Oro"></div>
+                  <div class="product-card__info">
+                    <p class="product-card__badge">✨ Semanal · En tienda</p>
+                    <p class="product-card__step">Puntos negros</p>
+                    <h3 class="product-card__title">Mascarilla Peel-Off Oro 24K</h3>
+                    <p class="product-card__price"><span class="product-card__compare" data-price-eur="49.95">€49,95</span><span data-price data-price-eur="29.95">€29,95</span></p>
+                  </div>
+                </a>
+                <button class="btn product-card__btn" data-add-cart="54092452790609">Añadir al carrito</button>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__controls">
+          <button class="carousel__btn" data-carousel-prev><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button class="carousel__btn" data-carousel-next><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial: problem/solution -->
+    <section class="editorial editorial--split">
+      <div class="editorial__media">
+        <img src="https://cdn.shopify.com/s/files/1/1054/1108/4625/files/Sff124c5f74a744808b5ea3c1700c4ee7c.webp?v=1782119807" alt="Discos tónicos Lorez Beauty">
+      </div>
+      <div class="editorial__content">
+        <p class="editorial__eyebrow eyebrow">La promesa Lorez</p>
+        <h2 class="editorial__title heading-lg">Lujo coreano. Resultados reales.</h2>
+        <p style="margin-bottom:24px;color:var(--color-warm-gray);font-size:0.875rem;line-height:1.7;">Oro de 24 quilates, texturas premium y fórmulas inspiradas en el K-beauty. Una rutina completa pensada para pieles con granos, acné y puntos negros.</p>
+        <p style="margin-bottom:24px;color:var(--color-warm-gray);font-size:0.875rem;line-height:1.7;">Cada producto forma parte de un ritual — no es un producto suelto, es una experiencia de cuidado facial en casa.</p>
+        <a href="#kit" class="btn">Ver el kit completo</a>
+      </div>
+    </section>
+
+    <!-- Bundle -->
+    <section class="bundle-banner" id="kit">
+      <p class="eyebrow" style="opacity:0.7;margin-bottom:12px;">🔥 Nueva rutina 2026</p>
+      <h2 class="heading-xl">Kit Clear Skin Completo</h2>
+      <p style="max-width:560px;margin:16px auto 0;font-size:0.875rem;opacity:0.8;">Mañana + noche + semanal · 9 productos · Guía incluida · Código LOREZ: 2+1 gratis</p>
+      <p class="bundle-banner__price" data-price-eur="209.95">€209,95</p>
+      <p class="bundle-banner__save"><span class="product-card__compare" data-price-eur="252.55">€252,55</span> Ahorras <span data-price data-price-eur="42.60">€42,60</span></p>
+      <div class="kit-grid">
+        <div class="kit-card">
+          <p class="eyebrow">☀️ Kit mañana</p>
+          <p class="kit-card__price" data-price-eur="114.95">€114,95</p>
+          <p style="font-size:0.75rem;opacity:0.8;">4 productos</p>
+        </div>
+        <div class="kit-card">
+          <p class="eyebrow">🌙 Kit noche</p>
+          <p class="kit-card__price" data-price-eur="89.95">€89,95</p>
+          <p style="font-size:0.75rem;opacity:0.8;">4 productos</p>
+        </div>
+        <div class="kit-card">
+          <p class="eyebrow">✨ Kit completo</p>
+          <p class="kit-card__price" data-price-eur="209.95">€209,95</p>
+          <p style="font-size:0.75rem;opacity:0.8;">Mejor precio</p>
+        </div>
+      </div>
+      <button class="btn btn--white" id="add-kit-btn" style="margin-top:24px;" data-pending-product>Reservar kit completo</button>
+      <p class="bundle-banner__includes">Tea Tree · Vitamina C · Niacinamida · SPF50 · Parches · Mascarillas colágeno · Jelly peel-off · Oro 24K</p>
+    </section>
+
+    <!-- AM/PM routine editorial -->
+    <section class="editorial editorial--full">
+      <div class="editorial__media">
+        <img src="https://cdn.shopify.com/s/files/1/1054/1108/4625/files/S403ad290db3545e1987e8cc71e5d4614Z.webp?v=1782122298" alt="Ritual Lorez Beauty">
+      </div>
+      <div class="editorial__overlay"></div>
+      <div class="editorial__content">
+        <p class="editorial__eyebrow eyebrow">Cómo usarlo</p>
+        <h2 class="editorial__title heading-xl">Mañana: limpiar → vitamina C → crema → SPF50</h2>
+        <p style="margin-bottom:24px;font-size:0.875rem;opacity:0.9;">Noche: limpiar → niacinamida → crema → parches. Semanal: mascarillas + peel-off oro.</p>
+        <a href="#productos" class="btn btn--white">Comprar ahora</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="services__header">
+        <h2 class="heading-lg">Los servicios Lorez Beauty</h2>
+      </div>
+      <div class="services__grid">
+        <a href="#" class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1"><rect x="8" y="20" width="32" height="22" rx="1"/><path d="M24 20V42M8 26h32"/><path d="M24 20c-4 0-8-2-8-6s4-4 8-4 8 0 8 4-4 6-8 6z"/><path d="M24 10v10"/></svg>
+          </div>
+          <h3 class="service-card__title">Guía de rutina incluida</h3>
+          <p class="service-card__text">Instrucciones paso a paso con cada pedido</p>
+        </a>
+        <a href="#" class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1"><rect x="14" y="8" width="20" height="32" rx="2"/><path d="M20 16h8M20 22h8M20 28h5"/></svg>
+          </div>
+          <h3 class="service-card__title">Parches de regalo</h3>
+          <p class="service-card__text">Muestra de parches anti-acné en pedidos +€50</p>
+        </a>
+        <a href="#" class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1"><path d="M4 32h32l4-12H8z"/><circle cx="14" cy="36" r="3"/><circle cx="30" cy="36" r="3"/><path d="M36 20V12H20"/></svg>
+          </div>
+          <h3 class="service-card__title">Envío España y México</h3>
+          <p class="service-card__text" data-market-copy data-es="España 2–5 días · Gratis desde €50" data-mx="México 7–14 días · Gratis desde $999 MXN">España 2–5 días · Gratis desde €50</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2 class="newsletter__title">El universo exclusivo de Lorez Beauty</h2>
+      <p class="newsletter__subtitle">Suscríbete para recibir adelantos exclusivos de nuevos productos y ofertas especiales.</p>
+      <form class="newsletter__form" onsubmit="event.preventDefault()">
+        <input type="email" class="newsletter__input" placeholder="Introduce tu email" required>
+        <button type="submit" class="newsletter__submit">Suscribirse</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <h3 class="footer__heading">Contáctenos</h3>
+        <a href="#" class="footer__link">Contacto</a>
+        <a href="#" class="footer__link">Boutiques</a>
+      </div>
+      <div>
+        <h3 class="footer__heading">Entregas y devoluciones</h3>
+        <a href="#" class="footer__link">Envío</a>
+        <a href="#" class="footer__link">Devoluciones</a>
+      </div>
+      <div>
+        <h3 class="footer__heading">FAQ</h3>
+        <a href="#" class="footer__link">Preguntas frecuentes</a>
+      </div>
+      <div>
+        <h3 class="footer__heading">Política de privacidad</h3>
+        <a href="#" class="footer__link">Privacidad</a>
+        <a href="#" class="footer__link">Términos legales</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__logo">Lorez Beauty</span>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link">Instagram</a>
+        <a href="#" class="footer__social-link">TikTok</a>
+      </div>
+    </div>
+    <p class="footer__copyright">&copy; 2026 Lorez Beauty. All rights reserved.</p>
+  </footer>
+
+  <div class="cart-toast" id="cart-toast">Producto añadido · <a href="https://lorezbeauty.com/cart">Ver carrito</a></div>
+
+  <script>
+    const SHOP = 'https://lorezbeauty.com';
+
+    function addToCart(variantId, redirect) {
+      fetch(SHOP + '/cart/add.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: variantId, quantity: 1 }),
+        mode: 'cors',
+        credentials: 'include'
+      }).then(r => r.json()).then(() => {
+        if (redirect) { window.location.href = SHOP + '/cart'; return; }
+        document.getElementById('cart-toast')?.classList.add('is-visible');
+        setTimeout(() => document.getElementById('cart-toast')?.classList.remove('is-visible'), 3500);
+      }).catch(() => {
+        window.location.href = SHOP + '/cart/' + variantId + ':1';
+      });
+    }
+
+    document.querySelectorAll('[data-pending-product]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const toast = document.getElementById('cart-toast');
+        if (toast) {
+          toast.innerHTML = 'Próximamente en la tienda · Importación CJ en curso · <a href="https://lorezbeauty.com/cart">Ver carrito</a>';
+          toast.classList.add('is-visible');
+          setTimeout(() => toast.classList.remove('is-visible'), 4000);
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-add-cart]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        addToCart(btn.dataset.addCart, false);
+      });
+    });
+  </script>
+
+</body>
+</html>

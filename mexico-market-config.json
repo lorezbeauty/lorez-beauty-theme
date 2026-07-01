@@ -1,0 +1,69 @@
+{
+  "store": "ibrcsh-ir.myshopify.com",
+  "primary_market": {
+    "name": "España",
+    "country": "ES",
+    "currency": "EUR",
+    "free_shipping_min": 50
+  },
+  "new_market": {
+    "name": "México",
+    "country": "MX",
+    "currency": "MXN",
+    "language": "es",
+    "exchange_rate_manual": 21.5,
+    "free_shipping_min_mxn": 999,
+    "shipping_days": "7-14 días hábiles",
+    "payment_methods": ["Tarjeta", "PayPal", "Mercado Pago"]
+  },
+  "kit_clear_skin": {
+    "title": "Rutina Clear Skin — Kit Anti-Acné",
+    "price_eur": 199.95,
+    "price_mxn": 4299,
+    "compare_eur": 235.65,
+    "compare_mxn": 5066,
+    "variant_ids": [
+      "54115616031057",
+      "54114582724945",
+      "54114559623505",
+      "54114575614289",
+      "54092452790609",
+      "54060942819665"
+    ]
+  },
+  "routine_products_mxn": [
+    { "title": "Espuma Limpiadora Q10 & Vitamina C", "price_mxn": 515, "compare_mxn": 751 },
+    { "title": "Discos Tónicos Refinadores de Poros", "price_mxn": 880, "compare_mxn": 1289 },
+    { "title": "Set de Cuidado con Centella", "price_mxn": 773, "compare_mxn": 1289 },
+    { "title": "Crema Antiedad con Colágeno", "price_mxn": 751, "compare_mxn": 1074 },
+    { "title": "Mascarilla Peel-Off de Oro 24K", "price_mxn": 644, "compare_mxn": 1074 },
+    { "title": "Mascarilla de Colágeno con Brocha", "price_mxn": 644, "compare_mxn": 1074 }
+  ],
+  "all_products_mxn": [
+    { "title": "Espuma Limpiadora Q10", "price_mxn": 515, "compare_mxn": 751 },
+    { "title": "Set Rodillo de Hielo", "price_mxn": 278, "compare_mxn": 536 },
+    { "title": "Banda V-Line", "price_mxn": 257, "compare_mxn": 536 },
+    { "title": "Exfoliante Iluminador", "price_mxn": 1031, "compare_mxn": 1289 },
+    { "title": "Protector Solar SPF50+", "price_mxn": 278, "compare_mxn": 536 },
+    { "title": "Discos Tónicos", "price_mxn": 880, "compare_mxn": 1289 },
+    { "title": "Crema Colágeno", "price_mxn": 751, "compare_mxn": 1074 },
+    { "title": "Mascarilla Colágeno (sheet)", "price_mxn": 343, "compare_mxn": 644 },
+    { "title": "Set Centella", "price_mxn": 773, "compare_mxn": 1289 },
+    { "title": "Mascarilla Reparadora Oro", "price_mxn": 859, "compare_mxn": 1289 },
+    { "title": "Parches Ojos Oro", "price_mxn": 429, "compare_mxn": 751 },
+    { "title": "Peel-Off Oro 24K", "price_mxn": 644, "compare_mxn": 1074 },
+    { "title": "Mascarilla Colágeno Brocha", "price_mxn": 644, "compare_mxn": 1074 }
+  ],
+  "shipping_profile_mexico": {
+    "name": "México — Envío internacional",
+    "rates": [
+      { "name": "Estándar", "price_mxn": 149, "min_days": 7, "max_days": 14 },
+      { "name": "Gratis", "price_mxn": 0, "condition": "order >= 999 MXN" }
+    ]
+  },
+  "admin_urls": {
+    "markets": "https://admin.shopify.com/store/ibrcsh-ir/settings/markets",
+    "shipping": "https://admin.shopify.com/store/ibrcsh-ir/settings/shipping",
+    "payments": "https://admin.shopify.com/store/ibrcsh-ir/settings/payments"
+  }
+}

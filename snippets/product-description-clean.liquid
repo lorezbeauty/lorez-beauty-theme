@@ -1,0 +1,5 @@
+{%- comment -%}Strip CJ/AliExpress junk images from imported descriptions{%- endcomment -%}
+{%- assign clean_html = html | default: product.description -%}
+{%- assign clean_html = clean_html | replace: 'cf.cjdropshipping.com', 'blocked.cj' -%}
+{%- assign clean_html = clean_html | replace: '<img', '<img data-cj-removed style="display:none!important" ' -%}
+{% render 'shipping-copy-fix', html: clean_html %}

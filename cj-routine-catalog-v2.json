@@ -1,0 +1,83 @@
+{
+  "updated": "2026-07-01",
+  "problem": "EELHOE Vitamin C, HOYGI Cream en EELHOE Ginseng Serum falen bij CJ → Shopify listing. Waarschijnlijk merk/SKU-restrictie.",
+  "strategy": "Plan A = routine NU compleet met bestaande + 4 nieuwe producten. Plan B = zoek vervangers in CJ-app (andere merken).",
+
+  "plan_a_complete_routine_now": {
+    "description": "Geen nieuwe CJ-import nodig — hergebruik producten die AL werken in Shopify",
+    "morning": [
+      { "step": "AM-1", "title_es": "Gel Limpiador Tea Tree Anti-Acné", "handle": "acanthosis-nigricans-cleansing-lotion-moisturizes-and-exfoliates", "price_eur": 22.95, "status": "live" },
+      { "step": "AM-2", "title_es": "Discos Tónicos Refinadores de Poros", "handle": "zero-pore-toner-pads-control-oil-reduce-sebum-exfoliate-deep-clean-refines-pores-antioxidant-skincare-treatment-skincare-korean", "price_eur": 40.95, "status": "rebrand", "note": "Niacinamida + BHA — vervangt Vit C serum ochtend (poros + luminosidad)" },
+      { "step": "AM-3", "title_es": "Crema Hidratante Colágeno", "handle": "50g-collagen-anti-wrinkle-firming-face-cream-deep-hydration-fade-fine-lines-lifting-anti-aging-whitening-korean-skin-care-cream", "price_eur": 34.95, "status": "rebrand", "note": "Hergebruik bestaande crema — Spaanse copy aanpassen" },
+      { "step": "AM-4", "title_es": "Protector Solar SPF50+ Arroz", "handle": "korean-rice-extract-sunscreen-cream-spf50-hydrating-moisturizing-tone-up-primer-lightweight-concealer-even-skin-tone", "price_eur": 36.95, "status": "live" }
+    ],
+    "evening": [
+      { "step": "PM-1", "title_es": "Gel Limpiador Tea Tree Anti-Acné", "handle": "acanthosis-nigricans-cleansing-lotion-moisturizes-and-exfoliates", "same_as": "AM-1" },
+      { "step": "PM-2", "title_es": "Set de Cuidado con Centella", "handle": "centella-facial-care-combo-gentle-soothing-makeup-remover-oil-centella-cleanser-centella-serum-set-for-sensitive-skin-daily-care", "price_eur": 35.95, "status": "rebrand", "note": "Calmar rojeces acné — sterker dan niacinamide serum voor PM" },
+      { "step": "PM-3", "title_es": "Crema Hidratante Colágeno", "handle": "50g-collagen-anti-wrinkle-firming-face-cream-deep-hydration-fade-fine-lines-lifting-anti-aging-whitening-korean-skin-care-cream", "same_as": "AM-3" },
+      { "step": "PM-4", "title_es": "Parches Anti-Acné Hidrocoloide (SOS)", "handle": "acne-stickers-fade-acne-marks", "price_eur": 14.95, "status": "live" }
+    ],
+    "weekly": [
+      { "title_es": "Caja Mascarillas Colágeno x4", "handle": "face-mask-shrink-pore-moisturizing-refreshing-brightening-firming-lift-nourish-skin-care-deep-hydration-moisturizer", "price_eur": 27.95 },
+      { "title_es": "Mascarilla Jelly Peel-Off Cereza", "handle": "cherry-flower-seaweed-mask-hydrating-jelly-glue-soft-mask-powder", "price_eur": 24.95 },
+      { "title_es": "Mascarilla Peel-Off Oro 24K", "handle": "24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product", "price_eur": 29.95 }
+    ],
+    "kit_completo_eur": 199.95,
+    "archive_these": [
+      "saoder-q10-vitamin-c-facial-cleanser-face-wash-foam-facial-cleansing-mossee-moisturizing-brightening-facial-skin-care-products",
+      "6-piece-ice-roller-facial-skin-care-ice-roller-set-facial-roller-scraping-facial-tool-face-wash-skin-care-three-piece-set",
+      "reusable-face-strap-v-line-mask-double-chin-reducer-chin-up-patch-chin-strap-v-shaped-belt-v-shaped-face-mask-for-sagging",
+      "100g-koec-azucar-glow-exfoliator-facial-sugar-scrub-exfoliation-hydration-brightening-cell-renewal-oil-control-natural-glow",
+      "5-10-20-30pcs-sadoer-collagen-face-mask-firming-moisturizing-repair-brightening-skincare-face-sheet-mask-facial-masks-skin-care",
+      "24k-pure-gold-moist-repair-mask-face-cream-collagen-anti-wrinkle-sleeping-mask-whitening-moisturizing-anti-aging-skin-care",
+      "60pcs-golden-moisturizing-eye-mask-relieve-eye-fatigue-nourish-eye-area-collagen-crystal-eye-mask-korean-skin-care-masks",
+      "collagen-wrapping-mask-and-brush-set-rejuvenation-moisturize-brightening-korean-face-mask-make-glowy-skin-elasticity-facial-mask",
+      "mascarilla-facial-de-colageno-duplicate-if-any"
+    ]
+  },
+
+  "plan_b_cj_alternatives_to_search": {
+    "instructies_nl": [
+      "Open CJ → zoekbalk (NIET de mislukte EELHOE/HOYGI producten)",
+      "Filter: Orders hoog → laag, Video = ja",
+      "Voeg toe aan My Products → List via SHOPIFY APP (niet website bulk)",
+      "Shopify → Apps → CJ Dropshipping → Product → Import to Store"
+    ],
+    "zoektermen": [
+      {
+        "rol": "AM — Vitamina C serum (vervanger)",
+        "zoek_in_cj": "vitamin c ampoule korean brightening",
+        "vermijd": "EELHOE, HOYGI, tanning",
+        "prijs_verkoop": 29.95,
+        "must_have": "lifestyle foto + dropper op huid"
+      },
+      {
+        "rol": "AM/PM — Crema hidratante (vervanger)",
+        "zoek_in_cj": "niacinamide moisturizer gel cream korean",
+        "vermijd": "HOYGI, anti-wrinkle only titels",
+        "prijs_verkoop": 34.95,
+        "must_have": "texture swatch foto, geen Chinese verpakking hero"
+      },
+      {
+        "rol": "PM — Sérum niacinamida (vervanger)",
+        "zoek_in_cj": "niacinamide 10 serum pore refining",
+        "vermijd": "EELHOE, ginseng",
+        "prijs_verkoop": 29.95,
+        "must_have": "video van applicatie op wang"
+      }
+    ],
+    "merken_die_vaak_lukken": ["SADOER", "LANBENA", "BIOAQUA", "OUHOE", "Jaysuing", "Korean generic OEM"],
+    "merken_vermijden": ["EELHOE", "HOYGI"]
+  },
+
+  "plan_c_listing_via_shopify_app": {
+    "stappen_nl": [
+      "Shopify Admin → Apps → CJ Dropshipping",
+      "Menu: Sourcing of Search products",
+      "Zoek bijv. 'niacinamide serum video'",
+      "Klik Add to Store (niet via cjdropshipping.com website)",
+      "Dit omzeilt vaak de delivery-profile fout",
+      "Na import: titel Lorez, prijs handmatig, foto's opschonen"
+    ]
+  }
+}

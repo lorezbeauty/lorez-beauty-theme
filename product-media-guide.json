@@ -1,0 +1,108 @@
+{
+  "waarom_fotos_aliexpress_uitzien": "CJ importeert alle 18 foto's inclusief verpakkingen met EELHOE/LANBENA/KOUNISH tekst. Premium merken (COSRX, Paula's Choice) gebruiken: 1 hero lifestyle, 1 textuur, 1 verpakking, 1 video — max 5 beelden.",
+  "premium_shot_list_per_product": [
+    "Hero: product IN GEBRUIK op huid (geen witte achtergrond)",
+    "Textuur: serum drop, gel smear, mask op gezicht",
+    "Verpakking: 1 clean shot zonder Chinese tekst (optioneel)",
+    "Video: 6-15 sec demo (CJ gallery download)",
+    "NIET gebruiken: before/after met vette pukkels, collage met merklogo, witte fabrieksfoto's"
+  ],
+  "shopify_foto_opschonen_nl": {
+    "stappen": [
+      "Shopify → Producten → open product",
+      "Scroll naar Media",
+      "Verwijder foto's met zichtbare merknamen (EELHOE, LANBENA, KOUNISH, West Month)",
+      "Sleep beste lifestyle-foto naar positie 1",
+      "Upload CJ-video als positie 2 (indien beschikbaar)",
+      "Max 5 foto's houden — minder = premium",
+      "Klik Opslaan"
+    ]
+  },
+  "products": [
+    {
+      "handle": "acanthosis-nigricans-cleansing-lotion-moisturizes-and-exfoliates",
+      "title_es": "Gel Limpiador Tea Tree Anti-Acné",
+      "price_eur": 22.95,
+      "compare_eur": 34.95,
+      "hero_image": "https://cf.cjdropshipping.com/17179776/2406100827470323000.jpg",
+      "keep_images": ["cf.cjdropshipping.com/17179776", "77155de9-b739"],
+      "delete_images_containing": ["West Month", "Black Spots"],
+      "has_video": false
+    },
+    {
+      "handle": "acne-stickers-fade-acne-marks",
+      "title_es": "Parches Anti-Acné Hidrocoloide (SOS)",
+      "price_eur": 14.95,
+      "compare_eur": 22.95,
+      "hero_position_1": "1247473137180.jpg",
+      "hero_reason": "Infographic — geen LANBENA op hero",
+      "keep_order": ["1247473137180", "8b1855da", "f267a4c7", "18822629795829"],
+      "delete_images_containing": ["LANBENA"],
+      "has_video": false
+    },
+    {
+      "handle": "face-mask-shrink-pore-moisturizing-refreshing-brightening-firming-lift-nourish-skin-care-deep-hydration-moisturizer",
+      "title_es": "Caja Mascarillas Colágeno x4",
+      "price_eur": 27.95,
+      "compare_eur": 39.95,
+      "hero_position_1": "ffd340bc-6fbd",
+      "keep_order": ["ffd340bc", "6e1f0aed", "bac4a72e", "79d4ad95"],
+      "delete_images_containing": ["3b1ba318", "EELHOE"],
+      "has_video": true,
+      "video_source": "CJ SKU CJMB205489701AZ → Gallery → Download MP4"
+    },
+    {
+      "handle": "cherry-flower-seaweed-mask-hydrating-jelly-glue-soft-mask-powder",
+      "title_es": "Mascarilla Jelly Peel-Off Cereza",
+      "price_eur": 24.95,
+      "compare_eur": 36.95,
+      "hero_position_1": "5d796d69-571f",
+      "keep_order": ["5d796d69", "0c7200e7", "c9db1d94", "c931e4bc"],
+      "delete_images_containing": ["88bf90b4", "KOUNISH"],
+      "has_video": true,
+      "video_source": "CJ SKU CJYD203349801AZ → Gallery → Download MP4"
+    }
+  ],
+  "missing_products_cj_listing": {
+    "instructies_nl": [
+      "CJ → My Products → Added Products",
+      "Per product: List (NIET bulk met ×2.5)",
+      "Handmatige prijs invullen (zie hieronder)",
+      "Vendor: Lorez Beauty",
+      "Delivery profile: General profile",
+      "Na import: foto's opschonen volgens shot list",
+      "Shopify → Voorraad → Doorgaan met verkopen als niet op voorraad AAN"
+    ],
+    "items": [
+      {
+        "title_es": "Sérum Vitamina C Iluminador",
+        "cj_sku": "CJJY213014501AZ",
+        "price_eur": 29.95,
+        "compare_eur": 44.95,
+        "expected_handle": "eelhoe-vitamin-c-serum-for-reducing-the-appearance-of-fine-lines-firming-and-moisturizing-the-skin-for-a-more-youthful-complexion",
+        "hero_rule": "Kies foto met serum op huid of dropper close-up — GEEN EELHOE doos als #1",
+        "has_video": true
+      },
+      {
+        "title_es": "Crema Hidratante Niacinamida",
+        "cj_sku": "CJMB213039501AZ",
+        "price_eur": 34.95,
+        "compare_eur": 49.95,
+        "expected_handle": "hoygi-anti-aging-face-cream-lightens-fine-lines-moisturizes-brightens-firms-firms-anti-wrinkle-cream",
+        "hero_rule": "Crème op huid of texture swatch — GEEN HOYGI verpakking als #1",
+        "has_video": true
+      },
+      {
+        "title_es": "Sérum Niacinamida Equilibrante",
+        "cj_sku": "CJJY213018801AZ",
+        "price_eur": 29.95,
+        "compare_eur": 44.95,
+        "expected_handle": "eelhoe-ginseng-essence-for-fading-fine-lines-firming-face-and-moisturizing-skin-serum",
+        "hero_rule": "Serum applicatie op gezicht — GEEN EELHOE tekst",
+        "has_video": true
+      }
+    ]
+  },
+  "na_import_csv": "product-routine-launch.csv importeren met overschrijven voor titels en beschrijvingen",
+  "theme_push": "GitHub push → Shopify sync voor premium productpagina en nieuwe homepage"
+}
