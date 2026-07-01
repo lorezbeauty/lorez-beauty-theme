@@ -1,13 +1,13 @@
 <footer class="footer">
   <div class="footer__grid">
-    <div>
+    <div id="contact">
       <h3 class="footer__heading">{{ 'footer.contact' | t }}</h3>
       {%- if section.settings.menu_contact.links.size > 0 -%}
         {%- for link in section.settings.menu_contact.links -%}
           <a href="{{ link.url }}" class="footer__link">{{ link.title }}</a>
         {%- endfor -%}
       {%- else -%}
-        <a href="/pages/contact" class="footer__link">Contáctenos</a>
+        <a href="/#contact" class="footer__link">Contáctenos</a>
         <a href="mailto:support@lorezbeauty.com" class="footer__link">support@lorezbeauty.com</a>
       {%- endif -%}
     </div>
@@ -29,7 +29,7 @@
           <a href="{{ link.url }}" class="footer__link">{{ link.title }}</a>
         {%- endfor -%}
       {%- else -%}
-        <a href="/pages/faq" class="footer__link">Preguntas frecuentes</a>
+        <a href="/#faq" class="footer__link">Preguntas frecuentes</a>
       {%- endif -%}
     </div>
     <div>
