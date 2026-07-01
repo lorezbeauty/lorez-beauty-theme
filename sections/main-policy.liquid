@@ -1,0 +1,16 @@
+<div class="policy-page page-width">
+  <header class="policy-page__header">
+    <h1 class="heading-lg">{{ policy.title }}</h1>
+  </header>
+  <div class="policy-page__body rte">
+    {%- capture policy_html -%}{{ policy.body }}{%- endcapture -%}
+    {% render 'shipping-copy-fix', html: policy_html %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Policy",
+  "settings": []
+}
+{% endschema %}
