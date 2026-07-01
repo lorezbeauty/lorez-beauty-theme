@@ -15,13 +15,19 @@
       "type": "announcement-bar",
       "settings": {
         "show_announcement": true,
-        "text": "Compra 2 y llévate 1 GRATIS · Código LOREZ · Envío gratis desde €50"
+        "text": "Compra 2 y llévate 1 GRATIS · Código LOREZ · Envío gratis desde €50",
+        "link": ""
       }
     },
     "header": {
       "type": "header",
-      "settings": {}
+      "settings": {
+        "menu": "main-menu"
+      }
     }
   },
-  "order": ["announcement", "header"]
+  "order": [
+    "announcement",
+    "header"
+  ]
 }
