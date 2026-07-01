@@ -79,6 +79,19 @@
     },
     "proof": {
       "type": "social-proof",
+      "blocks": {
+        "review_EMkGNU": {
+          "type": "review",
+          "settings": {
+            "quote": "",
+            "author": "María G.",
+            "location": "Madrid"
+          }
+        }
+      },
+      "block_order": [
+        "review_EMkGNU"
+      ],
       "settings": {
         "eyebrow": "Por qué Lorez",
         "title": "Skincare coreano con pasos claros",
@@ -142,6 +155,7 @@
         "compare_price": "",
         "save_text": "Ahorras €34,70 vs comprar por separado · Guía de rutina incluida",
         "guarantee": "✓ 30 días devolución · ✓ Pago seguro · ✓ Guía incluida",
+        "product": "",
         "variant_ids": "54181662032209,54114582724945,54114575614289,54114589016401,54114559623505,54181662064977,54181662163281",
         "button_label": "Añadir kit al carrito",
         "includes": "Gel Tea Tree · Discos Tónicos · Crema Colágeno · SPF50 · Set Centella · Parches SOS · Mascarillas Colágeno"
@@ -305,6 +319,7 @@
             "icon": "gift",
             "title": "Guía de rutina incluida",
             "text": "Mañana, noche y semanal",
+            "text_mx": "",
             "link": "/pages/faq"
           }
         },
@@ -324,6 +339,7 @@
             "icon": "shipping",
             "title": "España y México",
             "text": "Seguimiento por email",
+            "text_mx": "",
             "link": "/policies/shipping-policy"
           }
         }
@@ -336,6 +352,10 @@
       "settings": {
         "title": "Los servicios Lorez Beauty"
       }
+    },
+    "1782942847abdc9854": {
+      "type": "apps",
+      "settings": {}
     }
   },
   "order": [
@@ -348,6 +368,7 @@
     "products",
     "editorial",
     "faq",
-    "services"
+    "services",
+    "1782942847abdc9854"
   ]
 }
