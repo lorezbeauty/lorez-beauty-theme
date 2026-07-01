@@ -1,0 +1,76 @@
+<div class="product-page">
+  <div class="product-page__grid">
+    <div class="product-page__gallery">
+      {%- if product.featured_media -%}
+        {{ product.featured_media | image_url: width: 1200 | image_tag: loading: 'eager', sizes: '50vw' }}
+      {%- else -%}
+        {{ 'product-1' | placeholder_svg_tag }}
+      {%- endif -%}
+    </div>
+
+    <div class="product-page__info">
+      {%- if product.vendor != blank -%}
+        <p class="product-page__vendor eyebrow">{{ product.vendor }}</p>
+      {%- endif -%}
+      <h1 class="product-page__title heading-lg">{{ product.title }}</h1>
+      <p class="product-page__price">
+        {%- if product.compare_at_price > product.price -%}
+          <span class="product-card__compare">{{ product.compare_at_price | money }}</span>
+        {%- endif -%}
+        {{ product.price | money }}
+      </p>
+
+      <ul class="product-page__trust">
+        <li>🚚 Envío gratis desde €50</li>
+        <li>↩️ Devolución 30 días</li>
+        <li>🎁 Código <strong>LOREZ</strong>: 2+1 gratis</li>
+      </ul>
+
+      {%- if product.description != blank -%}
+        <div class="product-page__description">{{ product.description }}</div>
+      {%- endif -%}
+
+      {% form 'product', product, class: 'product-page__form' %}
+        {%- unless product.has_only_default_variant -%}
+          {%- for option in product.options_with_values -%}
+            <div style="margin-bottom:16px;">
+              <label class="eyebrow" style="display:block;margin-bottom:8px;">{{ option.name }}</label>
+              <select name="options[{{ option.name | escape }}]" style="width:100%;padding:12px;border:1px solid var(--color-light-gray);font-family:inherit;">
+                {%- for value in option.values -%}
+                  <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+          {%- endfor -%}
+        {%- endunless -%}
+
+        <div class="product-page__quantity">
+          <label for="Quantity">{{ 'products.quantity' | t }}</label>
+          <input type="number" id="Quantity" name="quantity" value="1" min="1">
+        </div>
+
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+        <button
+          type="submit"
+          class="btn btn--filled product-page__add"
+          {% unless product.available %}disabled{% endunless %}
+        >
+          {%- if product.available -%}
+            {{ 'products.add_to_cart' | t }}
+          {%- else -%}
+            {{ 'products.sold_out' | t }}
+          {%- endif -%}
+        </button>
+      {% endform %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product information",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}

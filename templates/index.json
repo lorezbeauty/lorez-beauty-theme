@@ -1,0 +1,196 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "settings": {
+        "eyebrow": "Lorez Beauty · Clear Skin",
+        "title": "Rutina anti-acné con oro de 24 quilates",
+        "subtitle": "Para piel con granos, acné y puntos negros",
+        "trust_line": "★★★★★ 4.8/5 · +2.400 clientas · España y México",
+        "button_label": "Quiero el kit completo — €199,95",
+        "button_link": "/#kit",
+        "button_secondary_label": "Ver los 6 pasos",
+        "button_secondary_link": "/#routine"
+      }
+    },
+    "trust": {
+      "type": "trust-bar",
+      "blocks": {
+        "t1": { "type": "item", "settings": { "icon": "shipping", "text": "Envío gratis desde €50 · $999 MXN" } },
+        "t2": { "type": "item", "settings": { "icon": "secure", "text": "Pago 100% seguro" } },
+        "t3": { "type": "item", "settings": { "icon": "returns", "text": "Devolución 30 días" } },
+        "t4": { "type": "item", "settings": { "icon": "check", "text": "Código LOREZ: 2+1 gratis" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"]
+    },
+    "market": {
+      "type": "market-shipping",
+      "settings": {
+        "bar_label": "Enviamos a",
+        "es_title": "España · Entrega rápida",
+        "es_shipping": "2–5 días laborables",
+        "es_free": "Envío gratuito desde €50",
+        "es_payment": "Tarjeta, PayPal y Bizum",
+        "mx_title": "México · Envío internacional",
+        "mx_shipping": "7–14 días hábiles",
+        "mx_free": "Envío gratuito desde $999 MXN",
+        "mx_payment": "Tarjeta, PayPal y Mercado Pago"
+      }
+    },
+    "proof": {
+      "type": "social-proof",
+      "settings": {
+        "eyebrow": "Resultados reales",
+        "title": "Miles de mujeres ya confían en Lorez",
+        "stat_1": "4.8/5",
+        "stat_1_label": "Valoración media",
+        "stat_2": "2.400+",
+        "stat_2_label": "Clientas activas",
+        "stat_3": "93%",
+        "stat_3_label": "Piel más limpia en 14 días"
+      },
+      "blocks": {
+        "r1": { "type": "review", "settings": { "quote": "La mascarilla de oro eliminó mis puntos negros. Mi piel nunca se había visto tan limpia.", "author": "Lucía R.", "location": "Barcelona" } },
+        "r2": { "type": "review", "settings": { "quote": "Compré el kit completo. En 3 semanas menos granos y poros más cerrados.", "author": "Ana M.", "location": "Ciudad de México" } },
+        "r3": { "type": "review", "settings": { "quote": "Los discos tónicos controlan mi piel grasa. Por fin una rutina que funciona.", "author": "Carmen S.", "location": "Valencia" } }
+      },
+      "block_order": ["r1", "r2", "r3"]
+    },
+    "routine": {
+      "type": "routine-steps",
+      "settings": {
+        "eyebrow": "Tu ritual diario",
+        "title": "6 pasos para una piel limpia y equilibrada",
+        "subtitle": "Inspirado en K-beauty · Mañana y noche"
+      },
+      "blocks": {
+        "step_1": { "type": "step", "settings": { "step_num": "PASO 01", "time": "Mañana & Noche", "title": "Limpiar", "description": "Espuma Q10 + Vitamina C. Limpia sin resecar." } },
+        "step_2": { "type": "step", "settings": { "step_num": "PASO 02", "time": "Mañana & Noche", "title": "Refinar poros", "description": "Discos tónicos. Controla sebo y exfolia suavemente." } },
+        "step_3": { "type": "step", "settings": { "step_num": "PASO 03", "time": "Mañana & Noche", "title": "Calmar", "description": "Set Centella. Reduce rojeces del acné." } },
+        "step_4": { "type": "step", "settings": { "step_num": "PASO 04", "time": "Mañana & Noche", "title": "Hidratar", "description": "Crema colágeno. Firmeza sin obstruir poros." } },
+        "step_5": { "type": "step", "settings": { "step_num": "PASO 05", "time": "1× por semana", "title": "Puntos negros", "description": "Peel-Off de Oro 24K. Elimina impurezas." } },
+        "step_6": { "type": "step", "settings": { "step_num": "PASO 06", "time": "1× por semana", "title": "Ritual de lujo", "description": "Mascarilla colágeno con brocha. Spa en casa." } }
+      },
+      "block_order": ["step_1", "step_2", "step_3", "step_4", "step_5", "step_6"]
+    },
+    "kit": {
+      "type": "bundle-banner",
+      "settings": {
+        "eyebrow": "🔥 Oferta más vendida",
+        "title": "Rutina Anti-Acné Completa",
+        "subtitle": "6 productos + guía de uso · Código LOREZ: 2+1 gratis",
+        "price": "€199,95",
+        "compare_price": "€235,65",
+        "save_text": "Ahorras €35,70",
+        "guarantee": "✓ 30 días devolución · ✓ Pago seguro · ✓ Guía incluida",
+        "variant_ids": "54115616031057,54114582724945,54114559623505,54114575614289,54092452790609,54060942819665",
+        "button_label": "Añadir kit al carrito — €199,95",
+        "includes": "Espuma Q10 · Discos Tónicos · Set Centella · Crema Colágeno · Peel-Off Oro 24K · Mascarilla Colágeno"
+      }
+    },
+    "products": {
+      "type": "routine-products",
+      "settings": {
+        "eyebrow": "O compra por pasos",
+        "title": "Productos de la rutina Clear Skin",
+        "subtitle": "¿Prefieres empezar con un solo paso?",
+        "note": "💡 El 78% de nuestras clientas eligen el kit completo — mejor resultado y mejor precio."
+      },
+      "blocks": {
+        "p1": {
+          "type": "product",
+          "settings": {
+            "product": "saoder-q10-vitamin-c-facial-cleanser-face-wash-foam-facial-cleansing-mossee-moisturizing-brightening-facial-skin-care-products",
+            "step_label": "Paso 1 · Limpiar"
+          }
+        },
+        "p2": {
+          "type": "product",
+          "settings": {
+            "product": "zero-pore-toner-pads-control-oil-reduce-sebum-exfoliate-deep-clean-refines-pores-antioxidant-skincare-treatment-skincare-korean",
+            "step_label": "Paso 2 · Poros"
+          }
+        },
+        "p3": {
+          "type": "product",
+          "settings": {
+            "product": "centella-facial-care-combo-gentle-soothing-makeup-remover-oil-centella-cleanser-centella-serum-set-for-sensitive-skin-daily-care",
+            "step_label": "Paso 3 · Calmar"
+          }
+        },
+        "p4": {
+          "type": "product",
+          "settings": {
+            "product": "50g-collagen-anti-wrinkle-firming-face-cream-deep-hydration-fade-fine-lines-lifting-anti-aging-whitening-korean-skin-care-cream",
+            "step_label": "Paso 4 · Hidratar"
+          }
+        },
+        "p5": {
+          "type": "product",
+          "settings": {
+            "product": "24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product",
+            "step_label": "Paso 5 · Puntos negros"
+          }
+        },
+        "p6": {
+          "type": "product",
+          "settings": {
+            "product": "collagen-wrapping-mask-and-brush-set-rejuvenation-moisturize-brightening-korean-face-mask-make-glowy-skin-elasticity-facial-mask",
+            "step_label": "Paso 6 · Ritual"
+          }
+        }
+      },
+      "block_order": ["p1", "p2", "p3", "p4", "p5", "p6"]
+    },
+    "editorial": {
+      "type": "editorial-block",
+      "settings": {
+        "layout": "split",
+        "eyebrow": "El problema",
+        "title": "¿Cansada de probar productos que no funcionan?",
+        "text": "Granos, acné y puntos negros no se van con un solo producto. Necesitas una rutina completa: limpiar, tratar, calmar e hidratar. Lorez Clear Skin lo hace por ti en 6 pasos.",
+        "button_label": "Quiero el kit completo",
+        "button_link": "/#kit"
+      }
+    },
+    "faq": {
+      "type": "faq-accordion",
+      "settings": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "Resolvemos tus dudas antes de comprar",
+        "button_label": "Empezar mi rutina Clear Skin — €199,95",
+        "button_link": "/#kit"
+      },
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "¿Funciona para acné y puntos negros?", "answer": "Sí. La rutina Clear Skin está diseñada para piel grasa y propensa al acné: limpia, controla el sebo, calma la inflamación y trata puntos negros con la mascarilla peel-off de oro." } },
+        "q2": { "type": "question", "settings": { "question": "¿Cuánto tarda el envío?", "answer": "España: 2–5 días laborables. México: 7–14 días hábiles. Envío gratuito desde €50 en España y $999 MXN en México." } },
+        "q3": { "type": "question", "settings": { "question": "¿Qué incluye el kit de €199,95?", "answer": "Los 6 productos de la rutina completa más una guía de uso paso a paso. Ahorras €35,70 frente a comprar por separado." } },
+        "q4": { "type": "question", "settings": { "question": "¿Cómo funciona el código LOREZ?", "answer": "Compra 2 productos y llévate 1 gratis. Introduce LOREZ al finalizar la compra." } },
+        "q5": { "type": "question", "settings": { "question": "¿Puedo devolver si no me convence?", "answer": "Sí. Tienes 30 días para devolución gratuita si el producto no está abierto." } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+    },
+    "services": {
+      "type": "services",
+      "settings": { "title": "Los servicios Lorez Beauty" },
+      "blocks": {
+        "service_1": { "type": "service", "settings": { "icon": "gift", "title": "Guía de rutina incluida", "text": "Instrucciones paso a paso con cada pedido" } },
+        "service_2": { "type": "service", "settings": { "icon": "sample", "title": "Parches de regalo", "text": "Muestra en pedidos +€50" } },
+        "service_3": { "type": "service", "settings": { "icon": "shipping", "title": "Envío España y México", "text": "ES 2–5 días · MX 7–14 días" } }
+      },
+      "block_order": ["service_1", "service_2", "service_3"]
+    }
+  },
+  "order": [
+    "hero",
+    "trust",
+    "market",
+    "proof",
+    "routine",
+    "kit",
+    "products",
+    "editorial",
+    "faq",
+    "services"
+  ]
+}

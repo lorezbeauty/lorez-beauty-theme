@@ -1,0 +1,52 @@
+<section class="newsletter">
+  <h2 class="newsletter__title">
+    {%- if section.settings.title != blank -%}
+      {{ section.settings.title }}
+    {%- else -%}
+      {{ 'newsletter.title' | t }}
+    {%- endif -%}
+  </h2>
+  {%- if section.settings.subtitle != blank -%}
+    <p class="newsletter__subtitle">{{ section.settings.subtitle }}</p>
+  {%- else -%}
+    <p class="newsletter__subtitle">{{ 'newsletter.subtitle' | t }}</p>
+  {%- endif -%}
+
+  {% form 'customer', class: 'newsletter__form' %}
+    <input type="hidden" name="contact[tags]" value="newsletter">
+    <input
+      type="email"
+      name="contact[email]"
+      class="newsletter__input"
+      placeholder="{{ 'newsletter.email_placeholder' | t }}"
+      required
+      autocomplete="email"
+    >
+    <button type="submit" class="newsletter__submit">{{ 'newsletter.submit' | t }}</button>
+  {% endform %}
+</section>
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "The exclusive universe of Lorez Beauty"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter"
+    }
+  ]
+}
+{% endschema %}

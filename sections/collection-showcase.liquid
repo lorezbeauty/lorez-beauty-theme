@@ -1,0 +1,99 @@
+<section class="collection-showcase"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+  <div class="collection-showcase__header">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="collection-showcase__eyebrow eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="collection-showcase__title heading-lg">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <p class="heading-md" style="font-style:italic;font-weight:300;">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+  </div>
+
+  {%- assign collection = collections[section.settings.collection] -%}
+  {%- if collection != blank and collection.products.size > 0 -%}
+    <div class="carousel" data-carousel>
+      <div class="carousel__track-wrapper">
+        <div class="carousel__track" data-carousel-track>
+          {%- for product in collection.products limit: section.settings.products_to_show -%}
+            <div class="carousel__slide" data-carousel-slide>
+              {% render 'product-card', product: product %}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="carousel__controls">
+        <button class="carousel__btn" data-carousel-prev aria-label="{{ 'accessibility.previous' | t }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <button class="carousel__btn" data-carousel-next aria-label="{{ 'accessibility.next' | t }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    {%- if section.settings.show_view_all -%}
+      <div class="collection-showcase__cta" style="text-align:center;margin-top:32px;">
+        <a href="{{ collection.url }}" class="btn">{{ 'collections.discover' | t }}</a>
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Collection showcase",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section HTML ID",
+      "default": "productos"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Skincare Collection"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Summer 2026 Collection"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 4,
+      "max": 12,
+      "step": 1,
+      "label": "Products to show",
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show discover button",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection showcase"
+    }
+  ]
+}
+{% endschema %}

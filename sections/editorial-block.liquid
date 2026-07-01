@@ -1,0 +1,104 @@
+<section class="editorial editorial--{{ section.settings.layout }}">
+  {%- if section.settings.layout == 'full' -%}
+    <div class="editorial__media">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 2000 | image_tag: loading: 'lazy', sizes: '100vw' }}
+      {%- else -%}
+        <div style="width:100%;height:100%;min-height:80vh;background:var(--color-cream);"></div>
+      {%- endif -%}
+    </div>
+    <div class="editorial__overlay"></div>
+    <div class="editorial__content">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="editorial__eyebrow eyebrow">{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h2 class="editorial__title heading-xl">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <p style="margin-bottom:24px;font-size:0.875rem;opacity:0.9;line-height:1.7;">{{ section.settings.text }}</p>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link }}" class="btn btn--white">{{ section.settings.button_label }}</a>
+      {%- endif -%}
+    </div>
+  {%- else -%}
+    <div class="editorial__media">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '50vw' }}
+      {%- else -%}
+        <div style="width:100%;height:100%;min-height:50vh;background:var(--color-cream);"></div>
+      {%- endif -%}
+    </div>
+    <div class="editorial__content">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="editorial__eyebrow eyebrow">{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h2 class="editorial__title heading-lg">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <p style="margin-bottom:24px;color:var(--color-warm-gray);font-size:0.875rem;line-height:1.7;">{{ section.settings.text }}</p>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link }}" class="btn">{{ section.settings.button_label }}</a>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Editorial block",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        { "value": "full", "label": "Full width" },
+        { "value": "split", "label": "Split" }
+      ],
+      "default": "full"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "A sunlit path through the forest"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Discover"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial block"
+    }
+  ]
+}
+{% endschema %}

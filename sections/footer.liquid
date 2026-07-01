@@ -1,0 +1,72 @@
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <h3 class="footer__heading">{{ 'footer.contact' | t }}</h3>
+      {%- for link in section.settings.menu_contact.links -%}
+        <a href="{{ link.url }}" class="footer__link">{{ link.title }}</a>
+      {%- endfor -%}
+    </div>
+    <div>
+      <h3 class="footer__heading">{{ 'footer.shipping' | t }}</h3>
+      {%- for link in section.settings.menu_shipping.links -%}
+        <a href="{{ link.url }}" class="footer__link">{{ link.title }}</a>
+      {%- endfor -%}
+    </div>
+    <div>
+      <h3 class="footer__heading">{{ 'footer.faq' | t }}</h3>
+      {%- for link in section.settings.menu_faq.links -%}
+        <a href="{{ link.url }}" class="footer__link">{{ link.title }}</a>
+      {%- endfor -%}
+    </div>
+    <div>
+      <h3 class="footer__heading">{{ 'footer.privacy' | t }}</h3>
+      {%- for link in section.settings.menu_legal.links -%}
+        <a href="{{ link.url }}" class="footer__link">{{ link.title }}</a>
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span class="footer__logo">{{ shop.name }}</span>
+    <div class="footer__social">
+      {%- if settings.social_instagram != blank -%}
+        <a href="{{ settings.social_instagram }}" class="footer__social-link" target="_blank" rel="noopener">Instagram</a>
+      {%- endif -%}
+      {%- if settings.social_tiktok != blank -%}
+        <a href="{{ settings.social_tiktok }}" class="footer__social-link" target="_blank" rel="noopener">TikTok</a>
+      {%- endif -%}
+      {%- if settings.social_facebook != blank -%}
+        <a href="{{ settings.social_facebook }}" class="footer__social-link" target="_blank" rel="noopener">Facebook</a>
+      {%- endif -%}
+    </div>
+  </div>
+  <p class="footer__copyright">&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</p>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu_contact",
+      "label": "Contact menu"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_shipping",
+      "label": "Shipping menu"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_faq",
+      "label": "FAQ menu"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_legal",
+      "label": "Legal menu"
+    }
+  ]
+}
+{% endschema %}

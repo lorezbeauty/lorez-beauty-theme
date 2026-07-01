@@ -1,0 +1,45 @@
+<section class="market-shipping" data-market-shipping>
+  <div class="market-bar">
+    <p class="market-bar__label">{{ section.settings.bar_label }}</p>
+    <div class="market-bar__toggle" role="group" aria-label="{{ section.settings.bar_label }}">
+      <button type="button" class="market-bar__btn is-active" data-market="es" aria-pressed="true">España</button>
+      <button type="button" class="market-bar__btn" data-market="mx" aria-pressed="false">México</button>
+    </div>
+  </div>
+
+  <div class="market-shipping__grid">
+    <div class="market-shipping__card is-visible" data-market-panel="es">
+      <p class="market-shipping__flag">🇪🇸</p>
+      <h3 class="market-shipping__title">{{ section.settings.es_title }}</h3>
+      <p class="market-shipping__text">{{ section.settings.es_shipping }}</p>
+      <p class="market-shipping__text">{{ section.settings.es_free }}</p>
+      <p class="market-shipping__text market-shipping__note">{{ section.settings.es_payment }}</p>
+    </div>
+    <div class="market-shipping__card" data-market-panel="mx">
+      <p class="market-shipping__flag">🇲🇽</p>
+      <h3 class="market-shipping__title">{{ section.settings.mx_title }}</h3>
+      <p class="market-shipping__text">{{ section.settings.mx_shipping }}</p>
+      <p class="market-shipping__text">{{ section.settings.mx_free }}</p>
+      <p class="market-shipping__text market-shipping__note">{{ section.settings.mx_payment }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Market & shipping",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "bar_label", "label": "Toggle label", "default": "Enviamos a" },
+    { "type": "text", "id": "es_title", "label": "Spain title", "default": "España · Entrega rápida" },
+    { "type": "text", "id": "es_shipping", "label": "Spain shipping", "default": "2–5 días laborables · Península e Islas Baleares" },
+    { "type": "text", "id": "es_free", "label": "Spain free shipping", "default": "Envío gratuito en pedidos superiores a €50" },
+    { "type": "text", "id": "es_payment", "label": "Spain payments", "default": "Tarjeta, PayPal y Bizum" },
+    { "type": "text", "id": "mx_title", "label": "Mexico title", "default": "México · Envío internacional" },
+    { "type": "text", "id": "mx_shipping", "label": "Mexico shipping", "default": "7–14 días hábiles · Todo el país" },
+    { "type": "text", "id": "mx_free", "label": "Mexico free shipping", "default": "Envío gratuito en pedidos superiores a $999 MXN" },
+    { "type": "text", "id": "mx_payment", "label": "Mexico payments", "default": "Tarjeta, PayPal y Mercado Pago" }
+  ],
+  "presets": [{ "name": "Market & shipping" }]
+}
+{% endschema %}

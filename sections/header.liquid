@@ -1,0 +1,98 @@
+<header class="header" data-header>
+  <div class="header__inner">
+    <div class="header__left">
+      <button class="header__menu-btn" data-menu-open aria-label="{{ 'accessibility.menu' | t }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+        {{ 'header.menu' | t }}
+      </button>
+    </div>
+
+    <div class="header__logo">
+      <a href="{{ routes.root_url }}">
+        {%- if section.settings.logo != blank -%}
+          {{ section.settings.logo | image_url: width: 200 | image_tag: loading: 'eager', alt: shop.name }}
+        {%- else -%}
+          <span class="header__logo-text">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+    </div>
+
+    <div class="header__right">
+      <button class="header__icon" data-search-open aria-label="{{ 'accessibility.search' | t }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="11" cy="11" r="7"/>
+          <path d="M20 20l-4-4"/>
+        </svg>
+      </button>
+      <a href="{{ routes.account_url }}" class="header__icon" aria-label="{{ 'accessibility.account' | t }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="8" r="4"/>
+          <path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/>
+        </svg>
+      </a>
+      <a href="{{ routes.cart_url }}" class="header__icon" aria-label="{{ 'accessibility.cart' | t }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M6 6h15l-1.5 9h-12z"/>
+          <circle cx="9" cy="20" r="1"/>
+          <circle cx="18" cy="20" r="1"/>
+        </svg>
+        {%- if cart.item_count > 0 -%}
+          <span class="header__cart-count">{{ cart.item_count }}</span>
+        {%- endif -%}
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="menu-drawer" data-menu-drawer>
+  <div class="menu-drawer__overlay"></div>
+  <div class="menu-drawer__panel">
+    <button class="menu-drawer__close" data-menu-close aria-label="{{ 'accessibility.close' | t }}">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M1 1l12 12M13 1L1 13"/>
+      </svg>
+      {{ 'accessibility.close' | t }}
+    </button>
+    <nav>
+      {%- for link in section.settings.menu.links -%}
+        <a href="{{ link.url }}" class="menu-drawer__nav-link">{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
+</div>
+
+<div class="search-overlay" data-search-overlay>
+  <button class="search-overlay__close" data-search-close>{{ 'accessibility.close' | t }}</button>
+  <div class="search-overlay__inner">
+    <form action="{{ routes.search_url }}" method="get" role="search">
+      <input
+        type="search"
+        name="q"
+        class="search-overlay__input"
+        placeholder="{{ 'header.search_placeholder' | t }}"
+        autocomplete="off"
+      >
+    </form>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    }
+  ]
+}
+{% endschema %}

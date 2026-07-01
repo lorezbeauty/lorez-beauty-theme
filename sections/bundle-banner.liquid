@@ -1,0 +1,64 @@
+<section class="bundle-banner" id="kit">
+  {%- if section.settings.eyebrow != blank -%}
+    <p class="eyebrow bundle-banner__eyebrow">{{ section.settings.eyebrow }}</p>
+  {%- endif -%}
+  {%- if section.settings.title != blank -%}
+    <h2 class="heading-xl">{{ section.settings.title }}</h2>
+  {%- endif -%}
+  {%- if section.settings.subtitle != blank -%}
+    <p class="bundle-banner__subtitle">{{ section.settings.subtitle }}</p>
+  {%- endif -%}
+  {%- if section.settings.price != blank -%}
+    {%- assign price_num = section.settings.price | remove: '€' | strip | replace: ',', '.' -%}
+    <p class="bundle-banner__price" data-price-eur="{{ price_num }}">{{ section.settings.price }}</p>
+  {%- endif -%}
+  {%- if section.settings.compare_price != blank -%}
+    <p class="bundle-banner__save">
+      <span class="product-card__compare">{{ section.settings.compare_price }}</span>
+      {{ section.settings.save_text }}
+    </p>
+  {%- endif -%}
+
+  {%- if section.settings.guarantee != blank -%}
+    <p class="bundle-banner__guarantee">{{ section.settings.guarantee }}</p>
+  {%- endif -%}
+
+  {%- if section.settings.product != blank -%}
+    {%- assign kit_product = all_products[section.settings.product] -%}
+    {%- if kit_product != blank -%}
+      <form method="post" action="/cart/add" class="bundle-banner__form">
+        <input type="hidden" name="id" value="{{ kit_product.selected_or_first_available_variant.id }}">
+        <button type="submit" class="btn btn--white">{{ section.settings.button_label }}</button>
+      </form>
+    {%- endif -%}
+  {%- else -%}
+    <button type="button" class="btn btn--white" id="add-kit-btn" data-kit-variants="{{ section.settings.variant_ids }}">
+      {{ section.settings.button_label }}
+    </button>
+  {%- endif -%}
+
+  {%- if section.settings.includes != blank -%}
+    <p class="bundle-banner__includes">{{ section.settings.includes }}</p>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Bundle banner",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Kit Clear Skin" },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Rutina Anti-Acné Completa" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "6 productos · Guía de uso incluida · Código LOREZ: 2+1 gratis" },
+    { "type": "text", "id": "price", "label": "Price display", "default": "€199,95" },
+    { "type": "text", "id": "compare_price", "label": "Compare price", "default": "€235,65" },
+    { "type": "text", "id": "save_text", "label": "Save text", "default": "Ahorras €35,70" },
+    { "type": "text", "id": "guarantee", "label": "Guarantee line", "default": "✓ 30 días de devolución · ✓ Pago seguro · ✓ Guía incluida" },
+    { "type": "product", "id": "product", "label": "Kit product (optional)" },
+    { "type": "text", "id": "variant_ids", "label": "Variant IDs (comma-separated, if no kit product)", "default": "54115616031057,54114582724945,54114559623505,54114575614289,54092452790609,54060942819665" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Añadir kit al carrito" },
+    { "type": "text", "id": "includes", "label": "Includes list", "default": "Espuma Q10 · Discos Tónicos · Set Centella · Crema Colágeno · Peel-Off Oro 24K · Mascarilla Colágeno con Brocha" }
+  ],
+  "presets": [{ "name": "Bundle banner" }]
+}
+{% endschema %}

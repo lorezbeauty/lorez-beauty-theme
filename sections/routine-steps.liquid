@@ -1,0 +1,84 @@
+<section class="routine-steps" id="routine">
+  <div class="routine-steps__header">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="eyebrow routine-steps__eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="heading-lg">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <p class="routine-steps__subtitle">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+  </div>
+  <div class="routine-steps__grid">
+    {%- for block in section.blocks -%}
+      <div class="routine-step" {{ block.shopify_attributes }}>
+        {%- if block.settings.step_num != blank -%}
+          <p class="routine-step__num">{{ block.settings.step_num }}</p>
+        {%- endif -%}
+        {%- if block.settings.time != blank -%}
+          <p class="routine-step__time">{{ block.settings.time }}</p>
+        {%- endif -%}
+        {%- if block.settings.title != blank -%}
+          <h3 class="routine-step__title">{{ block.settings.title }}</h3>
+        {%- endif -%}
+        {%- if block.settings.description != blank -%}
+          <p class="routine-step__desc">{{ block.settings.description }}</p>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Routine steps",
+  "tag": "section",
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Tu ritual diario"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "6 pasos para una piel limpia y equilibrada"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Mañana y noche · Formulado para piel grasa y propensa al acné"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        { "type": "text", "id": "step_num", "label": "Step label", "default": "PASO 01" },
+        { "type": "text", "id": "time", "label": "Frequency", "default": "Mañana & Noche" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Limpiar" },
+        { "type": "text", "id": "description", "label": "Description" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Routine steps",
+      "blocks": [
+        { "type": "step", "settings": { "step_num": "PASO 01", "time": "Mañana & Noche", "title": "Limpiar", "description": "Espuma Q10 + Vitamina C. Limpia sin resecar." } },
+        { "type": "step", "settings": { "step_num": "PASO 02", "time": "Mañana & Noche", "title": "Refinar poros", "description": "Discos tónicos coreanos. Controla el sebo y exfolia suavemente." } },
+        { "type": "step", "settings": { "step_num": "PASO 03", "time": "Mañana & Noche", "title": "Calmar", "description": "Set Centella. Reduce rojeces e inflamación del acné." } },
+        { "type": "step", "settings": { "step_num": "PASO 04", "time": "Mañana & Noche", "title": "Hidratar", "description": "Crema colágeno. Firmeza sin obstruir poros." } },
+        { "type": "step", "settings": { "step_num": "PASO 05", "time": "1× por semana", "title": "Puntos negros", "description": "Mascarilla Peel-Off de Oro. Elimina impurezas al retirarla." } },
+        { "type": "step", "settings": { "step_num": "PASO 06", "time": "1× por semana", "title": "Ritual de lujo", "description": "Mascarilla colágeno con brocha. Experiencia spa en casa." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

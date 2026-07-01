@@ -1,0 +1,55 @@
+{
+  "general": {
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    }
+  },
+  "accessibility": {
+    "skip_to_content": "Skip to content",
+    "close": "Close",
+    "menu": "Menu",
+    "search": "Search",
+    "cart": "Cart",
+    "account": "Account",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "header": {
+    "menu": "Menu",
+    "search_placeholder": "Search products"
+  },
+  "products": {
+    "add_to_cart": "Add to cart",
+    "sold_out": "Sold out",
+    "unavailable": "Unavailable",
+    "quantity": "Quantity",
+    "discover": "Discover"
+  },
+  "collections": {
+    "discover": "Discover",
+    "view_all": "View all"
+  },
+  "newsletter": {
+    "title": "The exclusive universe of Lorez Beauty",
+    "subtitle": "Subscribe to receive exclusive previews of new products and special offers.",
+    "email_placeholder": "Enter your email",
+    "submit": "Subscribe",
+    "success": "Thank you for subscribing"
+  },
+  "footer": {
+    "contact": "Contact us",
+    "shipping": "Shipping & returns",
+    "faq": "FAQ",
+    "privacy": "Privacy policy",
+    "terms": "Terms & conditions"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "checkout": "Checkout",
+    "continue_shopping": "Continue shopping",
+    "added": "Product added",
+    "view": "View cart"
+  }
+}

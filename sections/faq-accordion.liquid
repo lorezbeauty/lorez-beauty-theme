@@ -1,0 +1,58 @@
+<section class="faq" id="faq">
+  <div class="faq__inner">
+    {%- if section.settings.title != blank -%}
+      <h2 class="heading-lg faq__title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <p class="faq__subtitle">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+    <div class="faq__list">
+      {%- for block in section.blocks -%}
+        <details class="faq__item" {{ block.shopify_attributes }}>
+          <summary class="faq__question">{{ block.settings.question }}</summary>
+          <div class="faq__answer">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.button_label != blank -%}
+      <div class="faq__cta">
+        <a href="{{ section.settings.button_link }}" class="btn">{{ section.settings.button_label }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "Preguntas frecuentes" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Resolvemos tus dudas antes de comprar" },
+    { "type": "text", "id": "button_label", "label": "CTA label", "default": "Empezar mi rutina Clear Skin" },
+    { "type": "url", "id": "button_link", "label": "CTA link" }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question" },
+        { "type": "textarea", "id": "answer", "label": "Answer" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ",
+      "blocks": [
+        { "type": "question", "settings": { "question": "¿Funciona para acné y puntos negros?", "answer": "Sí. La rutina Clear Skin está diseñada para piel grasa y propensa al acné: limpia, controla el sebo, calma inflamación y trata puntos negros con la mascarilla peel-off de oro." } },
+        { "type": "question", "settings": { "question": "¿Cuánto tarda el envío?", "answer": "España: 2–5 días laborables. México: 7–14 días hábiles. Envío gratuito desde €50 en España y $999 MXN en México." } },
+        { "type": "question", "settings": { "question": "¿Qué incluye el kit de €199,95?", "answer": "Los 6 productos de la rutina completa más guía de uso paso a paso. Ahorras €35,70 frente a comprar por separado." } },
+        { "type": "question", "settings": { "question": "¿Cómo funciona el código LOREZ?", "answer": "Compra 2 productos y llévate 1 gratis. Introduce LOREZ al finalizar la compra." } },
+        { "type": "question", "settings": { "question": "¿Puedo devolver si no me convence?", "answer": "Sí. Tienes 30 días para devolución gratuita si el producto no está abierto." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

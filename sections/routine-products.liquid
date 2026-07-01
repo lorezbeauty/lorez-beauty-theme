@@ -1,0 +1,51 @@
+<section class="routine-products" id="productos">
+  <div class="routine-products__header">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="heading-lg">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <p class="routine-products__subtitle">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+  </div>
+  <div class="routine-products__grid">
+    {%- for block in section.blocks -%}
+      {%- assign p = block.settings.product -%}
+      {%- if p != blank -%}
+        <div {{ block.shopify_attributes }}>
+          {% render 'product-card', product: p, step_label: block.settings.step_label %}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+  {%- if section.settings.note != blank -%}
+    <p class="routine-products__note">{{ section.settings.note }}</p>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Routine products",
+  "tag": "section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "O compra por pasos" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Productos de la rutina" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "¿Prefieres empezar con un solo producto? Elige tu paso." },
+    { "type": "text", "id": "note", "label": "Bottom note", "default": "💡 Consejo: el 78% de nuestras clientas eligen el kit completo por mejor resultado y precio." }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" },
+        { "type": "text", "id": "step_label", "label": "Step label", "default": "Paso 1" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Routine products" }]
+}
+{% endschema %}
