@@ -10,13 +10,19 @@
   {%- endif -%}
 
   <title>
-    {{ page_title }}
-    {%- if current_tags %} &ndash; {{ 'general.meta.tags' | t: tags: current_tags.join(', ') }}{% endif -%}
-    {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
-    {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    {%- if template.name == 'index' -%}
+      Lorez Beauty | Rutina Anti-Acné K-Beauty — España y México
+    {%- else -%}
+      {{ page_title }}
+      {%- if current_tags %} &ndash; {{ 'general.meta.tags' | t: tags: current_tags.join(', ') }}{% endif -%}
+      {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+      {%- unless page_title contains 'Lorez Beauty' %} &ndash; Lorez Beauty{% endunless -%}
+    {%- endif -%}
   </title>
 
-  {%- if page_description -%}
+  {%- if template.name == 'index' -%}
+    <meta name="description" content="Rutina completa anti-acné: limpiador tea tree, discos tónicos, centella, SPF50 y mascarillas. Envío a España y México. Código LOREZ: 2+1 gratis.">
+  {%- elsif page_description -%}
     <meta name="description" content="{{ page_description | escape }}">
   {%- endif -%}
 

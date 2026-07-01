@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "Header group",
   "type": "header",
@@ -6,7 +15,7 @@
       "type": "announcement-bar",
       "settings": {
         "show_announcement": true,
-        "text": "Compra 2 y llévate 1 GRATIS · Código LOREZ · Solo esta semana"
+        "text": "Compra 2 y llévate 1 GRATIS · Código LOREZ · Envío gratis desde €50"
       }
     },
     "header": {

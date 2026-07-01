@@ -128,7 +128,15 @@
   const formatMXN = (eur) =>
     '$' + Math.round(parseFloat(String(eur).replace(',', '.')) * MXN_RATE).toLocaleString('es-MX') + ' MXN';
 
-  const formatEUR = (eur) => '€' + String(eur).replace('.', ',');
+  function formatEUR(eur) {
+    const n = parseFloat(String(eur).replace(',', '.'));
+    return '€' + n.toFixed(2).replace('.', ',');
+  }
+
+  function formatKitLabel(prefix, eur, market) {
+    const price = market === 'mx' ? formatMXN(eur) : formatEUR(eur);
+    return (prefix || '') + price;
+  }
 
   function setMarket(market) {
     document.querySelectorAll('[data-market]').forEach((btn) => {
@@ -155,6 +163,16 @@
 
     document.querySelectorAll('[data-market-copy]').forEach((el) => {
       el.textContent = market === 'mx' ? el.dataset.mx : el.dataset.es;
+    });
+
+    const kitBtn = document.getElementById('add-kit-btn');
+    if (kitBtn && kitBtn.dataset.priceEur) {
+      kitBtn.textContent = formatKitLabel(kitBtn.dataset.kitLabel || 'Añadir kit al carrito — ', kitBtn.dataset.priceEur, market);
+    }
+
+    document.querySelectorAll('[data-hero-kit-btn]').forEach((el) => {
+      if (!el.dataset.priceEur) return;
+      el.textContent = formatKitLabel(el.dataset.labelPrefix || '', el.dataset.priceEur, market);
     });
 
     localStorage.setItem('lorez-market', market);

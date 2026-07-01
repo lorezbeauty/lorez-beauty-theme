@@ -1,0 +1,64 @@
+{%- comment -%}Acne solution block — video demo or 3-step routine{%- endcomment -%}
+{%- case product.handle -%}
+  {%- when 'gel-limpiador-tea-tree-anti-acne' -%}
+    {%- assign acne_angle_es = 'El tea tree ayuda a limpiar poros y reducir brillos — primer paso esencial contra granos.' -%}
+  {%- when 'acanthosis-nigricans-cleansing-lotion-moisturizes-and-exfoliates' -%}
+    {%- assign acne_angle_es = 'El tea tree ayuda a limpiar poros y reducir brillos — primer paso esencial contra granos.' -%}
+  {%- when 'zero-pore-toner-pads-control-oil-reduce-sebum-exfoliate-deep-clean-refines-pores-antioxidant-skincare-treatment-skincare-korean' -%}
+    {%- assign acne_angle_es = 'Niacinamida + BHA refinan poros y controlan el sebo — clave para piel con acné.' -%}
+  {%- when 'centella-facial-care-combo-gentle-soothing-makeup-remover-oil-centella-cleanser-centella-serum-set-for-sensitive-skin-daily-care' -%}
+    {%- assign acne_angle_es = 'Centella calma rojeces e irritación tras limpiar — ideal por la noche con acné inflamada.' -%}
+  {%- when '50g-collagen-anti-wrinkle-firming-face-cream-deep-hydration-fade-fine-lines-lifting-anti-aging-whitening-korean-skin-care-cream' -%}
+    {%- assign acne_angle_es = 'Hidrata sin obstruir poros después de activos — barrera fuerte = menos brotes.' -%}
+  {%- when 'korean-rice-extract-sunscreen-cream-spf50-hydrating-moisturizing-tone-up-primer-lightweight-concealer-even-skin-tone' -%}
+    {%- assign acne_angle_es = 'SPF50 diario evita manchas post-grano — imprescindible en rutina anti-acné.' -%}
+  {%- when 'acne-stickers-fade-acne-marks' -%}
+    {%- assign acne_angle_es = 'Absorbe la secreción del grano y protege la zona toda la noche — el SOS de tu rutina.' -%}
+  {%- when 'face-mask-shrink-pore-moisturizing-refreshing-brightening-firming-lift-nourish-skin-care-deep-hydration-moisturizer' -%}
+    {%- assign acne_angle_es = 'Hidratación profunda que calma la piel tras activos — poros con aspecto más refinado cada semana.' -%}
+  {%- when 'cherry-flower-seaweed-mask-hydrating-jelly-glue-soft-mask-powder' -%}
+    {%- assign acne_angle_es = 'Ritual semanal que elimina impurezas superficiales y deja la piel más calmada.' -%}
+  {%- when '24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product' -%}
+    {%- assign acne_angle_es = 'Tratamiento semanal para puntos negros e impurezas en zona T.' -%}
+{%- endcase -%}
+
+{%- assign show_acne = false -%}
+{%- if acne_angle_es != blank or product.tags contains 'anti-acne' or product.tags contains 'clear-skin' -%}
+  {%- assign show_acne = true -%}
+{%- endif -%}
+
+{%- if show_acne -%}
+
+{%- assign acne_video = nil -%}
+{%- for media in product.media -%}
+  {%- if media.media_type == 'video' -%}
+    {%- assign acne_video = media -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<section class="product-acne-demo" aria-label="Solución anti-acné">
+  <p class="product-acne-demo__eyebrow eyebrow">Clear Skin · Lorez Beauty</p>
+  <h2 class="product-acne-demo__title heading-md">Cómo ayuda contra el acné</h2>
+
+  {%- if acne_angle_es != blank -%}
+    <p class="product-acne-demo__lead">{{ acne_angle_es }}</p>
+  {%- else -%}
+    <p class="product-acne-demo__lead">Paso clave de tu rutina mañana, noche o semanal para piel con granos y poros visibles.</p>
+  {%- endif -%}
+
+  {%- if acne_video -%}
+    <div class="product-acne-demo__video">
+      {{ acne_video | video_tag: class: 'product-acne-demo__player', controls: true, autoplay: false, loop: true, muted: true, playsinline: true }}
+      <p class="product-acne-demo__caption">▶ Mira cómo usarlo en tu rutina diaria</p>
+    </div>
+  {%- else -%}
+    <ol class="product-acne-demo__steps">
+      <li><strong>Limpiar</strong> — elimina grasa e impurezas sin irritar.</li>
+      <li><strong>Tratar</strong> — activos que refinan poros y calman rojeces.</li>
+      <li><strong>Proteger</strong> — hidratar + SPF para evitar marcas.</li>
+    </ol>
+    <p class="product-acne-demo__hint">💡 Sube un vídeo demo en <em>Media</em> (posición 2) para mostrar la aplicación real.</p>
+  {%- endif -%}
+</section>
+{%- endif -%}

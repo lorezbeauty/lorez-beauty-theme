@@ -16,10 +16,8 @@
       {%- endif -%}
       <h3 class="product-card__title">{{ product.title }}</h3>
       <p class="product-card__price">
-        {%- if product.compare_at_price > product.price -%}
-          <span class="product-card__compare">{{ product.compare_at_price | money }}</span>
-        {%- endif -%}
-        <span data-price>{{ product.price | money }}</span>
+        {%- assign price_eur = product.price | times: 1.0 | divided_by: 100.0 -%}
+        <span data-price data-price-eur="{{ price_eur }}">{{ product.price | money }}</span>
       </p>
     </div>
   </a>
