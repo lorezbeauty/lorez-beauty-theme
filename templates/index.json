@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -5,9 +14,10 @@
       "settings": {
         "eyebrow": "Lorez Beauty · Clear Skin",
         "title": "Rutina completa anti-acné — mañana y noche",
-        "subtitle": "7 productos · Ingredientes activos · Resultados en 14 días",
-        "trust_line": "★★★★★ 4.8/5 · +2.400 clientas · España y México",
-        "button_label": "Kit completo — €199,95",
+        "subtitle": "9 productos · Ingredientes activos · Rutina K-beauty paso a paso",
+        "trust_line": "Rutina coreana · Envío España y México · Devolución 30 días",
+        "kit_price_eur": "179.95",
+        "button_label": "Kit completo",
         "button_link": "/#kit",
         "button_secondary_label": "Ver productos",
         "button_secondary_link": "/#productos"
@@ -16,12 +26,42 @@
     "trust": {
       "type": "trust-bar",
       "blocks": {
-        "t1": { "type": "item", "settings": { "icon": "shipping", "text": "Envío gratis desde €50 · $999 MXN" } },
-        "t2": { "type": "item", "settings": { "icon": "secure", "text": "Pago 100% seguro" } },
-        "t3": { "type": "item", "settings": { "icon": "returns", "text": "Devolución 30 días" } },
-        "t4": { "type": "item", "settings": { "icon": "check", "text": "Código LOREZ: 2+1 gratis" } }
+        "t1": {
+          "type": "item",
+          "settings": {
+            "icon": "shipping",
+            "text": "Envío gratis desde €50 · $999 MXN"
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "icon": "secure",
+            "text": "Pago 100% seguro"
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "icon": "returns",
+            "text": "Devolución 30 días"
+          }
+        },
+        "t4": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "text": "Código LOREZ: 2+1 gratis"
+          }
+        }
       },
-      "block_order": ["t1", "t2", "t3", "t4"]
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {}
     },
     "market": {
       "type": "market-shipping",
@@ -40,70 +80,157 @@
     "proof": {
       "type": "social-proof",
       "settings": {
-        "eyebrow": "Resultados reales",
-        "title": "Miles de mujeres ya confían en Lorez",
-        "stat_1": "4.8/5",
-        "stat_1_label": "Valoración media",
-        "stat_2": "2.400+",
-        "stat_2_label": "Clientas activas",
-        "stat_3": "93%",
-        "stat_3_label": "Piel más limpia en 14 días"
-      },
-      "blocks": {
-        "r1": { "type": "review", "settings": { "quote": "Los discos tónicos y el gel tea tree cambiaron mi rutina. Menos granos en 2 semanas.", "author": "Lucía R.", "location": "Barcelona" } },
-        "r2": { "type": "review", "settings": { "quote": "El set Centella por la noche calma mi piel. Los parches SOS son imprescindibles.", "author": "Ana M.", "location": "Ciudad de México" } },
-        "r3": { "type": "review", "settings": { "quote": "Las mascarillas semanales me dan piel de spa. Se nota que no es dropship barato.", "author": "Carmen S.", "location": "Valencia" } }
-      },
-      "block_order": ["r1", "r2", "r3"]
+        "eyebrow": "Por qué Lorez",
+        "title": "Skincare coreano con pasos claros",
+        "stat_1": "9",
+        "stat_1_label": "Productos de rutina",
+        "stat_2": "ES + MX",
+        "stat_2_label": "Enviamos a tu país",
+        "stat_3": "30",
+        "stat_3_label": "Días de devolución"
+      }
     },
     "routine": {
       "type": "routine-steps",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "step_num": "☀️ MAÑANA",
+            "time": "4 pasos",
+            "title": "Limpiar → Poros → Hidratar → SPF",
+            "description": "Tea tree, discos tónicos, crema colágeno y protector solar."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "step_num": "🌙 NOCHE",
+            "time": "4 pasos",
+            "title": "Limpiar → Centella → Crema → Parches",
+            "description": "Repara, calma rojeces y trata granos mientras duermes."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "step_num": "✨ SEMANAL",
+            "time": "1–2×",
+            "title": "Mascarillas profundas",
+            "description": "Colágeno, jelly peel-off y oro 24K para poros."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
       "settings": {
         "eyebrow": "Tu ritual Clear Skin",
         "title": "Mañana, noche y tratamiento semanal",
-        "subtitle": "7 productos · Rutina simple como COSRX — resultados en 14 días"
-      },
-      "blocks": {
-        "step_1": { "type": "step", "settings": { "step_num": "☀️ MAÑANA", "time": "4 pasos", "title": "Limpiar → Poros → Hidratar → SPF", "description": "Tea tree, discos tónicos, crema colágeno y protector solar." } },
-        "step_2": { "type": "step", "settings": { "step_num": "🌙 NOCHE", "time": "4 pasos", "title": "Limpiar → Centella → Crema → Parches", "description": "Repara, calma rojeces y trata granos mientras duermes." } },
-        "step_3": { "type": "step", "settings": { "step_num": "✨ SEMANAL", "time": "1–2×", "title": "Mascarillas profundas", "description": "Colágeno, jelly peel-off y oro 24K para poros." } }
-      },
-      "block_order": ["step_1", "step_2", "step_3"]
+        "subtitle": "Rutina simple y completa — mañana, noche y 1–2× por semana"
+      }
     },
     "kit": {
       "type": "bundle-banner",
       "settings": {
         "eyebrow": "🔥 Kit más vendido",
         "title": "Rutina Clear Skin Completa",
-        "subtitle": "7 productos + guía paso a paso · Código LOREZ: 2+1 gratis",
-        "price": "€199,95",
+        "subtitle": "7 productos esenciales + guía por email · Código LOREZ: 2+1 gratis",
+        "price": "€179,95",
         "compare_price": "",
-        "save_text": "7 productos esenciales · Guía de rutina incluida",
+        "save_text": "Ahorras €34,70 vs comprar por separado · Guía de rutina incluida",
         "guarantee": "✓ 30 días devolución · ✓ Pago seguro · ✓ Guía incluida",
         "variant_ids": "54181662032209,54114582724945,54114575614289,54114589016401,54114559623505,54181662064977,54181662163281",
-        "button_label": "Añadir kit al carrito — €199,95",
+        "button_label": "Añadir kit al carrito",
         "includes": "Gel Tea Tree · Discos Tónicos · Crema Colágeno · SPF50 · Set Centella · Parches SOS · Mascarillas Colágeno"
       }
     },
     "products": {
       "type": "routine-products",
+      "blocks": {
+        "p1": {
+          "type": "product",
+          "settings": {
+            "product": "acanthosis-nigricans-cleansing-lotion-moisturizes-and-exfoliates",
+            "step_label": "Paso 1 · Limpiar"
+          }
+        },
+        "p2": {
+          "type": "product",
+          "settings": {
+            "product": "zero-pore-toner-pads-control-oil-reduce-sebum-exfoliate-deep-clean-refines-pores-antioxidant-skincare-treatment-skincare-korean",
+            "step_label": "Paso 2 AM · Poros"
+          }
+        },
+        "p3": {
+          "type": "product",
+          "settings": {
+            "product": "50g-collagen-anti-wrinkle-firming-face-cream-deep-hydration-fade-fine-lines-lifting-anti-aging-whitening-korean-skin-care-cream",
+            "step_label": "Paso 3 · Hidratar"
+          }
+        },
+        "p4": {
+          "type": "product",
+          "settings": {
+            "product": "korean-rice-extract-sunscreen-cream-spf50-hydrating-moisturizing-tone-up-primer-lightweight-concealer-even-skin-tone",
+            "step_label": "Paso 4 AM · SPF50"
+          }
+        },
+        "p5": {
+          "type": "product",
+          "settings": {
+            "product": "centella-facial-care-combo-gentle-soothing-makeup-remover-oil-centella-cleanser-centella-serum-set-for-sensitive-skin-daily-care",
+            "step_label": "Paso 2 PM · Centella"
+          }
+        },
+        "p6": {
+          "type": "product",
+          "settings": {
+            "product": "acne-stickers-fade-acne-marks",
+            "step_label": "Paso 4 PM · Parches"
+          }
+        },
+        "p7": {
+          "type": "product",
+          "settings": {
+            "product": "face-mask-shrink-pore-moisturizing-refreshing-brightening-firming-lift-nourish-skin-care-deep-hydration-moisturizer",
+            "step_label": "Semanal · Colágeno x4"
+          }
+        },
+        "p8": {
+          "type": "product",
+          "settings": {
+            "product": "cherry-flower-seaweed-mask-hydrating-jelly-glue-soft-mask-powder",
+            "step_label": "Semanal · Jelly Cereza"
+          }
+        },
+        "p9": {
+          "type": "product",
+          "settings": {
+            "product": "24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product",
+            "step_label": "Semanal · Oro 24K"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9"
+      ],
       "settings": {
         "eyebrow": "Compra por pasos",
         "title": "Productos de la rutina",
         "subtitle": "Cada paso tiene un propósito — como en K-beauty profesional",
-        "note": "💡 El kit completo incluye los 7 pasos de la rutina Clear Skin."
-      },
-      "blocks": {
-        "p1": { "type": "product", "settings": { "product": "acanthosis-nigricans-cleansing-lotion-moisturizes-and-exfoliates", "step_label": "Paso 1 · Limpiar" } },
-        "p2": { "type": "product", "settings": { "product": "zero-pore-toner-pads-control-oil-reduce-sebum-exfoliate-deep-clean-refines-pores-antioxidant-skincare-treatment-skincare-korean", "step_label": "Paso 2 AM · Poros" } },
-        "p3": { "type": "product", "settings": { "product": "50g-collagen-anti-wrinkle-firming-face-cream-deep-hydration-fade-fine-lines-lifting-anti-aging-whitening-korean-skin-care-cream", "step_label": "Paso 3 · Hidratar" } },
-        "p4": { "type": "product", "settings": { "product": "korean-rice-extract-sunscreen-cream-spf50-hydrating-moisturizing-tone-up-primer-lightweight-concealer-even-skin-tone", "step_label": "Paso 4 AM · SPF50" } },
-        "p5": { "type": "product", "settings": { "product": "centella-facial-care-combo-gentle-soothing-makeup-remover-oil-centella-cleanser-centella-serum-set-for-sensitive-skin-daily-care", "step_label": "Paso 2 PM · Centella" } },
-        "p6": { "type": "product", "settings": { "product": "acne-stickers-fade-acne-marks", "step_label": "Paso 4 PM · Parches" } },
-        "p7": { "type": "product", "settings": { "product": "face-mask-shrink-pore-moisturizing-refreshing-brightening-firming-lift-nourish-skin-care-deep-hydration-moisturizer", "step_label": "Semanal · Mascarillas" } },
-        "p8": { "type": "product", "settings": { "product": "24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product", "step_label": "Semanal · Oro 24K" } }
-      },
-      "block_order": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8"]
+        "note": "💡 El kit completo incluye los 7 pasos esenciales con mejor precio."
+      }
     },
     "editorial": {
       "type": "editorial-block",
@@ -111,38 +238,116 @@
         "layout": "split",
         "eyebrow": "Por qué Lorez",
         "title": "Rutina real, no otra tienda AliExpress",
-        "text": "Seleccionamos productos con fotos lifestyle, ingredientes activos y pasos claros — como COSRX o Paula's Choice. Compra todo en lorezbeauty.com.",
+        "text": "Seleccionamos productos con ingredientes activos y pasos claros — rutina completa en un solo lugar. Compra todo en lorezbeauty.com.",
         "button_label": "Empezar mi rutina",
         "button_link": "/#kit"
       }
     },
     "faq": {
       "type": "faq-accordion",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Funciona para acné y puntos negros?",
+            "answer": "Sí. La rutina combina tea tree, discos tónicos, centella calmante, crema hidratante, SPF diario y mascarillas semanales."
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cuánto tarda el envío?",
+            "answer": "Preparamos tu pedido en 1–2 días. España: 7–14 días. México: 10–18 días. Gratis desde €50 / $999 MXN."
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué incluye el kit?",
+            "answer": "7 productos esenciales de la rutina mañana, noche y semanal, más guía de uso por email tras tu compra."
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Código LOREZ?",
+            "answer": "Compra 2 productos y llévate 1 gratis al finalizar la compra."
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "¿Devolución?",
+            "answer": "30 días si el producto no está abierto. Escríbenos a support@lorezbeauty.com"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
       "settings": {
         "title": "Preguntas frecuentes",
         "subtitle": "Resolvemos tus dudas antes de comprar",
-        "button_label": "Kit completo — €199,95",
+        "button_label": "Ver kit completo",
         "button_link": "/#kit"
-      },
-      "blocks": {
-        "q1": { "type": "question", "settings": { "question": "¿Funciona para acné y puntos negros?", "answer": "Sí. La rutina combina tea tree, niacinamida (discos), centella calmante, crema hidratante, SPF diario y mascarillas semanales." } },
-        "q2": { "type": "question", "settings": { "question": "¿Cuánto tarda el envío?", "answer": "Preparamos tu pedido en 1–2 días. España: 7–14 días. México: 10–18 días. Gratis desde €50 / $999 MXN." } },
-        "q3": { "type": "question", "settings": { "question": "¿Qué incluye el kit de €199,95?", "answer": "7 productos esenciales de la rutina mañana, noche y semanal, más guía de uso." } },
-        "q4": { "type": "question", "settings": { "question": "¿Código LOREZ?", "answer": "Compra 2 productos y llévate 1 gratis al finalizar la compra." } },
-        "q5": { "type": "question", "settings": { "question": "¿Devolución?", "answer": "30 días si el producto no está abierto." } }
-      },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+      }
     },
     "services": {
       "type": "services",
-      "settings": { "title": "Los servicios Lorez Beauty" },
       "blocks": {
-        "service_1": { "type": "service", "settings": { "icon": "gift", "title": "Guía de rutina incluida", "text": "Mañana, noche y semanal" } },
-        "service_2": { "type": "service", "settings": { "icon": "sample", "title": "Parches SOS de regalo", "text": "Pedidos +€50" } },
-        "service_3": { "type": "service", "settings": { "icon": "shipping", "title": "España y México", "text": "Seguimiento por email" } }
+        "service_1": {
+          "type": "service",
+          "settings": {
+            "icon": "gift",
+            "title": "Guía de rutina incluida",
+            "text": "Mañana, noche y semanal",
+            "link": "/pages/faq"
+          }
+        },
+        "service_2": {
+          "type": "service",
+          "settings": {
+            "icon": "sample",
+            "title": "Parches SOS de regalo",
+            "text": "Pedidos +€50",
+            "text_mx": "Pedidos +$999 MXN",
+            "link": "/#kit"
+          }
+        },
+        "service_3": {
+          "type": "service",
+          "settings": {
+            "icon": "shipping",
+            "title": "España y México",
+            "text": "Seguimiento por email",
+            "link": "/policies/shipping-policy"
+          }
+        }
       },
-      "block_order": ["service_1", "service_2", "service_3"]
+      "block_order": [
+        "service_1",
+        "service_2",
+        "service_3"
+      ],
+      "settings": {
+        "title": "Los servicios Lorez Beauty"
+      }
     }
   },
-  "order": ["hero", "trust", "market", "proof", "routine", "kit", "products", "editorial", "faq", "services"]
+  "order": [
+    "hero",
+    "trust",
+    "market",
+    "proof",
+    "routine",
+    "kit",
+    "products",
+    "editorial",
+    "faq",
+    "services"
+  ]
 }

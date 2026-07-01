@@ -17,6 +17,8 @@
       <span class="product-card__compare">{{ section.settings.compare_price }}</span>
       {{ section.settings.save_text }}
     </p>
+  {%- elsif section.settings.save_text != blank -%}
+    <p class="bundle-banner__save">{{ section.settings.save_text }}</p>
   {%- endif -%}
 
   {%- if section.settings.guarantee != blank -%}
@@ -32,8 +34,8 @@
       </form>
     {%- endif -%}
   {%- else -%}
-    <button type="button" class="btn btn--white" id="add-kit-btn" data-kit-variants="{{ section.settings.variant_ids }}">
-      {{ section.settings.button_label }}
+    <button type="button" class="btn btn--white" id="add-kit-btn" data-kit-variants="{{ section.settings.variant_ids }}" data-kit-label="Añadir kit al carrito — " data-price-eur="{{ price_num }}">
+      {{ section.settings.button_label }} — {{ section.settings.price }}
     </button>
   {%- endif -%}
 
@@ -50,8 +52,8 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Kit Clear Skin" },
     { "type": "text", "id": "title", "label": "Heading", "default": "Rutina Anti-Acné Completa" },
     { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "7 productos · Guía de uso incluida · Código LOREZ: 2+1 gratis" },
-    { "type": "text", "id": "price", "label": "Price display", "default": "€199,95" },
-    { "type": "text", "id": "compare_price", "label": "Compare price (leave empty for Omnibus compliance)", "default": "" },
+    { "type": "text", "id": "price", "label": "Price display", "default": "€179,95" },
+    { "type": "text", "id": "compare_price", "label": "Compare price (leave blank for Omnibus compliance)" },
     { "type": "text", "id": "save_text", "label": "Save text", "default": "7 productos esenciales · Guía de rutina incluida" },
     { "type": "text", "id": "guarantee", "label": "Guarantee line", "default": "✓ 30 días de devolución · ✓ Pago seguro · ✓ Guía incluida" },
     { "type": "product", "id": "product", "label": "Kit product (optional)" },
