@@ -12,6 +12,7 @@
     "hero": {
       "type": "hero-banner",
       "settings": {
+        "image": "shopify://shop_images/Schermafbeelding_2026-07-01_224406.png",
         "eyebrow": "Lorez Beauty · Clear Skin",
         "title": "Rutina completa anti-acné — mañana y noche",
         "subtitle": "9 productos · Ingredientes activos · Rutina K-beauty paso a paso",
@@ -142,6 +143,7 @@
         "compare_price": "",
         "save_text": "Ahorras €34,70 vs comprar por separado · Guía de rutina incluida",
         "guarantee": "✓ 30 días devolución · ✓ Pago seguro · ✓ Guía incluida",
+        "product": "",
         "variant_ids": "54181662032209,54114582724945,54114575614289,54114589016401,54114559623505,54181662064977,54181662163281",
         "button_label": "Añadir kit al carrito",
         "includes": "Gel Tea Tree · Discos Tónicos · Crema Colágeno · SPF50 · Set Centella · Parches SOS · Mascarillas Colágeno"
@@ -305,6 +307,7 @@
             "icon": "gift",
             "title": "Guía de rutina incluida",
             "text": "Mañana, noche y semanal",
+            "text_mx": "",
             "link": "/#faq"
           }
         },
@@ -324,6 +327,7 @@
             "icon": "shipping",
             "title": "España y México",
             "text": "Seguimiento por email",
+            "text_mx": "",
             "link": "/policies/shipping-policy"
           }
         }
