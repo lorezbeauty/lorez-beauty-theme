@@ -12,6 +12,7 @@
     "hero": {
       "type": "hero-banner",
       "settings": {
+        "image": "shopify://shop_images/Schermafbeelding_2026-07-01_224406.png",
         "eyebrow": "Lorez Beauty · Clear Skin",
         "title": "Complete anti-acne routine — morning & night",
         "subtitle": "9 products · Active ingredients · Step-by-step K-beauty routine",
@@ -30,7 +31,7 @@
           "type": "item",
           "settings": {
             "icon": "shipping",
-            "text": "Free shipping from €50 · $999 MXN"
+            "text": "Free shipping from €35"
           }
         },
         "t2": {
@@ -142,6 +143,7 @@
         "compare_price": "",
         "save_text": "Save €34.70 vs buying separately · Routine guide included",
         "guarantee": "✓ 30-day returns · ✓ Secure checkout · ✓ Guide included",
+        "product": "",
         "variant_ids": "54181662032209,54114582724945,54114575614289,54114589016401,54114559623505,54181662064977,54181662163281",
         "button_label": "Add kit to cart",
         "includes": "Tea Tree Gel · Toner Pads · Collagen Cream · SPF50 · Centella Set · SOS Patches · Collagen Masks"
@@ -305,6 +307,7 @@
             "icon": "gift",
             "title": "Routine guide included",
             "text": "Morning, night & weekly",
+            "text_mx": "",
             "link": "/#faq"
           }
         },
@@ -324,6 +327,7 @@
             "icon": "shipping",
             "title": "Spain & Mexico",
             "text": "Tracking by email",
+            "text_mx": "",
             "link": "/policies/shipping-policy"
           }
         }
