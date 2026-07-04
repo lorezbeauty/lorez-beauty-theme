@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "Footer group",
   "type": "footer",
@@ -5,8 +14,8 @@
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "title": "El universo exclusivo de Lorez Beauty",
-        "subtitle": "Suscríbete para recibir adelantos exclusivos de nuevos productos y ofertas especiales."
+        "title": "The exclusive world of Lorez Beauty",
+        "subtitle": "Subscribe for early access to new products and special offers."
       }
     },
     "footer": {

@@ -19,14 +19,14 @@
           {%- endfor -%}
         </div>
         {%- if product.media.size > 1 -%}
-          <div class="product-gallery__thumbs" role="tablist" aria-label="Galería">
+          <div class="product-gallery__thumbs" role="tablist" aria-label="Gallery">
             {%- for media in product.media -%}
               <button
                 type="button"
                 class="product-gallery__thumb{% if forloop.first %} is-active{% endif %}"
                 data-gallery-thumb
                 data-index="{{ forloop.index0 }}"
-                aria-label="Imagen {{ forloop.index }}"
+                aria-label="Image {{ forloop.index }}"
               >
                 {%- if media.media_type == 'video' -%}
                   <span class="product-gallery__thumb-video">▶</span>
@@ -44,7 +44,7 @@
     </div>
 
     <div class="product-page__info">
-      {% render 'product-routine-meta', product: product %}
+      {%- render 'product-routine-meta', product: product -%}
 
       {%- if routine_step != blank -%}
         <p class="product-page__step eyebrow">{{ routine_step }}</p>
@@ -56,31 +56,39 @@
         <p class="product-page__tagline">{{ routine_tagline }}</p>
       {%- endif -%}
 
-      <p class="product-page__price">
-        {%- if product.compare_at_price > product.price -%}
-          <span class="product-card__compare">{{ product.compare_at_price | money }}</span>
-        {%- endif -%}
-        {{ product.price | money }}
-      </p>
+      {%- assign price_eur = product.price | times: 1.0 | divided_by: 100.0 -%}
+      <p class="product-page__price" data-price data-price-eur="{{ price_eur }}">{{ product.price | money }}</p>
 
       {%- if routine_ingredients != blank -%}
         <div class="product-page__specs">
           <span class="product-page__spec">🧪 {{ routine_ingredients }}</span>
           <span class="product-page__spec">✓ Cruelty-free</span>
-          <span class="product-page__spec">✓ Todos los tipos de piel</span>
+          <span class="product-page__spec">✓ All skin types</span>
         </div>
       {%- endif -%}
 
       <ul class="product-page__trust">
-        <li>🚚 Envío gratis desde €50</li>
-        <li>↩️ Devolución 30 días</li>
-        <li>🎁 Código <strong>LOREZ</strong>: 2+1 gratis</li>
+        <li>🚚 Free shipping from €50</li>
+        <li>↩️ 30-day returns</li>
+        <li>🎁 Code <strong>LOREZ</strong>: buy 2 get 1 free</li>
       </ul>
+
+      {% render 'product-acne-demo', product: product %}
 
       {% form 'product', product, class: 'product-page__form', id: 'product-form' %}
         {%- unless product.has_only_default_variant -%}
           {%- for option in product.options_with_values -%}
-            {%- unless option.name == 'Color' and option.values.size == 1 and option.values[0] == 'Default Title' -%}
+            {%- assign hide_option = false -%}
+            {%- if option.name == 'Title' and option.values.size == 1 and option.values[0] == 'Default Title' -%}
+              {%- assign hide_option = true -%}
+            {%- endif -%}
+            {%- if option.name == 'Color' and option.values.size == 1 and option.values[0] == 'Default Title' -%}
+              {%- assign hide_option = true -%}
+            {%- endif -%}
+            {%- if option.name == 'Specifications' -%}
+              {%- assign hide_option = true -%}
+            {%- endif -%}
+            {%- unless hide_option -%}
               <div class="product-page__option">
                 <label class="eyebrow">{{ option.name }}</label>
                 <select name="options[{{ option.name | escape }}]" class="product-page__select">

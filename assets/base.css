@@ -1,12 +1,17 @@
 /* Lorez Luxury — Dior-inspired theme */
 
 :root {
-  --color-black: #000000;
+  /* Lorez Blush — warm K-beauty palette (converts better for women 25–45 than cold black/white) */
+  --color-black: #3a2e2e;
   --color-white: #ffffff;
-  --color-cream: #f7f5f2;
-  --color-warm-gray: #8a8a8a;
-  --color-light-gray: #e8e8e8;
+  --color-cream: #f5ebe8;
+  --color-blush: #fbf7f5;
+  --color-warm-gray: #8b7370;
+  --color-light-gray: #e8ded8;
   --color-accent: {{ settings.color_accent }};
+  --color-accent-dark: #a86b62;
+  --color-rose-soft: #e8c4c4;
+  --color-champagne: #c9a87c;
   --color-text: {{ settings.color_text }};
   --color-bg: {{ settings.color_background }};
   --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
@@ -82,7 +87,7 @@ ul, ol {
   left: 0;
   z-index: 9999;
   padding: 12px 24px;
-  background: var(--color-black);
+  background: var(--color-accent-dark);
   color: var(--color-white);
   clip: auto;
   width: auto;
@@ -146,7 +151,7 @@ ul, ol {
 }
 
 .btn:hover {
-  background: var(--color-black);
+  background: var(--color-accent-dark);
   color: var(--color-white);
 }
 
@@ -161,13 +166,15 @@ ul, ol {
 }
 
 .btn--filled {
-  background: var(--color-black);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
   color: var(--color-white);
 }
 
 .btn--filled:hover {
-  background: transparent;
-  color: var(--color-black);
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  color: var(--color-white);
 }
 
 .page-width {
@@ -178,7 +185,7 @@ ul, ol {
 
 /* Announcement bar */
 .announcement-bar {
-  background: var(--color-black);
+  background: linear-gradient(90deg, #8b5a52 0%, var(--color-accent) 100%);
   color: var(--color-white);
   text-align: center;
   font-size: 0.6875rem;
@@ -326,7 +333,7 @@ ul, ol {
   position: absolute;
   top: -4px;
   right: -8px;
-  background: var(--color-black);
+  background: var(--color-accent-dark);
   color: var(--color-white);
   font-size: 0.5625rem;
   width: 16px;
@@ -541,7 +548,7 @@ ul, ol {
 
 .carousel__btn:hover:not(:disabled) {
   border-color: var(--color-black);
-  background: var(--color-black);
+  background: var(--color-accent-dark);
   color: var(--color-white);
 }
 
@@ -721,7 +728,7 @@ ul, ol {
 }
 
 .service-card:hover {
-  background: var(--color-black);
+  background: var(--color-accent);
   color: var(--color-white);
 }
 
@@ -751,7 +758,7 @@ ul, ol {
 .newsletter {
   padding: 80px var(--gutter);
   text-align: center;
-  background: var(--color-black);
+  background: linear-gradient(135deg, #4a3535 0%, #8b5a52 50%, var(--color-accent) 100%);
   color: var(--color-white);
 }
 
@@ -1065,7 +1072,7 @@ ul, ol {
 .product-acne-demo__video {
   border-radius: 2px;
   overflow: hidden;
-  background: #000;
+  background: var(--color-black);
 }
 
 .product-acne-demo__player {
@@ -1371,7 +1378,7 @@ ul, ol {
 /* Bundle banner */
 .bundle-banner {
   padding: 80px var(--gutter);
-  background: var(--color-black);
+  background: linear-gradient(135deg, #4a3535 0%, #8b5a52 100%);
   color: var(--color-white);
   text-align: center;
 }
@@ -1447,7 +1454,8 @@ ul, ol {
 }
 
 .market-bar__btn.is-active {
-  background: var(--color-black);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
   color: var(--color-white);
 }
 
@@ -1505,7 +1513,7 @@ ul, ol {
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%) translateY(100px);
-  background: var(--color-black);
+  background: var(--color-accent-dark);
   color: var(--color-white);
   padding: 16px 28px;
   font-size: 0.75rem;
@@ -1560,7 +1568,7 @@ ul, ol {
 
 /* Trust bar */
 .trust-bar {
-  background: var(--color-black);
+  background: linear-gradient(90deg, #4a3535 0%, #8b5a52 100%);
   color: var(--color-white);
   padding: 14px var(--gutter);
 }

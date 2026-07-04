@@ -167,7 +167,7 @@
 
     const kitBtn = document.getElementById('add-kit-btn');
     if (kitBtn && kitBtn.dataset.priceEur) {
-      kitBtn.textContent = formatKitLabel(kitBtn.dataset.kitLabel || 'Añadir kit al carrito — ', kitBtn.dataset.priceEur, market);
+      kitBtn.textContent = formatKitLabel(kitBtn.dataset.kitLabel || 'Add kit to cart — ', kitBtn.dataset.priceEur, market);
     }
 
     document.querySelectorAll('[data-hero-kit-btn]').forEach((el) => {
@@ -182,8 +182,10 @@
     btn.addEventListener('click', () => setMarket(btn.dataset.market));
   });
 
+  const shopCountry = (window.Shopify && window.Shopify.country) || 'ES';
+  const defaultMarket = shopCountry === 'MX' ? 'mx' : 'es';
   const savedMarket = localStorage.getItem('lorez-market');
-  if (savedMarket === 'mx' || savedMarket === 'es') setMarket(savedMarket);
+  setMarket(savedMarket === 'mx' || savedMarket === 'es' ? savedMarket : defaultMarket);
 
   /* Cart toast */
   const cartToast = document.getElementById('cart-toast');

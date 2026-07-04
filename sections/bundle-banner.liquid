@@ -34,7 +34,7 @@
       </form>
     {%- endif -%}
   {%- else -%}
-    <button type="button" class="btn btn--white" id="add-kit-btn" data-kit-variants="{{ section.settings.variant_ids }}" data-kit-label="Añadir kit al carrito — " data-price-eur="{{ price_num }}">
+    <button type="button" class="btn btn--white" id="add-kit-btn" data-kit-variants="{{ section.settings.variant_ids }}" data-kit-label="Add kit to cart — " data-price-eur="{{ price_num }}">
       {{ section.settings.button_label }} — {{ section.settings.price }}
     </button>
   {%- endif -%}
@@ -50,16 +50,16 @@
   "tag": "section",
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Kit Clear Skin" },
-    { "type": "text", "id": "title", "label": "Heading", "default": "Rutina Anti-Acné Completa" },
-    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "7 productos · Guía de uso incluida · Código LOREZ: 2+1 gratis" },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Complete Clear Skin Routine" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "7 products · Usage guide included · Code LOREZ: buy 2 get 1 free" },
     { "type": "text", "id": "price", "label": "Price display", "default": "€179,95" },
     { "type": "text", "id": "compare_price", "label": "Compare price (leave blank for Omnibus compliance)" },
-    { "type": "text", "id": "save_text", "label": "Save text", "default": "7 productos esenciales · Guía de rutina incluida" },
-    { "type": "text", "id": "guarantee", "label": "Guarantee line", "default": "✓ 30 días de devolución · ✓ Pago seguro · ✓ Guía incluida" },
+    { "type": "text", "id": "save_text", "label": "Save text", "default": "7 essential products · Routine guide included" },
+    { "type": "text", "id": "guarantee", "label": "Guarantee line", "default": "✓ 30-day returns · ✓ Secure checkout · ✓ Guide included" },
     { "type": "product", "id": "product", "label": "Kit product (optional)" },
     { "type": "text", "id": "variant_ids", "label": "Variant IDs (comma-separated, if no kit product)", "default": "54181662032209,54114582724945,54114575614289,54114589016401,54114559623505,54181662064977,54181662163281" },
-    { "type": "text", "id": "button_label", "label": "Button label", "default": "Añadir kit al carrito" },
-    { "type": "text", "id": "includes", "label": "Includes list", "default": "Gel Tea Tree · Discos Tónicos · Crema Colágeno · SPF50 · Set Centella · Parches SOS · Mascarillas Colágeno" }
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Add kit to cart" },
+    { "type": "text", "id": "includes", "label": "Includes list", "default": "Tea Tree Gel · Toner Pads · Collagen Cream · SPF50 · Centella Set · SOS Patches · Collagen Masks" }
   ],
   "presets": [{ "name": "Bundle banner" }]
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#c4847a">
   <link rel="canonical" href="{{ canonical_url }}">
   {%- if settings.favicon != blank -%}
     <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -11,7 +11,7 @@
 
   <title>
     {%- if template.name == 'index' -%}
-      Lorez Beauty | Rutina Anti-Acné K-Beauty — España y México
+      Lorez Beauty | K-Beauty Anti-Acne Routine — Clear Skin
     {%- else -%}
       {{ page_title }}
       {%- if current_tags %} &ndash; {{ 'general.meta.tags' | t: tags: current_tags.join(', ') }}{% endif -%}
@@ -21,7 +21,7 @@
   </title>
 
   {%- if template.name == 'index' -%}
-    <meta name="description" content="Rutina completa anti-acné: limpiador tea tree, discos tónicos, centella, SPF50 y mascarillas. Envío a España y México. Código LOREZ: 2+1 gratis.">
+    <meta name="description" content="Complete anti-acne K-beauty routine: tea tree cleanser, toner pads, centella, SPF50 and weekly masks. Ships to Spain & Mexico. Code LOREZ: buy 2 get 1 free.">
   {%- elsif page_description -%}
     <meta name="description" content="{{ page_description | escape }}">
   {%- endif -%}
@@ -40,6 +40,8 @@
     window.themeSettings = {
       moneyFormat: {{ shop.money_format | json }}
     };
+    window.Shopify = window.Shopify || {};
+    Shopify.country = {{ localization.country.iso_code | json }};
   </script>
 </head>
 <body class="template-{{ template.name | handle }}{% if template.suffix %} template-{{ template.name | handle }}-{{ template.suffix }}{% endif %}">

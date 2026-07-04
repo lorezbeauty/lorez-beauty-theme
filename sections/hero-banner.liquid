@@ -5,7 +5,7 @@
     {%- elsif section.settings.image != blank -%}
       {{ section.settings.image | image_url: width: 2000 | image_tag: loading: 'eager', sizes: '100vw' }}
     {%- else -%}
-      <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a 0%,#3d3d3d 100%);"></div>
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#8b5a52 0%,#c4847a 50%,#f5ebe8 100%);"></div>
     {%- endif -%}
   </div>
   <div class="hero__overlay"></div>
@@ -24,8 +24,12 @@
     {%- endif -%}
     <div class="hero__actions">
       {%- if section.settings.button_label != blank -%}
-        <a href="{{ section.settings.button_link }}" class="btn btn--white btn--lg">
-          {{ section.settings.button_label }}
+        <a href="{{ section.settings.button_link }}" class="btn btn--white btn--lg"{% if section.settings.kit_price_eur != blank %} data-hero-kit-btn data-price-eur="{{ section.settings.kit_price_eur }}" data-label-prefix="{{ section.settings.button_label }} — "{% endif %}>
+          {%- if section.settings.kit_price_eur != blank -%}
+            {{ section.settings.button_label }} — €{{ section.settings.kit_price_eur | replace: '.', ',' }}
+          {%- else -%}
+            {{ section.settings.button_label }}
+          {%- endif -%}
         </a>
       {%- endif -%}
       {%- if section.settings.button_secondary_label != blank -%}
@@ -75,7 +79,13 @@
       "type": "text",
       "id": "trust_line",
       "label": "Trust line under subtitle",
-      "default": "★★★★★ 4.8/5 · Envío gratis desde €50 · Devolución 30 días"
+      "default": "★★★★★ 4.8/5 · Free shipping from €50 · 30-day returns"
+    },
+    {
+      "type": "text",
+      "id": "kit_price_eur",
+      "label": "Kit price (EUR number for market toggle)",
+      "default": "179.95"
     },
     {
       "type": "text",

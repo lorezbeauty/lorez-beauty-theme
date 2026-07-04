@@ -1,65 +1,65 @@
-{%- comment -%}Routine metadata per handle — tagline, step, ingredients (COSRX-style PDP){%- endcomment -%}
-{%- case product.handle -%}
-  {%- when 'zero-pore-toner-pads-control-oil-reduce-sebum-exfoliate-deep-clean-refines-pores-antioxidant-skincare-treatment-skincare-korean' -%}
-    {%- assign routine_tagline = 'Refina poros · Niacinamida + BHA · Mañana' -%}
-    {%- assign routine_step = 'Paso 2 AM · Poros' -%}
-    {%- assign routine_ingredients = 'Niacinamida, ácido salicílico, extractos botánicos' -%}
-    {%- assign acne_angle_es = 'Niacinamida + BHA refinan poros y controlan el sebo — clave para piel con acné.' -%}
-  {%- when 'centella-facial-care-combo-gentle-soothing-makeup-remover-oil-centella-cleanser-centella-serum-set-for-sensitive-skin-daily-care' -%}
-    {%- assign routine_tagline = 'Calma rojeces · Centella · Rutina noche' -%}
-    {%- assign routine_step = 'Paso 2 PM · Calmar' -%}
-    {%- assign routine_ingredients = 'Centella asiática, serum calmante, aceite limpiador' -%}
-    {%- assign acne_angle_es = 'Centella calma rojeces e irritación tras limpiar — ideal por la noche con acné inflamada.' -%}
-  {%- when '50g-collagen-anti-wrinkle-firming-face-cream-deep-hydration-fade-fine-lines-lifting-anti-aging-whitening-korean-skin-care-cream' -%}
-    {%- assign routine_tagline = 'Hidratación profunda · Colágeno · AM y PM' -%}
-    {%- assign routine_step = 'Paso 3 · Hidratar' -%}
-    {%- assign routine_ingredients = 'Colágeno, péptidos, ácido hialurónico' -%}
-    {%- assign acne_angle_es = 'Hidrata sin obstruir poros después de activos — barrera fuerte = menos brotes.' -%}
-  {%- when 'gel-limpiador-tea-tree-anti-acne' -%}
-    {%- assign routine_tagline = 'Limpieza profunda · Tea tree · Mañana y noche' -%}
-    {%- assign routine_step = 'Paso 1 · Limpiar' -%}
-    {%- assign routine_ingredients = 'Tea tree, pomelo, ácido cítrico' -%}
-    {%- assign acne_angle_es = 'El tea tree ayuda a limpiar poros y reducir brillos — primer paso esencial contra granos.' -%}
-  {%- when 'acanthosis-nigricans-cleansing-lotion-moisturizes-and-exfoliates' -%}
-    {%- assign routine_tagline = 'Limpieza profunda · Tea tree · Mañana y noche' -%}
-    {%- assign routine_step = 'Paso 1 · Limpiar' -%}
-    {%- assign routine_ingredients = 'Tea tree, pomelo, ácido cítrico' -%}
-    {%- assign acne_angle_es = 'El tea tree ayuda a limpiar poros y reducir brillos — primer paso esencial contra granos.' -%}
-  {%- when 'eelhoe-vitamin-c-serum-for-reducing-the-appearance-of-fine-lines-firming-and-moisturizing-the-skin-for-a-more-youthful-complexion' -%}
-    {%- assign routine_tagline = 'Luminosidad · Vitamina C + E · Rutina mañana' -%}
-    {%- assign routine_step = 'Paso 2 AM · Iluminar' -%}
-    {%- assign routine_ingredients = 'Vitamina C, vitamina E, aloe vera' -%}
-  {%- when 'hoygi-anti-aging-face-cream-lightens-fine-lines-moisturizes-brightens-firms-firms-anti-wrinkle-cream' -%}
-    {%- assign routine_tagline = 'Hidratación ligera · Niacinamida · AM y PM' -%}
-    {%- assign routine_step = 'Paso 3 · Hidratar' -%}
-    {%- assign routine_ingredients = 'Niacinamida, ácido hialurónico, péptidos' -%}
-  {%- when 'eelhoe-ginseng-essence-for-fading-fine-lines-firming-face-and-moisturizing-skin-serum' -%}
-    {%- assign routine_tagline = 'Equilibrio · Niacinamida · Rutina noche' -%}
-    {%- assign routine_step = 'Paso 2 PM · Equilibrar' -%}
-    {%- assign routine_ingredients = 'Niacinamida, ginseng, ácido hialurónico' -%}
-  {%- when 'korean-rice-extract-sunscreen-cream-spf50-hydrating-moisturizing-tone-up-primer-lightweight-concealer-even-skin-tone' -%}
-    {%- assign routine_tagline = 'Protección SPF50+ · Sin residuo blanco · Mañana' -%}
-    {%- assign routine_step = 'Paso 4 AM · Proteger' -%}
-    {%- assign routine_ingredients = 'Extracto de arroz, SPF50+, hidratantes' -%}
-    {%- assign acne_angle_es = 'SPF50 diario evita manchas post-grano — imprescindible en rutina anti-acné.' -%}
-  {%- when 'acne-stickers-fade-acne-marks' -%}
-    {%- assign routine_tagline = 'SOS granos · Hidrocoloide · Noche' -%}
-    {%- assign routine_step = 'Paso 4 PM · Parches' -%}
-    {%- assign routine_ingredients = 'Hidrocoloide, tea tree, caléndula' -%}
-    {%- assign acne_angle_es = 'Absorbe la secreción del grano y protege la zona toda la noche — el SOS de tu rutina.' -%}
-  {%- when 'face-mask-shrink-pore-moisturizing-refreshing-brightening-firming-lift-nourish-skin-care-deep-hydration-moisturizer' -%}
-    {%- assign routine_tagline = 'Hidratación profunda · Colágeno · 1–2× semana' -%}
-    {%- assign routine_step = 'Tratamiento semanal' -%}
-    {%- assign routine_ingredients = 'Colágeno, ácido hialurónico, probióticos' -%}
-    {%- assign acne_angle_es = 'Hidratación profunda que calma la piel tras activos — poros con aspecto más refinado cada semana.' -%}
-  {%- when 'cherry-flower-seaweed-mask-hydrating-jelly-glue-soft-mask-powder' -%}
-    {%- assign routine_tagline = 'Peel-off modeling · Spa en casa · Semanal' -%}
-    {%- assign routine_step = 'Tratamiento semanal' -%}
-    {%- assign routine_ingredients = 'Gel de cereza, aminoácidos vegetales' -%}
-    {%- assign acne_angle_es = 'Ritual semanal que elimina impurezas superficiales y deja la piel más calmada.' -%}
-  {%- when '24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product' -%}
-    {%- assign routine_tagline = 'Puntos negros · Oro 24K · Semanal' -%}
-    {%- assign routine_step = 'Tratamiento semanal' -%}
-    {%- assign routine_ingredients = 'Oro 24K, colágeno, extractos botánicos' -%}
-    {%- assign acne_angle_es = 'Tratamiento semanal para puntos negros e impurezas en zona T.' -%}
-{%- endcase -%}
+{%- comment -%}Routine metadata per handle — tagline, step, ingredients{%- endcomment -%}
+{%- case product.handle -%}
+  {%- when 'zero-pore-toner-pads-control-oil-reduce-sebum-exfoliate-deep-clean-refines-pores-antioxidant-skincare-treatment-skincare-korean' -%}
+    {%- assign routine_tagline = 'Refine pores · Niacinamide + BHA · Morning' -%}
+    {%- assign routine_step = 'Step 2 AM · Pores' -%}
+    {%- assign routine_ingredients = 'Niacinamide, salicylic acid, botanical extracts' -%}
+    {%- assign acne_angle = 'Niacinamide + BHA refine pores and control oil — key for acne-prone skin.' -%}
+  {%- when 'centella-facial-care-combo-gentle-soothing-makeup-remover-oil-centella-cleanser-centella-serum-set-for-sensitive-skin-daily-care' -%}
+    {%- assign routine_tagline = 'Calm redness · Centella · Night routine' -%}
+    {%- assign routine_step = 'Step 2 PM · Soothe' -%}
+    {%- assign routine_ingredients = 'Centella asiatica, calming serum, cleansing oil' -%}
+    {%- assign acne_angle = 'Centella calms redness and irritation after cleansing — ideal at night for inflamed acne.' -%}
+  {%- when '50g-collagen-anti-wrinkle-firming-face-cream-deep-hydration-fade-fine-lines-lifting-anti-aging-whitening-korean-skin-care-cream' -%}
+    {%- assign routine_tagline = 'Deep hydration · Collagen · AM & PM' -%}
+    {%- assign routine_step = 'Step 3 · Hydrate' -%}
+    {%- assign routine_ingredients = 'Collagen, peptides, hyaluronic acid' -%}
+    {%- assign acne_angle = 'Hydrates without clogging pores after actives — strong barrier = fewer breakouts.' -%}
+  {%- when 'gel-limpiador-tea-tree-anti-acne' -%}
+    {%- assign routine_tagline = 'Deep cleanse · Tea tree · Morning & night' -%}
+    {%- assign routine_step = 'Step 1 · Cleanse' -%}
+    {%- assign routine_ingredients = 'Tea tree, grapefruit, citric acid' -%}
+    {%- assign acne_angle = 'Tea tree helps clear pores and reduce shine — essential first step against breakouts.' -%}
+  {%- when 'acanthosis-nigricans-cleansing-lotion-moisturizes-and-exfoliates' -%}
+    {%- assign routine_tagline = 'Deep cleanse · Tea tree · Morning & night' -%}
+    {%- assign routine_step = 'Step 1 · Cleanse' -%}
+    {%- assign routine_ingredients = 'Tea tree, grapefruit, citric acid' -%}
+    {%- assign acne_angle = 'Tea tree helps clear pores and reduce shine — essential first step against breakouts.' -%}
+  {%- when 'eelhoe-vitamin-c-serum-for-reducing-the-appearance-of-fine-lines-firming-and-moisturizing-the-skin-for-a-more-youthful-complexion' -%}
+    {%- assign routine_tagline = 'Brightening · Vitamin C + E · Morning' -%}
+    {%- assign routine_step = 'Step 2 AM · Brighten' -%}
+    {%- assign routine_ingredients = 'Vitamin C, vitamin E, aloe vera' -%}
+  {%- when 'hoygi-anti-aging-face-cream-lightens-fine-lines-moisturizes-brightens-firms-firms-anti-wrinkle-cream' -%}
+    {%- assign routine_tagline = 'Light hydration · Niacinamide · AM & PM' -%}
+    {%- assign routine_step = 'Step 3 · Hydrate' -%}
+    {%- assign routine_ingredients = 'Niacinamide, hyaluronic acid, peptides' -%}
+  {%- when 'eelhoe-ginseng-essence-for-fading-fine-lines-firming-face-and-moisturizing-skin-serum' -%}
+    {%- assign routine_tagline = 'Balance · Niacinamide · Night routine' -%}
+    {%- assign routine_step = 'Step 2 PM · Balance' -%}
+    {%- assign routine_ingredients = 'Niacinamide, ginseng, hyaluronic acid' -%}
+  {%- when 'korean-rice-extract-sunscreen-cream-spf50-hydrating-moisturizing-tone-up-primer-lightweight-concealer-even-skin-tone' -%}
+    {%- assign routine_tagline = 'SPF50+ protection · No white cast · Morning' -%}
+    {%- assign routine_step = 'Step 4 AM · Protect' -%}
+    {%- assign routine_ingredients = 'Rice extract, SPF50+, moisturizers' -%}
+    {%- assign acne_angle = 'Daily SPF50 prevents post-breakout dark spots — essential in any anti-acne routine.' -%}
+  {%- when 'acne-stickers-fade-acne-marks' -%}
+    {%- assign routine_tagline = 'SOS patches · Hydrocolloid · Night' -%}
+    {%- assign routine_step = 'Step 4 PM · Patches' -%}
+    {%- assign routine_ingredients = 'Hydrocolloid, tea tree, calendula' -%}
+    {%- assign acne_angle = 'Absorbs fluid from the spot and protects it overnight — the SOS step in your routine.' -%}
+  {%- when 'face-mask-shrink-pore-moisturizing-refreshing-brightening-firming-lift-nourish-skin-care-deep-hydration-moisturizer' -%}
+    {%- assign routine_tagline = 'Deep hydration · Collagen · 1–2× weekly' -%}
+    {%- assign routine_step = 'Weekly treatment' -%}
+    {%- assign routine_ingredients = 'Collagen, hyaluronic acid, probiotics' -%}
+    {%- assign acne_angle = 'Deep hydration that calms skin after actives — pores look more refined each week.' -%}
+  {%- when 'cherry-flower-seaweed-mask-hydrating-jelly-glue-soft-mask-powder' -%}
+    {%- assign routine_tagline = 'Peel-off modeling · Spa at home · Weekly' -%}
+    {%- assign routine_step = 'Weekly treatment' -%}
+    {%- assign routine_ingredients = 'Cherry gel, plant amino acids' -%}
+    {%- assign acne_angle = 'Weekly ritual that lifts surface impurities and leaves skin calmer.' -%}
+  {%- when '24k-gold-peel-off-mask-to-remove-blackheads-and-acne-and-cleanse-facial-masks-moisturizing-firming-brightening-skin-care-product' -%}
+    {%- assign routine_tagline = 'Blackheads · 24K gold · Weekly' -%}
+    {%- assign routine_step = 'Weekly treatment' -%}
+    {%- assign routine_ingredients = '24K gold, collagen, botanical extracts' -%}
+    {%- assign acne_angle = 'Weekly treatment for blackheads and T-zone impurities.' -%}
+{%- endcase -%}

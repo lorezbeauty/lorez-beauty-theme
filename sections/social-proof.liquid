@@ -27,6 +27,7 @@
       {%- endif -%}
     </div>
     <div class="social-proof__reviews">
+      {%- if section.blocks.size > 0 -%}
       {%- for block in section.blocks -%}
         <blockquote class="social-proof__review" {{ block.shopify_attributes }}>
           <p class="social-proof__stars">★★★★★</p>
@@ -34,6 +35,7 @@
           <footer class="social-proof__author">— {{ block.settings.author }}{% if block.settings.location != blank %}, {{ block.settings.location }}{% endif %}</footer>
         </blockquote>
       {%- endfor -%}
+      {%- endif -%}
     </div>
   </div>
 </section>
@@ -44,14 +46,14 @@
   "tag": "section",
   "max_blocks": 6,
   "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Resultados reales" },
-    { "type": "text", "id": "title", "label": "Heading", "default": "Miles de mujeres ya confían en Lorez" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Real results" },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Thousands of women trust Lorez" },
     { "type": "text", "id": "stat_1", "label": "Stat 1 number", "default": "4.8/5" },
-    { "type": "text", "id": "stat_1_label", "label": "Stat 1 label", "default": "Valoración media" },
-    { "type": "text", "id": "stat_2", "label": "Stat 2 number", "default": "2.400+" },
-    { "type": "text", "id": "stat_2_label", "label": "Stat 2 label", "default": "Clientas en España y México" },
+    { "type": "text", "id": "stat_1_label", "label": "Stat 1 label", "default": "Average rating" },
+    { "type": "text", "id": "stat_2", "label": "Stat 2 number", "default": "2,400+" },
+    { "type": "text", "id": "stat_2_label", "label": "Stat 2 label", "default": "Customers in Spain & Mexico" },
     { "type": "text", "id": "stat_3", "label": "Stat 3 number", "default": "93%" },
-    { "type": "text", "id": "stat_3_label", "label": "Stat 3 label", "default": "Notan piel más limpia en 14 días" }
+    { "type": "text", "id": "stat_3_label", "label": "Stat 3 label", "default": "See clearer skin in 14 days" }
   ],
   "blocks": [
     {
@@ -68,9 +70,9 @@
     {
       "name": "Social proof",
       "blocks": [
-        { "type": "review", "settings": { "quote": "La mascarilla de oro eliminó mis puntos negros. Mi piel nunca se había visto tan limpia.", "author": "Lucía R.", "location": "Barcelona" } },
-        { "type": "review", "settings": { "quote": "Compré el kit completo. En 3 semanas menos granos y poros más cerrados. Vale cada euro.", "author": "Ana M.", "location": "Ciudad de México" } },
-        { "type": "review", "settings": { "quote": "Los discos tónicos son lo mejor para mi piel grasa. Por fin una rutina que funciona.", "author": "Carmen S.", "location": "Valencia" } }
+        { "type": "review", "settings": { "quote": "The gold mask cleared my blackheads. My skin has never looked this clean.", "author": "Lucia R.", "location": "Barcelona" } },
+        { "type": "review", "settings": { "quote": "I bought the full kit. In 3 weeks fewer breakouts and tighter pores. Worth every euro.", "author": "Ana M.", "location": "Mexico City" } },
+        { "type": "review", "settings": { "quote": "The toner pads are the best for my oily skin. Finally a routine that works.", "author": "Carmen S.", "location": "Valencia" } }
       ]
     }
   ]

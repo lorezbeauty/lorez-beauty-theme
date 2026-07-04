@@ -1,4 +1,4 @@
-<section class="routine-products" id="productos">
+<section class="routine-products" id="products">
   <div class="routine-products__header">
     {%- if section.settings.eyebrow != blank -%}
       <p class="eyebrow">{{ section.settings.eyebrow }}</p>
@@ -31,9 +31,9 @@
   "tag": "section",
   "max_blocks": 12,
   "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "O compra por pasos" },
-    { "type": "text", "id": "title", "label": "Title", "default": "Productos de la rutina" },
-    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "¿Prefieres empezar con un solo producto? Elige tu paso." },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Or shop by step" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Routine products" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Prefer to start with one product? Pick your step." },
     { "type": "text", "id": "note", "label": "Bottom note", "default": "💡 Consejo: el 78% de nuestras clientas eligen el kit completo por mejor resultado y precio." }
   ],
   "blocks": [
@@ -42,7 +42,7 @@
       "name": "Product",
       "settings": [
         { "type": "product", "id": "product", "label": "Product" },
-        { "type": "text", "id": "step_label", "label": "Step label", "default": "Paso 1" }
+        { "type": "text", "id": "step_label", "label": "Step label", "default": "Step 1" }
       ]
     }
   ],

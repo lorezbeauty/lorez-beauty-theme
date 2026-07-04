@@ -8,20 +8,11 @@
  * ------------------------------------------------------------
  */
 {
-  "name": "Header group",
-  "type": "header",
   "sections": {
-    "announcement": {
-      "type": "announcement-bar",
-      "settings": {
-        "show_announcement": true,
-        "text": "Buy 2 get 1 FREE · Code LOREZ · Free shipping from €50"
-      }
-    },
-    "header": {
-      "type": "header",
+    "main": {
+      "type": "main-page",
       "settings": {}
     }
   },
-  "order": ["announcement", "header"]
+  "order": ["main"]
 }
