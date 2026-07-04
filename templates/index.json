@@ -64,33 +64,6 @@
       ],
       "settings": {}
     },
-    "market": {
-      "type": "market-shipping",
-      "settings": {
-        "bar_label": "We ship to",
-        "es_title": "Spain",
-        "es_shipping": "7–14 business days",
-        "es_free": "Free shipping on orders over €50",
-        "es_payment": "Card, PayPal & Bizum",
-        "mx_title": "Mexico",
-        "mx_shipping": "10–18 business days",
-        "mx_free": "Free shipping on orders over $999 MXN",
-        "mx_payment": "Card, PayPal & Mercado Pago"
-      }
-    },
-    "proof": {
-      "type": "social-proof",
-      "settings": {
-        "eyebrow": "Why Lorez",
-        "title": "Korean skincare with clear steps",
-        "stat_1": "9",
-        "stat_1_label": "Routine products",
-        "stat_2": "ES + MX",
-        "stat_2_label": "We ship to you",
-        "stat_3": "30",
-        "stat_3_label": "Day returns"
-      }
-    },
     "routine": {
       "type": "routine-steps",
       "blocks": {
@@ -345,8 +318,6 @@
   "order": [
     "hero",
     "trust",
-    "market",
-    "proof",
     "routine",
     "kit",
     "products",
