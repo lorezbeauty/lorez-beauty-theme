@@ -1,60 +1,69 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "meta": {
-      "tags": "Etiquetado \"{{ tags }}\"",
-      "page": "Página {{ page }}"
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
     }
   },
   "accessibility": {
-    "skip_to_content": "Ir al contenido",
-    "close": "Cerrar",
-    "menu": "Menú",
-    "search": "Buscar",
-    "cart": "Carrito",
-    "account": "Cuenta",
-    "previous": "Anterior",
-    "next": "Siguiente"
+    "skip_to_content": "Skip to content",
+    "close": "Close",
+    "menu": "Menu",
+    "search": "Search",
+    "cart": "Cart",
+    "account": "Account",
+    "previous": "Previous",
+    "next": "Next"
   },
   "header": {
-    "menu": "Menú",
-    "search_placeholder": "Buscar productos"
+    "menu": "Menu",
+    "search_placeholder": "Search products"
   },
   "products": {
-    "add_to_cart": "Añadir al carrito",
-    "sold_out": "Agotado",
-    "unavailable": "No disponible",
-    "quantity": "Cantidad",
-    "discover": "Descubrir"
+    "add_to_cart": "Add to cart",
+    "sold_out": "Sold out",
+    "unavailable": "Unavailable",
+    "quantity": "Quantity",
+    "discover": "Discover"
   },
   "collections": {
-    "discover": "Descubrir",
-    "view_all": "Ver todo"
+    "discover": "Discover",
+    "view_all": "View all"
   },
   "newsletter": {
-    "title": "El universo exclusivo de Lorez Beauty",
-    "subtitle": "Suscríbete para recibir adelantos exclusivos de nuevos productos y ofertas especiales.",
-    "email_placeholder": "Introduce tu email",
-    "submit": "Suscribirse",
-    "success": "Gracias por suscribirte"
+    "title": "The exclusive world of Lorez Beauty",
+    "subtitle": "Subscribe for early access to new products and special offers.",
+    "email_placeholder": "Enter your email",
+    "submit": "Subscribe",
+    "success": "Thank you for subscribing"
   },
   "footer": {
-    "contact": "Contáctenos",
-    "shipping": "Entregas y devoluciones",
+    "contact": "Contact us",
+    "shipping": "Shipping & returns",
     "faq": "FAQ",
-    "privacy": "Política de privacidad",
-    "terms": "Términos legales"
+    "privacy": "Privacy policy",
+    "terms": "Terms & conditions"
   },
   "cart": {
-    "title": "Tu carrito",
-    "empty": "Tu carrito está vacío",
-    "checkout": "Finalizar compra",
-    "continue_shopping": "Seguir comprando",
-    "added": "Producto añadido",
-    "view": "Ver carrito"
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "checkout": "Checkout",
+    "continue_shopping": "Continue shopping",
+    "added": "Product added",
+    "view": "View cart"
   },
   "market": {
-    "ships_to": "Enviamos a",
-    "spain": "España",
-    "mexico": "México"
+    "ships_to": "We ship to",
+    "spain": "Spain",
+    "mexico": "Mexico"
   }
 }
