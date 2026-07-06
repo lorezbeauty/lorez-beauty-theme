@@ -11,7 +11,7 @@
 
   <title>
     {%- if template.name == 'index' -%}
-      Lorez Beauty | K-Beauty Anti-Acne Routine — Clear Skin
+      Lorez Beauty | Private Label Teeth Whitening Products
     {%- else -%}
       {{ page_title }}
       {%- if current_tags %} &ndash; {{ 'general.meta.tags' | t: tags: current_tags.join(', ') }}{% endif -%}
@@ -21,12 +21,36 @@
   </title>
 
   {%- if template.name == 'index' -%}
-    <meta name="description" content="Complete anti-acne K-beauty routine: tea tree cleanser, toner pads, centella, SPF50 and weekly masks. Ships to Spain & Mexico. Code LOREZ: buy 2 get 1 free.">
+    <meta name="description" content="Lorez Beauty offers private label teeth whitening products, OEM/ODM support and custom packaging for modern beauty brands.">
+  {%- elsif template.name == 'product' -%}
+    <meta name="description" content="{{ product.title | escape }} — custom whitening products for private label brands. {{ product.description | strip_html | truncatewords: 20 | escape }}">
+  {%- elsif template.name == 'collection' -%}
+    <meta name="description" content="{{ collection.title | escape }} — whitening strips, gels, powders and LED kits for OEM and private label development. Low MOQ, fast sampling.">
   {%- elsif page_description -%}
     <meta name="description" content="{{ page_description | escape }}">
   {%- endif -%}
 
-  {{ content_for_header }}
+  {% if template.name == 'product' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "{{ product.title | escape }}",
+        "description": "{{ product.description | strip_html | escape }}",
+        "brand": {
+          "@type": "Brand",
+          "name": "Lorez Beauty"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "{{ product.url | absolute_url }}",
+          "priceCurrency": "EUR",
+          "price": "{{ product.price | money_without_currency }}",
+          "availability": "{{ product.available | default: 'OutOfStock' | capitalize }}"
+        }
+      }
+    </script>
+  {% endif %}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

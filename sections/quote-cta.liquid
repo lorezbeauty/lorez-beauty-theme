@@ -1,0 +1,163 @@
+<!-- Request quote CTA section -->
+<style>
+  #quote-cta-{{ section.id }} {
+    padding: 56px var(--gutter);
+    background: linear-gradient(120deg, #b84f68 0%, #d16b7b 100%);
+    color: #fff;
+  }
+
+  #quote-cta-{{ section.id }} .quote-cta__inner {
+    max-width: 880px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 28px;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    #quote-cta-{{ section.id }} .quote-cta__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #quote-cta-{{ section.id }} .quote-cta__content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.15;
+  }
+
+  #quote-cta-{{ section.id }} .quote-cta__content p {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.92);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  #quote-cta-{{ section.id }} .quote-cta__features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  #quote-cta-{{ section.id }} .quote-feature {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  #quote-cta-{{ section.id }} .quote-feature::before {
+    content: '✓';
+    font-weight: 700;
+  }
+
+  #quote-cta-{{ section.id }} .quote-cta__action {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  #quote-cta-{{ section.id }} .quote-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: none;
+  }
+
+  #quote-cta-{{ section.id }} .quote-btn--primary {
+    background: #fff;
+    color: #b84f68;
+  }
+
+  #quote-cta-{{ section.id }} .quote-btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+  }
+
+  #quote-cta-{{ section.id }} .quote-btn--secondary {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.6);
+  }
+
+  #quote-cta-{{ section.id }} .quote-btn--secondary:hover {
+    background: rgba(255,255,255,0.1);
+  }
+
+  #quote-cta-{{ section.id }} .quote-cta__visual {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  #quote-cta-{{ section.id }} .quote-visual-icon {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+  }
+
+  #quote-cta-{{ section.id }} .quote-visual-text {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+  }
+</style>
+
+<div id="quote-cta-{{ section.id }}">
+  <div class="quote-cta__inner">
+    <div class="quote-cta__content">
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.description }}</p>
+      
+      <div class="quote-cta__features">
+        <div class="quote-feature">{{ section.settings.feature_1 }}</div>
+        <div class="quote-feature">{{ section.settings.feature_2 }}</div>
+        <div class="quote-feature">{{ section.settings.feature_3 }}</div>
+        <div class="quote-feature">{{ section.settings.feature_4 }}</div>
+      </div>
+
+      <div class="quote-cta__action">
+        <a href="{{ section.settings.button_link }}" class="quote-btn quote-btn--primary">{{ section.settings.button_text }}</a>
+        <a href="{{ section.settings.secondary_link }}" class="quote-btn quote-btn--secondary">{{ section.settings.secondary_text }}</a>
+      </div>
+    </div>
+
+    <div class="quote-cta__visual">
+      <div class="quote-visual-icon">{{ section.settings.icon }}</div>
+      <div class="quote-visual-text">{{ section.settings.visual_text }}</div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Request Quote CTA",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Ready to launch your whitening line?" },
+    { "type": "textarea", "id": "description", "label": "Description", "default": "Connect with our team for product samples, custom development and private label support. Fast turnaround, low MOQ, certified manufacturing." },
+    { "type": "text", "id": "feature_1", "label": "Feature 1", "default": "Free samples in 48 hours" },
+    { "type": "text", "id": "feature_2", "label": "Feature 2", "default": "Custom formulation support" },
+    { "type": "text", "id": "feature_3", "label": "Feature 3", "default": "Low MOQ, fast production" },
+    { "type": "text", "id": "feature_4", "label": "Feature 4", "default": "Certified + compliant" },
+    { "type": "text", "id": "icon", "label": "Visual icon (emoji)", "default": "📋" },
+    { "type": "text", "id": "visual_text", "label": "Visual text", "default": "OEM / ODM Partnership Model" },
+    { "type": "text", "id": "button_text", "label": "Primary button text", "default": "Get a quote" },
+    { "type": "url", "id": "button_link", "label": "Primary button link", "default": "/pages/contact" },
+    { "type": "text", "id": "secondary_text", "label": "Secondary button text", "default": "Learn more" },
+    { "type": "url", "id": "secondary_link", "label": "Secondary button link", "default": "/#customization" }
+  ]
+}
+{% endschema %}

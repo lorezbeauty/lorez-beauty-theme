@@ -1,8 +1,19 @@
 <div class="collection-header">
-  <h1 class="collection-header__title heading-xl">{{ collection.title }}</h1>
-  {%- if collection.description != blank -%}
-    <div class="collection-header__description">{{ collection.description }}</div>
-  {%- endif -%}
+  <div class="collection-hero">
+    <div class="collection-hero__content">
+      <p class="eyebrow">Private label whitening</p>
+      <h1 class="collection-header__title heading-xl">{{ collection.title }}</h1>
+      {%- if collection.description != blank -%}
+        <div class="collection-header__description">{{ collection.description }}</div>
+      {%- else -%}
+        <div class="collection-header__description">Explore premium whitening strips, gels, powders and LED kits designed for modern beauty brands and fast retail launches.</div>
+      {%- endif -%}
+    </div>
+    <div class="collection-hero__card">
+      <h3>Fast launch support</h3>
+      <p>Low MOQ, free samples, private label packaging and flexible OEM/ODM development for your next line.</p>
+    </div>
+  </div>
 </div>
 
 <div class="collection-grid">

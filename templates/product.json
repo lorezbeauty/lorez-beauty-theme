@@ -3,7 +3,22 @@
     "main": {
       "type": "main-product",
       "settings": {}
+    },
+    "quote-cta": {
+      "type": "quote-cta",
+      "settings": {
+        "heading": "Ready to launch your whitening line?",
+        "description": "Connect with our team for product samples, custom development and private label support. Fast turnaround, low MOQ, certified manufacturing.",
+        "feature_1": "Free samples in 48 hours",
+        "feature_2": "Custom formulation support",
+        "feature_3": "Low MOQ, fast production",
+        "feature_4": "Certified + compliant",
+        "button_text": "Get a quote",
+        "button_link": "/pages/contact",
+        "secondary_text": "Learn about OEM/ODM",
+        "secondary_link": "/#customization"
+      }
     }
   },
-  "order": ["main"]
+  "order": ["main", "quote-cta"]
 }

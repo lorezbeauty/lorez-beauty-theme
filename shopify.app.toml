@@ -1,0 +1,5 @@
+# Shopify Theme Configuration
+scopes = "write_products,read_products"
+
+[build]
+dev = "npm run dev"
