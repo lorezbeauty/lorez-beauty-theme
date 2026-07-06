@@ -1,4 +1,4 @@
-<section class="routine-steps" id="routine">
+<section class="routine-steps" id="{{ section.settings.section_id | default: 'routine' }}">
   <div class="routine-steps__header">
     {%- if section.settings.eyebrow != blank -%}
       <p class="eyebrow routine-steps__eyebrow">{{ section.settings.eyebrow }}</p>
@@ -36,6 +36,12 @@
   "tag": "section",
   "max_blocks": 8,
   "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section HTML ID",
+      "default": "routine"
+    },
     {
       "type": "text",
       "id": "eyebrow",

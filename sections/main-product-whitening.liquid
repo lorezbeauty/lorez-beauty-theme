@@ -1,0 +1,97 @@
+<div class="product-page product-page--whitening">
+  <div class="product-page__grid">
+    <div class="product-page__gallery" data-product-gallery>
+      {%- if product.media.size > 0 -%}
+        <div class="product-gallery__main">
+          {%- for media in product.media -%}
+            {%- assign loading_mode = 'lazy' -%}
+            {%- if forloop.first -%}{%- assign loading_mode = 'eager' -%}{%- endif -%}
+            <div class="product-gallery__slide{% if forloop.first %} is-active{% endif %}" data-gallery-slide data-index="{{ forloop.index0 }}">
+              {%- if media.media_type == 'video' -%}
+                {{ media | video_tag: class: 'product-gallery__video', controls: true, autoplay: false, loop: true, muted: true }}
+              {%- else -%}
+                {{ media | image_url: width: 1400 | image_tag: loading: loading_mode, sizes: '50vw', class: 'product-gallery__img' }}
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+        {%- if product.media.size > 1 -%}
+          <div class="product-gallery__thumbs" role="tablist" aria-label="Galerij">
+            {%- for media in product.media -%}
+              <button type="button" class="product-gallery__thumb{% if forloop.first %} is-active{% endif %}" data-gallery-thumb data-index="{{ forloop.index0 }}" aria-label="Afbeelding {{ forloop.index }}">
+                {%- if media.media_type == 'video' -%}
+                  <span class="product-gallery__thumb-video">▶</span>
+                  {{ media.preview_image | image_url: width: 120 | image_tag: loading: 'lazy' }}
+                {%- else -%}
+                  {{ media | image_url: width: 120 | image_tag: loading: 'lazy' }}
+                {%- endif -%}
+              </button>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      {%- else -%}
+        <div class="product-gallery__placeholder" style="aspect-ratio:1;background:linear-gradient(135deg,#f5ebe8,#c4847a);display:flex;align-items:center;justify-content:center;padding:2rem;text-align:center;">
+          <p style="font-family:var(--font-serif);font-size:1.25rem;color:#3a2e2e;">Lorez Beauty<br>PAP+ Whitening Strips</p>
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="product-page__info">
+      {%- render 'product-whitening-meta', product: product -%}
+
+      {%- if routine_step != blank -%}
+        <p class="product-page__step eyebrow">{{ routine_step }}</p>
+      {%- endif -%}
+
+      <h1 class="product-page__title heading-lg">{{ product.title }}</h1>
+
+      {%- if routine_tagline != blank -%}
+        <p class="product-page__tagline">{{ routine_tagline }}</p>
+      {%- endif -%}
+
+      {%- assign price_eur = product.price | times: 1.0 | divided_by: 100.0 -%}
+      <p class="product-page__price" data-price data-price-eur="{{ price_eur }}">{{ product.price | money }}</p>
+
+      {%- if product.compare_at_price > product.price -%}
+        <p class="product-page__compare"><s>{{ product.compare_at_price | money }}</s></p>
+      {%- endif -%}
+
+      {%- if routine_ingredients != blank -%}
+        <div class="product-page__specs">
+          <span class="product-page__spec">✨ {{ routine_ingredients }}</span>
+          <span class="product-page__spec">✓ Geen peroxide</span>
+          <span class="product-page__spec">✓ 30 min per sessie</span>
+        </div>
+      {%- endif -%}
+
+      <ul class="product-page__trust">
+        <li>🚚 Gratis verzending vanaf €35</li>
+        <li>↩️ 14 dagen retour</li>
+        <li>🇳🇱 Verzending NL & BE · 2–4 werkdagen</li>
+      </ul>
+
+      {% render 'product-whitening-demo', product: product %}
+
+      {% form 'product', product, class: 'product-page__form', id: 'product-form' %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" data-variant-id>
+        <button type="submit" class="btn btn--filled product-page__add" {% unless product.available %}disabled{% endunless %}>
+          {%- if product.available -%}In winkelwagen{%- else -%}Uitverkocht{%- endif -%}
+        </button>
+      {% endform %}
+
+      {%- if product.description != blank -%}
+        <div class="product-page__description rte">
+          {% render 'product-description-clean', product: product %}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Whitening product",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "general": {
+    "meta": {
+      "tags": "Getagd \"{{ tags }}\"",
+      "page": "Pagina {{ page }}"
+    }
+  },
+  "accessibility": {
+    "skip_to_content": "Ga naar inhoud",
+    "close": "Sluiten",
+    "menu": "Menu",
+    "search": "Zoeken",
+    "cart": "Winkelwagen",
+    "account": "Account",
+    "previous": "Vorige",
+    "next": "Volgende"
+  },
+  "header": {
+    "menu": "Menu",
+    "search_placeholder": "Zoek producten"
+  },
+  "products": {
+    "add_to_cart": "In winkelwagen",
+    "sold_out": "Uitverkocht",
+    "unavailable": "Niet beschikbaar",
+    "quantity": "Aantal",
+    "discover": "Ontdekken"
+  },
+  "collections": {
+    "discover": "Ontdekken",
+    "view_all": "Alles bekijken"
+  },
+  "newsletter": {
+    "title": "De exclusieve wereld van Lorez Beauty",
+    "subtitle": "Schrijf je in voor early access tot nieuwe producten en aanbiedingen.",
+    "email_placeholder": "Vul je e-mailadres in",
+    "submit": "Inschrijven",
+    "success": "Bedankt voor je inschrijving"
+  },
+  "footer": {
+    "contact": "Contact",
+    "shipping": "Verzending & retour",
+    "faq": "Veelgestelde vragen",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene voorwaarden"
+  },
+  "cart": {
+    "title": "Je winkelwagen",
+    "empty": "Je winkelwagen is leeg",
+    "checkout": "Afrekenen",
+    "continue_shopping": "Verder winkelen",
+    "added": "Product toegevoegd",
+    "view": "Bekijk winkelwagen"
+  },
+  "market": {
+    "ships_to": "We verzenden naar",
+    "spain": "Spanje",
+    "mexico": "Mexico",
+    "netherlands": "Nederland",
+    "belgium": "België"
+  }
+}
