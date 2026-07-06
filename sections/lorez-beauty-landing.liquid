@@ -1,0 +1,266 @@
+<!-- sections/lorez-beauty-landing.liquid -->
+<!-- Plaats dit bestand in de map "sections" van je Shopify thema (Thema's -> ... -> Code bewerken -> Sections -> Add a new section).
+     Voeg 'm daarna toe aan een pagina via de Theme Customizer ("Secties toevoegen" -> Lorez Beauty Landing). -->
+
+<style>
+  #lorez-landing-{{ section.id }} { font-family: 'Inter', sans-serif; background: #FFF8FA; color: #2B2226; width: 100%; overflow-x: hidden; }
+  #lorez-landing-{{ section.id }} .lz-heading { font-family: 'Poppins', sans-serif; font-weight: 800; }
+  #lorez-landing-{{ section.id }} .lz-btn { display: inline-block; text-decoration: none; cursor: pointer; border-radius: 999px; font-weight: 700; font-size: 15px; padding: 16px 32px; text-align: center; }
+  #lorez-landing-{{ section.id }} .lz-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 32px; max-width: 1280px; margin: 0 auto; }
+  #lorez-landing-{{ section.id }} .lz-card { background: #FFFFFF; border-radius: 24px; padding: 22px; display: flex; flex-direction: column; gap: 14px; text-align: left; box-shadow: 0 20px 45px -30px rgba(184,79,104,0.35); }
+  #lorez-landing-{{ section.id }} .lz-card img { width: 100%; height: 220px; object-fit: cover; border-radius: 18px; background: #FBE4EA; }
+  #lorez-landing-{{ section.id }} .lz-trust-row { display: flex; justify-content: center; gap: 48px; padding: 36px 24px; background: #FFFFFF; flex-wrap: wrap; }
+  #lorez-landing-{{ section.id }} .lz-testimonial { background: #FFFFFF; border-radius: 20px; padding: 30px; text-align: left; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 20px 45px -34px rgba(184,79,104,0.4); }
+  #lorez-landing-{{ section.id }} .lz-hero-media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 749px) {
+    #lorez-landing-{{ section.id }} .lz-hero { height: 520px !important; }
+    #lorez-landing-{{ section.id }} .lz-hero-title { font-size: 34px !important; }
+    #lorez-landing-{{ section.id }} .lz-results { grid-template-columns: 1fr !important; }
+  }
+</style>
+
+<div id="lorez-landing-{{ section.id }}">
+
+  {%- comment -%} ================= HERO ================= {%- endcomment -%}
+  <div class="lz-hero" style="position:relative; width:100%; height:640px; overflow:hidden; background:linear-gradient(135deg,#FBC7D4,#F7A9BE);">
+    {%- if section.settings.hero_video != blank -%}
+      <video class="lz-hero-media" autoplay muted loop playsinline poster="{{ section.settings.hero_image | image_url: width: 1600 }}">
+        <source src="{{ section.settings.hero_video.sources.last.url }}" type="video/mp4">
+      </video>
+    {%- elsif section.settings.hero_image != blank -%}
+      <img class="lz-hero-media" src="{{ section.settings.hero_image | image_url: width: 1600 }}" alt="{{ section.settings.hero_heading | escape }}" loading="eager">
+    {%- endif -%}
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(184,79,104,0.05) 0%, rgba(120,40,60,0.35) 100%);"></div>
+    <div style="position:relative; z-index:2; height:100%; display:flex; flex-direction:column; align-items:flex-start; justify-content:center; padding:0 80px; max-width:640px;">
+      {%- if section.settings.eyebrow != blank -%}
+        <div style="background:rgba(255,255,255,0.9); color:#B84F68; font-size:12px; font-weight:700; letter-spacing:0.06em; padding:6px 14px; border-radius:999px; margin-bottom:18px;">{{ section.settings.eyebrow }}</div>
+      {%- endif -%}
+      <div class="lz-heading lz-hero-title" style="font-size:56px; line-height:1.05; color:#FFFFFF; text-shadow:0 2px 18px rgba(120,30,50,0.25);">{{ section.settings.hero_heading }}</div>
+      <div style="font-size:17px; font-weight:500; color:#FFF3F5; margin-top:18px; line-height:1.5;">{{ section.settings.hero_subheading }}</div>
+      <div style="display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;">
+        {%- if section.settings.button_1_text != blank -%}
+          <a href="{{ section.settings.button_1_link }}" class="lz-btn" style="background:#FFFFFF; color:#B84F68;">{{ section.settings.button_1_text }}</a>
+        {%- endif -%}
+        {%- if section.settings.button_2_text != blank -%}
+          <a href="{{ section.settings.button_2_link }}" class="lz-btn" style="background:transparent; color:#FFFFFF; border:2px solid rgba(255,255,255,0.8);">{{ section.settings.button_2_text }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+  {%- comment -%} ================= TRUST STRIP ================= {%- endcomment -%}
+  {%- assign trust_blocks = section.blocks | where: "type", "trust_item" -%}
+  {%- if trust_blocks.size > 0 -%}
+    <div class="lz-trust-row">
+      {%- for block in trust_blocks -%}
+        <div style="display:flex; align-items:center; gap:10px; font-size:14px; font-weight:600; color:#8A6470;">
+          <div style="width:8px;height:8px;border-radius:50%;background:#D9738C;"></div>
+          {{ block.settings.label }}
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+  {%- comment -%} ================= PRODUCTS ================= {%- endcomment -%}
+  {%- assign product_blocks = section.blocks | where: "type", "product" -%}
+  {%- if product_blocks.size > 0 -%}
+    <div style="padding:90px 64px 40px; text-align:center;">
+      {%- if section.settings.collection_eyebrow != blank -%}
+        <div class="lz-heading" style="font-size:14px; letter-spacing:0.12em; color:#D9738C; text-transform:uppercase; margin-bottom:12px;">{{ section.settings.collection_eyebrow }}</div>
+      {%- endif -%}
+      {%- if section.settings.collection_heading != blank -%}
+        <div class="lz-heading" style="font-size:38px; color:#3A2A2F; margin-bottom:56px;">{{ section.settings.collection_heading }}</div>
+      {%- endif -%}
+      <div class="lz-grid">
+        {%- for block in product_blocks -%}
+          {%- assign p = block.settings.product -%}
+          <div class="lz-card" {{ block.shopify_attributes }}>
+            <a href="{{ p.url | default: '#' }}">
+              {%- if p.featured_image != blank -%}
+                <img src="{{ p.featured_image | image_url: width: 600 }}" alt="{{ p.title | escape }}" loading="lazy">
+              {%- else -%}
+                <img src="{{ 'product-1' | placeholder_svg_tag }}" alt="Productfoto" style="height:220px;">
+              {%- endif -%}
+            </a>
+            {%- if block.settings.tag != blank -%}
+              <div style="font-size:12px; font-weight:700; color:#D9738C; letter-spacing:0.05em; text-transform:uppercase;">{{ block.settings.tag }}</div>
+            {%- endif -%}
+            <div class="lz-heading" style="font-size:19px; color:#3A2A2F;">{{ p.title | default: block.settings.fallback_name }}</div>
+            <div style="font-size:14px; color:#8A6470; line-height:1.5;">{{ block.settings.description | default: p.description | strip_html | truncatewords: 18 }}</div>
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-top:6px;">
+              <div class="lz-heading" style="font-size:18px; color:#3A2A2F;">
+                {%- if p != blank -%}{{ p.price | money }}{%- else -%}{{ block.settings.fallback_price }}{%- endif -%}
+              </div>
+              {%- if p != blank -%}
+                {%- form 'product', p -%}
+                  <button type="submit" name="add" style="background:#B84F68; color:#FFF; font-weight:600; font-size:13px; padding:10px 20px; border-radius:999px; border:none; cursor:pointer;">In winkelwagen</button>
+                {%- endform -%}
+              {%- else -%}
+                <span style="background:#B84F68; color:#FFF; font-weight:600; font-size:13px; padding:10px 20px; border-radius:999px;">Binnenkort</span>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment -%} ================= RESULTS ================= {%- endcomment -%}
+  {%- if section.settings.show_results -%}
+    <div class="lz-results" style="display:grid; grid-template-columns:1fr 1fr; gap:0; margin:100px 0; background:#FCE4EA;">
+      <div style="padding:80px 72px; display:flex; flex-direction:column; justify-content:center; gap:20px;">
+        <div class="lz-heading" style="font-size:14px; letter-spacing:0.1em; color:#B84F68; text-transform:uppercase;">{{ section.settings.results_eyebrow }}</div>
+        <div class="lz-heading" style="font-size:34px; color:#3A2A2F; line-height:1.2;">{{ section.settings.results_heading }}</div>
+        <div style="font-size:15px; color:#6E525A; line-height:1.7; max-width:460px;">{{ section.settings.results_text }}</div>
+        <div style="display:flex; gap:40px; margin-top:16px; flex-wrap:wrap;">
+          <div>
+            <div class="lz-heading" style="font-size:30px; color:#B84F68;">{{ section.settings.stat_1_number }}</div>
+            <div style="font-size:13px; color:#8A6470;">{{ section.settings.stat_1_label }}</div>
+          </div>
+          <div>
+            <div class="lz-heading" style="font-size:30px; color:#B84F68;">{{ section.settings.stat_2_number }}</div>
+            <div style="font-size:13px; color:#8A6470;">{{ section.settings.stat_2_label }}</div>
+          </div>
+        </div>
+      </div>
+      {%- if section.settings.results_image != blank -%}
+        <img src="{{ section.settings.results_image | image_url: width: 1200 }}" alt="Resultaten" style="width:100%; height:520px; object-fit:cover;" loading="lazy">
+      {%- else -%}
+        <div style="width:100%; height:520px; background:#F6DDE3;"></div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- comment -%} ================= TESTIMONIALS ================= {%- endcomment -%}
+  {%- assign testimonial_blocks = section.blocks | where: "type", "testimonial" -%}
+  {%- if testimonial_blocks.size > 0 -%}
+    <div style="padding:20px 64px 100px; text-align:center;">
+      <div class="lz-heading" style="font-size:34px; color:#3A2A2F; margin-bottom:56px;">{{ section.settings.testimonials_heading }}</div>
+      <div class="lz-grid" style="max-width:1100px;">
+        {%- for block in testimonial_blocks -%}
+          <div class="lz-testimonial" {{ block.shopify_attributes }}>
+            <div style="color:#D9738C; font-size:15px; letter-spacing:2px;">
+              {%- for i in (1..5) -%}{%- if i <= block.settings.rating -%}&#9733;{%- else -%}&#9734;{%- endif -%}{%- endfor -%}
+            </div>
+            <div style="font-size:15px; color:#4A383D; line-height:1.6;">{{ block.settings.quote }}</div>
+            <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+              {%- if block.settings.avatar != blank -%}
+                <img src="{{ block.settings.avatar | image_url: width: 80 }}" alt="{{ block.settings.name }}" style="width:40px; height:40px; border-radius:50%; object-fit:cover;">
+              {%- endif -%}
+              <div style="font-size:14px; font-weight:600; color:#3A2A2F;">{{ block.settings.name }}</div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment -%} ================= NEWSLETTER ================= {%- endcomment -%}
+  {%- if section.settings.show_newsletter -%}
+    <div style="background:#B84F68; padding:70px 64px; text-align:center; color:#FFF3F5;">
+      <div class="lz-heading" style="font-size:28px; margin-bottom:12px;">{{ section.settings.newsletter_heading }}</div>
+      <div style="font-size:15px; opacity:0.9; margin-bottom:28px;">{{ section.settings.newsletter_subheading }}</div>
+      {%- form 'customer' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div style="display:flex; justify-content:center; gap:12px; max-width:420px; margin:0 auto; flex-wrap:wrap;">
+          <input type="email" name="contact[email]" placeholder="jouw@email.com" required
+            style="flex:1; min-width:220px; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.5); border-radius:999px; padding:14px 20px; font-size:14px; color:#FFFFFF;">
+          <button type="submit" style="background:#FFFFFF; color:#B84F68; font-weight:700; font-size:14px; padding:14px 26px; border-radius:999px; border:none; cursor:pointer;">Aanmelden</button>
+        </div>
+        {%- if form.posted_successfully? -%}
+          <div style="margin-top:14px; font-size:13px;">Bedankt voor je aanmelding!</div>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
+  {%- endif -%}
+
+</div>
+
+{% schema %}
+{
+  "name": "Lorez Beauty Landing",
+  "settings": [
+    { "type": "header", "content": "Hero" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow tekst", "default": "NIEUW - KLINISCH GETEST" },
+    { "type": "text", "id": "hero_heading", "label": "Hero titel", "default": "Een stralere glimlach in 10 dagen" },
+    { "type": "textarea", "id": "hero_subheading", "label": "Hero subtekst", "default": "Whitening zonder gevoelige tanden. Vegan, peroxide-arm en dermatologisch getest." },
+    { "type": "image_picker", "id": "hero_image", "label": "Hero afbeelding (fallback/poster)" },
+    { "type": "video", "id": "hero_video", "label": "Hero video (heeft voorrang op afbeelding)" },
+    { "type": "text", "id": "button_1_text", "label": "Knop 1 tekst", "default": "Shop de kit" },
+    { "type": "url", "id": "button_1_link", "label": "Knop 1 link" },
+    { "type": "text", "id": "button_2_text", "label": "Knop 2 tekst", "default": "Bekijk resultaten" },
+    { "type": "url", "id": "button_2_link", "label": "Knop 2 link" },
+
+    { "type": "header", "content": "Productsectie" },
+    { "type": "text", "id": "collection_eyebrow", "label": "Eyebrow", "default": "De collectie" },
+    { "type": "text", "id": "collection_heading", "label": "Titel", "default": "Ontworpen voor je hele routine" },
+
+    { "type": "header", "content": "Resultaten" },
+    { "type": "checkbox", "id": "show_results", "label": "Toon resultaten-sectie", "default": true },
+    { "type": "text", "id": "results_eyebrow", "label": "Eyebrow", "default": "Bewezen resultaat" },
+    { "type": "text", "id": "results_heading", "label": "Titel", "default": "Tot 8 tinten witter, zonder gevoeligheid" },
+    { "type": "textarea", "id": "results_text", "label": "Tekst", "default": "Onze formule combineert een lage peroxideconcentratie met kaliumnitraat, zodat je resultaat ziet zonder de pijnlijke bijwerkingen van klassieke whitening." },
+    { "type": "image_picker", "id": "results_image", "label": "Voor/na afbeelding" },
+    { "type": "text", "id": "stat_1_number", "label": "Statistiek 1 getal", "default": "92%" },
+    { "type": "text", "id": "stat_1_label", "label": "Statistiek 1 label", "default": "zag verschil binnen 10 dagen" },
+    { "type": "text", "id": "stat_2_number", "label": "Statistiek 2 getal", "default": "0%" },
+    { "type": "text", "id": "stat_2_label", "label": "Statistiek 2 label", "default": "peroxide-gevoelige klachten" },
+
+    { "type": "header", "content": "Testimonials" },
+    { "type": "text", "id": "testimonials_heading", "label": "Titel", "default": "Wat klanten zeggen" },
+
+    { "type": "header", "content": "Nieuwsbrief" },
+    { "type": "checkbox", "id": "show_newsletter", "label": "Toon nieuwsbrief-sectie", "default": true },
+    { "type": "text", "id": "newsletter_heading", "label": "Titel", "default": "10% korting op je eerste bestelling" },
+    { "type": "textarea", "id": "newsletter_subheading", "label": "Subtekst", "default": "Meld je aan voor whitening-tips en early access naar nieuwe producten." }
+  ],
+  "blocks": [
+    {
+      "type": "trust_item",
+      "name": "Vertrouwenspunt",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Tekst", "default": "Dermatologisch getest" }
+      ]
+    },
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Koppel Shopify product" },
+        { "type": "text", "id": "tag", "label": "Label (bv. Bestseller)", "default": "Bestseller" },
+        { "type": "textarea", "id": "description", "label": "Omschrijving (overschrijft product-omschrijving)" },
+        { "type": "text", "id": "fallback_name", "label": "Naam (indien geen product gekoppeld)", "default": "Productnaam" },
+        { "type": "text", "id": "fallback_price", "label": "Prijs (indien geen product gekoppeld)", "default": "€ 0,00" }
+      ]
+    },
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        { "type": "textarea", "id": "quote", "label": "Quote", "default": "Binnen een week al zichtbaar witter." },
+        { "type": "text", "id": "name", "label": "Naam", "default": "Fleur, 27" },
+        { "type": "image_picker", "id": "avatar", "label": "Foto" },
+        { "type": "range", "id": "rating", "label": "Sterren", "min": 1, "max": 5, "step": 1, "default": 5 }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lorez Beauty Landing",
+      "blocks": [
+        { "type": "trust_item", "settings": { "label": "Dermatologisch getest" } },
+        { "type": "trust_item", "settings": { "label": "Vegan en cruelty-free" } },
+        { "type": "trust_item", "settings": { "label": "Peroxide-arme formule" } },
+        { "type": "trust_item", "settings": { "label": "30 dagen niet-goed-geld-terug" } },
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "testimonial", "settings": { "quote": "Binnen een week al zichtbaar witter, en geen last van gevoelige tanden.", "name": "Fleur, 27", "rating": 5 } },
+        { "type": "testimonial", "settings": { "quote": "Eindelijk een whitening kit die niet prikt.", "name": "Nina, 32", "rating": 5 } },
+        { "type": "testimonial", "settings": { "quote": "De pen past in elke tas, gebruik hem na elke koffie.", "name": "Sanne, 24", "rating": 5 } }
+      ]
+    }
+  ]
+}
+{% endschema %}
