@@ -1,58 +1,27 @@
-﻿/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
-{
+﻿{
   "sections": {
-    "landing": {
-      "type": "lorez-beauty-landing",
+    "hero": {
+      "type": "hero-banner",
       "settings": {
-        "eyebrow": "FACTORY DIRECT • PRIVATE LABEL",
-        "hero_heading": "Private label teeth whitening products for modern beauty brands",
-        "hero_subheading": "OEM and ODM solutions for whitening strips, gels, powders, LED kits and custom packaging built for retail growth.",
-        "hero_image": "",
-        "hero_video": "",
-        "button_1_text": "Request a quote",
-        "button_1_link": "/collections/all",
-        "button_2_text": "Bekijk producten",
-        "button_2_link": "/#products",
-        "collection_eyebrow": "Product range",
-        "collection_heading": "Featured whitening products for your shop",
-        "show_results": true,
-        "results_eyebrow": "Why brands choose us",
-        "results_heading": "Factory capabilities and compliance in one place",
-        "results_text": "Speed, flexibility and compliant manufacturing are the core of every private label whitening launch.",
-        "results_image": "",
-        "stat_1_number": "72M+",
-        "stat_1_label": "annual production capacity",
-        "stat_2_number": "20+",
-        "stat_2_label": "R&D specialists",
-        "testimonials_heading": "What clients say",
-        "show_newsletter": true,
-        "newsletter_heading": "Launch support for your next product line",
-        "newsletter_subheading": "Receive product guidance, launch tips and sample support for your private label whitening brand."
-      },
-      "blocks": {
-        "trust_1": { "type": "trust_item", "settings": { "label": "OEM / ODM support" } },
-        "trust_2": { "type": "trust_item", "settings": { "label": "Low MOQ and free samples" } },
-        "trust_3": { "type": "trust_item", "settings": { "label": "GMP / ISO / CE aligned" } },
-        "trust_4": { "type": "trust_item", "settings": { "label": "Custom packaging and molds" } },
-        "product_1": { "type": "product", "settings": { "product": "", "tag": "Bestseller", "description": "LED home kit with a premium retail presentation and fast whitening routine appeal.", "fallback_name": "Custom Teeth Whitening LED Home Kits", "fallback_price": "Vanaf € 39" } },
-        "product_2": { "type": "product", "settings": { "product": "", "tag": "New", "description": "U-shaped strips designed for easier application and strong whitening visibility.", "fallback_name": "U Type Teeth Whitening Strips", "fallback_price": "Vanaf € 19" } },
-        "product_3": { "type": "product", "settings": { "product": "", "tag": "Classic", "description": "Mint-forward powder formula created for daily use and a polished whitening routine.", "fallback_name": "Classic Mint Teeth Whitening Powder", "fallback_price": "Vanaf € 15" } },
-        "product_4": { "type": "product", "settings": { "product": "", "tag": "Popular", "description": "V34 strip format for a clean, modern product line and strong customer appeal.", "fallback_name": "V34 Teeth Whitening Strips", "fallback_price": "Vanaf € 24" } },
-        "product_5": { "type": "product", "settings": { "product": "", "tag": "Liquid", "description": "Precision whitening liquid positioned for daily use and convenient application.", "fallback_name": "V34 Teeth Whitening Liquid", "fallback_price": "Vanaf € 22" } },
-        "product_6": { "type": "product", "settings": { "product": "", "tag": "Sensitive", "description": "PAP-based dry strip option designed for lower irritation and more flexible positioning.", "fallback_name": "PAP Non-Alcohol Teeth Whitening Dry Strips", "fallback_price": "Vanaf € 18" } },
-        "testimonial_1": { "type": "testimonial", "settings": { "quote": "The launch became easier with a strong OEM partner and faster customization.", "name": "Lina, 31", "rating": 5 } },
-        "testimonial_2": { "type": "testimonial", "settings": { "quote": "We launched a premium line in weeks instead of months.", "name": "Mila, 35", "rating": 5 } }
-      },
-      "block_order": ["trust_1", "trust_2", "trust_3", "trust_4", "product_1", "product_2", "product_3", "product_4", "product_5", "product_6", "testimonial_1", "testimonial_2"]
+        "heading": "Private Label Teeth Whitening Products",
+        "subheading": "OEM & ODM solutions for modern beauty brands",
+        "button_text": "Request a quote",
+        "button_link": "/pages/contact"
+      }
+    },
+    "quote-cta": {
+      "type": "quote-cta",
+      "settings": {
+        "heading": "Ready to launch your whitening line?",
+        "description": "Connect with our team for product samples, custom development and private label support.",
+        "feature_1": "Free samples in 48 hours",
+        "feature_2": "Custom formulation support",
+        "feature_3": "Low MOQ, fast production",
+        "feature_4": "Certified + compliant",
+        "button_text": "Get a quote",
+        "button_link": "/pages/contact"
+      }
     }
   },
-  "order": ["landing"]
+  "order": ["hero", "quote-cta"]
 }
