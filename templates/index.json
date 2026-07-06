@@ -3,23 +3,31 @@
     "hero": {
       "type": "hero-banner",
       "settings": {
-        "heading": "Private Label Teeth Whitening Products",
-        "subheading": "OEM & ODM solutions for modern beauty brands",
-        "button_text": "Request a quote",
-        "button_link": "/pages/contact"
+        "title": "Private Label Teeth Whitening Products",
+        "subtitle": "OEM & ODM solutions for modern beauty brands",
+        "eyebrow": "FACTORY DIRECT • PRIVATE LABEL",
+        "trust_line": "★★★★★ 4.8/5 · Free samples in 48h · GMP/ISO certified",
+        "button_label": "Request a quote",
+        "button_link": "/pages/contact",
+        "button_secondary_label": "View products",
+        "button_secondary_link": "/collections/all"
       }
     },
     "quote-cta": {
       "type": "quote-cta",
       "settings": {
         "heading": "Ready to launch your whitening line?",
-        "description": "Connect with our team for product samples, custom development and private label support.",
+        "description": "Connect with our team for product samples, custom development and private label support. Fast turnaround, low MOQ, certified manufacturing.",
         "feature_1": "Free samples in 48 hours",
         "feature_2": "Custom formulation support",
         "feature_3": "Low MOQ, fast production",
         "feature_4": "Certified + compliant",
+        "icon": "📋",
+        "visual_text": "OEM / ODM Partnership Model",
         "button_text": "Get a quote",
-        "button_link": "/pages/contact"
+        "button_link": "/pages/contact",
+        "secondary_text": "Learn more",
+        "secondary_link": "/#customization"
       }
     }
   },
