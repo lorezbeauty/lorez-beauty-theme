@@ -1,52 +1,52 @@
 /*
- * Lorez Whitening — Professional Results Homepage
- * Language: English
- * Theme: Premium Teeth Whitening Experience
+ * Lorez Professional Whitening — Landing Page
+ * Language: Dutch + English
+ * Theme: Premium Teeth Whitening
  */
 {
   "sections": {
     "hero": {
       "type": "hero-banner",
       "settings": {
-        "eyebrow": "Lorez Professional Whitening",
-        "title": "Professional Teeth Whitening at Home",
-        "subtitle": "Achieve a brighter smile in just 14 days with our scientifically-formulated whitening system",
-        "trust_line": "✓ Dentist-approved • Vegan & cruelty-free • Results in 2 weeks",
-        "button_label": "Shop Whitening Kit",
+        "eyebrow": "NIEUW - KLINISCH GETEST",
+        "title": "Een stralere glimlach in 10 dagen",
+        "subtitle": "Whitening zonder gevoelige tanden. Vegan, peroxide-arm en dermatologisch getest, ontworpen voor dagelijks gebruik.",
+        "trust_line": "",
+        "button_label": "Shop de kit",
         "button_link": "/collections/all",
-        "button_secondary_label": "Watch results",
+        "button_secondary_label": "Bekijk resultaten",
         "button_secondary_link": "/pages/about"
       }
     },
-    "trust": {
+    "features": {
       "type": "trust-bar",
       "blocks": {
         "t1": {
           "type": "item",
           "settings": {
             "icon": "check",
-            "text": "Professional-grade whitening formula"
+            "text": "Professioneel witmakers formule"
           }
         },
         "t2": {
           "type": "item",
           "settings": {
             "icon": "bolt",
-            "text": "Results in 14 days or your money back"
+            "text": "Resultaten in 10 dagen of geld terug"
           }
         },
         "t3": {
           "type": "item",
           "settings": {
             "icon": "shield",
-            "text": "Clinically tested & safe for enamel"
+            "text": "Klinisch getest & veilig voor tandglazuur"
           }
         },
         "t4": {
           "type": "item",
           "settings": {
             "icon": "shipping",
-            "text": "Free shipping on orders €50+"
+            "text": "Gratis verzending vanaf €40"
           }
         }
       },
@@ -61,34 +61,34 @@
     "social-proof": {
       "type": "social-proof",
       "settings": {
-        "eyebrow": "Trusted by Thousands",
-        "title": "Real Results from Real Customers",
+        "eyebrow": "Vertrouwd door duizenden",
+        "title": "Werkelijke resultaten van werkelijke klanten",
         "stat_1": "50K+",
-        "stat_1_label": "Brighter smiles",
+        "stat_1_label": "Wit gemaakt",
         "stat_2": "98%",
-        "stat_2_label": "Customer satisfaction",
+        "stat_2_label": "Tevreden klanten",
         "stat_3": "4.9★",
-        "stat_3_label": "Average rating"
+        "stat_3_label": "Gemiddelde beoordeling"
       }
     },
     "editorial": {
       "type": "editorial-block",
       "settings": {
         "layout": "split",
-        "eyebrow": "Our Science",
-        "title": "Professional Results, At Home",
-        "text": "Our patented formula combines advanced whitening technology with gentle, enamel-safe ingredients. Clinically tested and used by leading dentists worldwide.",
-        "button_label": "Learn about our formula",
+        "eyebrow": "Onze Science",
+        "title": "Professionele resultaten, thuis",
+        "text": "Onze gepatenteerde formule combineert geavanceerde whitening-technologie met zachte, tandglazuur-veilige ingrediënten. Klinisch getest en gebruikt door tandartsen wereldwijd.",
+        "button_label": "Leer over onze formule",
         "button_link": "/pages/about"
       }
     },
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "title": "Get Exclusive Access",
-        "subtitle": "Join our community and get 15% off your first order, plus early access to new whitening products.",
-        "placeholder": "Enter your email",
-        "button_label": "Subscribe"
+        "title": "Exclusieve toegang",
+        "subtitle": "Sluit je aan bij onze community en krijg 15% korting op je eerste bestelling, plus vroege toegang tot nieuwe whitening-producten.",
+        "placeholder": "Voer je e-mailadres in",
+        "button_label": "Abonneren"
       }
     },
     "faq": {
@@ -97,29 +97,29 @@
         "q1": {
           "type": "question",
           "settings": {
-            "question": "Is the whitening formula safe?",
-            "answer": "Yes! Our formula is dentist-approved and clinically tested. It's safe for enamel and gentle on sensitive teeth. Results without the risk."
+            "question": "Is de whitening-formule veilig?",
+            "answer": "Ja! Onze formule is door tandartsen goedgekeurd en klinisch getest. Het is veilig voor tandglazuur en zacht voor gevoelige tanden."
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "How long until I see results?",
-            "answer": "Most customers see noticeable results within 3-7 days. Full results appear in 14 days with consistent use of our system."
+            "question": "Hoe lang tot ik resultaten zie?",
+            "answer": "De meeste klanten zien opvallende resultaten binnen 3-7 dagen. Volledige resultaten verschijnen in 10 dagen met consistent gebruik."
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "What's included in the kit?",
-            "answer": "Each kit includes our advanced LED whitening device, professional-grade gel, application trays, and shade guide to track your progress."
+            "question": "Wat zit er in de kit?",
+            "answer": "Elke kit bevat ons geavanceerde LED-apparaat, professioneel whitening-gel, applicatietrays en een kleurengids."
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "Do you offer a guarantee?",
-            "answer": "100% satisfaction guaranteed. If you're not happy with results after 30 days, we'll refund you completely—no questions asked."
+            "question": "Bieden jullie garantie?",
+            "answer": "100% tevredenheidgarantie. Contacteer ons binnen 30 dagen als je niet blij bent - we betalen je volledig terug."
           }
         }
       },
@@ -130,13 +130,13 @@
         "q4"
       ],
       "settings": {
-        "title": "Frequently Asked Questions"
+        "title": "Veelgestelde vragen"
       }
     }
   },
   "order": [
     "hero",
-    "trust",
+    "features",
     "social-proof",
     "editorial",
     "newsletter",
