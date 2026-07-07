@@ -1,17 +1,18 @@
-/* Lorez Luxury — Dior-inspired theme */
+/* Lorez Luxury — Premium Rose Collection */
 
 :root {
-  /* Lorez Blush — warm K-beauty palette (converts better for women 25–45 than cold black/white) */
-  --color-black: #3a2e2e;
+  /* Luxury Rose Palette — elegant, feminine, premium */
+  --color-black: #2a1f1f;
   --color-white: #ffffff;
-  --color-cream: #f5ebe8;
-  --color-blush: #fbf7f5;
-  --color-warm-gray: #8b7370;
-  --color-light-gray: #e8ded8;
-  --color-accent: {{ settings.color_accent }};
-  --color-accent-dark: #a86b62;
-  --color-rose-soft: #e8c4c4;
-  --color-champagne: #c9a87c;
+  --color-cream: #faf8f7;
+  --color-blush: #f5ede9;
+  --color-rose-primary: #F108C6;
+  --color-rose-light: #F98CE0;
+  --color-rose-dark: #C70A9A;
+  --color-rose-soft: #F9D4E8;
+  --color-accent: {{ settings.color_accent | default: '#F108C6' }};
+  --color-accent-light: {{ settings.color_accent_light | default: '#F98CE0' }};
+  --color-accent-dark: {{ settings.color_accent_dark | default: '#C70A9A' }};
   --color-text: {{ settings.color_text }};
   --color-bg: {{ settings.color_background }};
   --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;

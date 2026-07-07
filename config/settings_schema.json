@@ -2,7 +2,7 @@
   {
     "name": "theme_info",
     "theme_name": "Lorez Luxury",
-    "theme_version": "1.0.2",
+    "theme_version": "1.0.3",
     "theme_author": "Lorez Beauty",
     "theme_documentation_url": "https://help.shopify.com",
     "theme_support_url": "https://help.shopify.com"
@@ -13,20 +13,32 @@
       {
         "type": "color",
         "id": "color_background",
-        "label": "Background (warm ivory)",
-        "default": "#fbf7f5"
+        "label": "Background (luxe ivory)",
+        "default": "#faf8f7"
       },
       {
         "type": "color",
         "id": "color_text",
-        "label": "Text (warm espresso)",
-        "default": "#3a2e2e"
+        "label": "Text (dark brown)",
+        "default": "#2a1f1f"
       },
       {
         "type": "color",
         "id": "color_accent",
-        "label": "Accent / CTA (dusty rose)",
-        "default": "#c4847a"
+        "label": "Primary Rose (luxury)",
+        "default": "#F108C6"
+      },
+      {
+        "type": "color",
+        "id": "color_accent_light",
+        "label": "Rose Light (soft highlight)",
+        "default": "#F98CE0"
+      },
+      {
+        "type": "color",
+        "id": "color_accent_dark",
+        "label": "Rose Dark (elegant)",
+        "default": "#C70A9A"
       }
     ]
   },
