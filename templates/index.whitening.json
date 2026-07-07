@@ -13,13 +13,13 @@
       "type": "hero-banner",
       "settings": {
         "eyebrow": "Lorez Beauty · Smile Care",
-        "title": "Wittere tanden in 30 minuten",
-        "subtitle": "PAP+ whitening strips · Geen peroxide · Geen gevoeligheid",
-        "trust_line": "14 behandelingen · Gratis verzending vanaf €35 · 14 dagen retour",
+        "title": "Whiter teeth in 30 minutes",
+        "subtitle": "PAP+ whitening strips · No peroxide · No sensitivity",
+        "trust_line": "14 treatments · Free shipping from €50 · 14-day returns",
         "kit_price_eur": "29.95",
         "button_label": "Shop PAP+ strips",
         "button_link": "/products/lorez-beauty-pap-whitening-strips",
-        "button_secondary_label": "Hoe het werkt",
+        "button_secondary_label": "How it works",
         "button_secondary_link": "/#how-it-works"
       }
     },
@@ -30,28 +30,28 @@
           "type": "item",
           "settings": {
             "icon": "shipping",
-            "text": "Gratis verzending vanaf €35"
+            "text": "Free shipping from €50"
           }
         },
         "t2": {
           "type": "item",
           "settings": {
             "icon": "secure",
-            "text": "Veilig betalen met iDEAL"
+            "text": "Secure checkout"
           }
         },
         "t3": {
           "type": "item",
           "settings": {
             "icon": "returns",
-            "text": "14 dagen retour"
+            "text": "14-day returns"
           }
         },
         "t4": {
           "type": "item",
           "settings": {
             "icon": "check",
-            "text": "PAP+ · geen peroxide"
+            "text": "PAP+ · no peroxide"
           }
         }
       },
@@ -69,37 +69,37 @@
         "step_1": {
           "type": "step",
           "settings": {
-            "step_num": "STAP 01",
+            "step_num": "STEP 01",
             "time": "1 min",
-            "title": "Droog je tanden",
-            "description": "Dep je tanden droog met een tissue voor de beste hechting."
+            "title": "Dry your teeth",
+            "description": "Pat your teeth dry with a tissue for the best adhesion."
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
-            "step_num": "STAP 02",
+            "step_num": "STEP 02",
             "time": "1 min",
-            "title": "Plak de strips",
-            "description": "Plak de strip op je boven- en ondertanden. Druk zacht aan."
+            "title": "Apply the strips",
+            "description": "Place the strip on your upper and lower teeth. Press gently."
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
-            "step_num": "STAP 03",
+            "step_num": "STEP 03",
             "time": "30 min",
-            "title": "Wacht & relax",
-            "description": "Lees, werk of kijk tv — de PAP+ formule doet het werk."
+            "title": "Wait & relax",
+            "description": "Read, work or watch TV — the PAP+ formula does the work."
           }
         },
         "step_4": {
           "type": "step",
           "settings": {
-            "step_num": "STAP 04",
-            "time": "Klaar",
-            "title": "Verwijder de strip",
-            "description": "Geen spoelen nodig. Geen plakkerig residu. Stralendere glimlach."
+            "step_num": "STEP 04",
+            "time": "Done",
+            "title": "Remove the strip",
+            "description": "No rinsing needed. No sticky residue. Brighter smile."
           }
         }
       },
@@ -111,34 +111,34 @@
       ],
       "settings": {
         "section_id": "how-it-works",
-        "eyebrow": "Zo werkt het",
-        "title": "4 stappen naar een stralendere glimlach",
-        "subtitle": "30 minuten per sessie · Thuis op de bank"
+        "eyebrow": "How it works",
+        "title": "4 steps to a brighter smile",
+        "subtitle": "30 minutes per session · At home on your couch"
       }
     },
     "kit": {
       "type": "bundle-banner",
       "settings": {
-        "eyebrow": "Meest gekozen",
+        "eyebrow": "Most popular",
         "title": "Lorez Beauty PAP+ Whitening Strips",
-        "subtitle": "14 behandelingen · PAP+ formule · Residue-free · Geen peroxide",
-        "price": "€29,95",
-        "compare_price": "€44,95",
-        "save_text": "Bespaar €15 vs. adviesprijs · 2 weken routine",
-        "guarantee": "✓ 14 dagen retour · ✓ Veilig betalen · ✓ NL verzending 2–4 dagen",
+        "subtitle": "14 treatments · PAP+ formula · Residue-free · No peroxide",
+        "price": "€29.95",
+        "compare_price": "€44.95",
+        "save_text": "Save €15 vs. RRP · 2-week routine",
+        "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ NL shipping 2–4 days",
         "product": "lorez-beauty-pap-whitening-strips",
-        "button_label": "In winkelwagen",
-        "includes": "14 PAP+ whitening strips · Handleiding · Premium verpakking"
+        "button_label": "Add to cart",
+        "includes": "14 PAP+ whitening strips · Instructions · Premium packaging"
       }
     },
     "editorial": {
       "type": "editorial-block",
       "settings": {
         "layout": "split",
-        "eyebrow": "Waarom PAP+",
-        "title": "Wit stralen zonder gevoeligheid",
-        "text": "Klassieke peroxide-bleek kan gevoeligheid geven. Lorez Beauty PAP+ strips zijn ontwikkeld voor thuisgebruik — zacht, effectief en zonder plakkerig residu na gebruik.",
-        "button_label": "Bestel nu",
+        "eyebrow": "Why PAP+",
+        "title": "Brighten without sensitivity",
+        "text": "Classic peroxide bleaching can cause sensitivity. Lorez Beauty PAP+ strips are designed for home use — gentle, effective and with no sticky residue after use.",
+        "button_label": "Order now",
         "button_link": "/products/lorez-beauty-pap-whitening-strips"
       }
     },
@@ -148,36 +148,36 @@
         "q1": {
           "type": "question",
           "settings": {
-            "question": "Is PAP+ veilig voor dagelijks gebruik?",
-            "answer": "Gebruik 1× per dag, maximaal 14 dagen achter elkaar. Neem daarna 2 weken pauze. Bij twijfel raadpleeg je tandarts."
+            "question": "Is PAP+ safe for daily use?",
+            "answer": "Use once per day, for up to 14 consecutive days. Then take a 2-week break. Consult your dentist if unsure."
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "Hoe snel zie ik resultaat?",
-            "answer": "Veel gebruikers merken al na de eerste sessie een frissere, stralendere glimlach. Resultaten verschillen per persoon."
+            "question": "How quickly will I see results?",
+            "answer": "Many users notice a fresher, brighter smile after the first session. Results vary by person."
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "Verzendt ihr naar Nederland en België?",
-            "answer": "Ja. Nederland: 2–4 werkdagen. België: 3–5 werkdagen. Gratis verzending vanaf €35."
+            "question": "Do you ship to the Netherlands and Belgium?",
+            "answer": "Yes. Netherlands: 2–4 business days. Belgium: 3–5 business days. Free shipping from €50."
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "Kan ik retourneren?",
-            "answer": "Ja, binnen 14 dagen als het product ongeopend is. Neem contact op via support@lorezbeauty.com"
+            "question": "Can I return my order?",
+            "answer": "Yes, within 14 days if the product is unopened. Contact support@lorezbeauty.com"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "Bevat het peroxide?",
-            "answer": "Nee. Onze PAP+ formule is ontwikkeld als EU-vriendelijk alternatief zonder waterstofperoxide."
+            "question": "Does it contain peroxide?",
+            "answer": "No. Our PAP+ formula is developed as an EU-friendly alternative without hydrogen peroxide."
           }
         }
       },
@@ -189,8 +189,8 @@
         "q5"
       ],
       "settings": {
-        "title": "Veelgestelde vragen",
-        "subtitle": "Alles wat je moet weten vóór je bestelt",
+        "title": "Frequently asked questions",
+        "subtitle": "Everything you need to know before you order",
         "button_label": "Shop PAP+ strips",
         "button_link": "/products/lorez-beauty-pap-whitening-strips"
       }
@@ -202,8 +202,8 @@
           "type": "service",
           "settings": {
             "icon": "gift",
-            "title": "14 behandelingen",
-            "text": "Complete 2-weken routine",
+            "title": "14 treatments",
+            "text": "Complete 2-week routine",
             "link": "/products/lorez-beauty-pap-whitening-strips"
           }
         },
@@ -211,8 +211,8 @@
           "type": "service",
           "settings": {
             "icon": "shipping",
-            "title": "NL & BE verzending",
-            "text": "2–4 werkdagen",
+            "title": "NL & BE shipping",
+            "text": "2–4 business days",
             "link": "/policies/shipping-policy"
           }
         },
@@ -221,7 +221,7 @@
           "settings": {
             "icon": "sample",
             "title": "Premium smile care",
-            "text": "PAP+ formule",
+            "text": "PAP+ formula",
             "link": "/#how-it-works"
           }
         }

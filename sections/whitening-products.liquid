@@ -26,7 +26,7 @@
               <p>{{ block.settings.description | default: product.description | strip_html | truncate: 100 }}</p>
               <div class="oem-product-card__footer">
                 <span class="oem-product-card__price">{{ product.price | money }}</span>
-                <a href="{{ product.url }}" class="oem-product-card__btn">Bekijk</a>
+                <a href="{{ product.url }}" class="oem-product-card__btn">{{ 'products.discover' | t }}</a>
               </div>
             </div>
           </article>

@@ -7,65 +7,65 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
-  "general": {
-    "meta": {
-      "tags": "Getagd \"{{ tags }}\"",
-      "page": "Pagina {{ page }}"
-    }
-  },
-  "accessibility": {
-    "skip_to_content": "Ga naar inhoud",
-    "close": "Sluiten",
-    "menu": "Menu",
-    "search": "Zoeken",
-    "cart": "Winkelwagen",
-    "account": "Account",
-    "previous": "Vorige",
-    "next": "Volgende"
-  },
-  "header": {
-    "menu": "Menu",
-    "search_placeholder": "Zoek producten"
-  },
-  "products": {
-    "add_to_cart": "In winkelwagen",
-    "sold_out": "Uitverkocht",
-    "unavailable": "Niet beschikbaar",
-    "quantity": "Aantal",
-    "discover": "Ontdekken"
-  },
-  "collections": {
-    "discover": "Ontdekken",
-    "view_all": "Alles bekijken"
-  },
-  "newsletter": {
-    "title": "De exclusieve wereld van Lorez Beauty",
-    "subtitle": "Schrijf je in voor early access tot nieuwe producten en aanbiedingen.",
-    "email_placeholder": "Vul je e-mailadres in",
-    "submit": "Inschrijven",
-    "success": "Bedankt voor je inschrijving"
-  },
-  "footer": {
-    "contact": "Contact",
-    "shipping": "Verzending & retour",
-    "faq": "Veelgestelde vragen",
-    "privacy": "Privacybeleid",
-    "terms": "Algemene voorwaarden"
-  },
-  "cart": {
-    "title": "Je winkelwagen",
-    "empty": "Je winkelwagen is leeg",
-    "checkout": "Afrekenen",
-    "continue_shopping": "Verder winkelen",
-    "added": "Product toegevoegd",
-    "view": "Bekijk winkelwagen"
-  },
-  "market": {
-    "ships_to": "We verzenden naar",
-    "spain": "Spanje",
-    "mexico": "Mexico",
-    "netherlands": "Nederland",
-    "belgium": "België"
-  }
-}
+{
+  "general": {
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    }
+  },
+  "accessibility": {
+    "skip_to_content": "Skip to content",
+    "close": "Close",
+    "menu": "Menu",
+    "search": "Search",
+    "cart": "Cart",
+    "account": "Account",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "header": {
+    "menu": "Menu",
+    "search_placeholder": "Search products"
+  },
+  "products": {
+    "add_to_cart": "Add to cart",
+    "sold_out": "Sold out",
+    "unavailable": "Unavailable",
+    "quantity": "Quantity",
+    "discover": "View"
+  },
+  "collections": {
+    "discover": "View",
+    "view_all": "View all"
+  },
+  "newsletter": {
+    "title": "The exclusive world of Lorez Beauty",
+    "subtitle": "Subscribe for early access to new products and special offers.",
+    "email_placeholder": "Enter your email",
+    "submit": "Subscribe",
+    "success": "Thank you for subscribing"
+  },
+  "footer": {
+    "contact": "Contact us",
+    "shipping": "Shipping & returns",
+    "faq": "FAQ",
+    "privacy": "Privacy policy",
+    "terms": "Terms & conditions"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "checkout": "Checkout",
+    "continue_shopping": "Continue shopping",
+    "added": "Product added",
+    "view": "View cart"
+  },
+  "market": {
+    "ships_to": "We ship to",
+    "spain": "Spain",
+    "mexico": "Mexico",
+    "netherlands": "Netherlands",
+    "belgium": "Belgium"
+  }
+}

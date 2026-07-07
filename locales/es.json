@@ -33,10 +33,10 @@
     "sold_out": "Sold out",
     "unavailable": "Unavailable",
     "quantity": "Quantity",
-    "discover": "Discover"
+    "discover": "View"
   },
   "collections": {
-    "discover": "Discover",
+    "discover": "View",
     "view_all": "View all"
   },
   "newsletter": {

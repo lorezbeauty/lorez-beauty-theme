@@ -1,18 +1,17 @@
-/* Lorez Luxury — Premium Rose Collection */
+/* Lorez Luxury — Dior-inspired theme */
 
 :root {
-  /* Luxury Rose Palette — elegant, feminine, premium */
-  --color-black: #2a1f1f;
+  /* Lorez Blush — warm K-beauty palette (converts better for women 25–45 than cold black/white) */
+  --color-black: #3a2e2e;
   --color-white: #ffffff;
-  --color-cream: #faf8f7;
-  --color-blush: #f5ede9;
-  --color-rose-primary: #E8A8CC;
-  --color-rose-light: #E8A8CC;
-  --color-rose-dark: #E8A8CC;
-  --color-rose-soft: #E8A8CC;
-  --color-accent: {{ settings.color_accent | default: '#E8A8CC' }};
-  --color-accent-light: {{ settings.color_accent_light | default: '#E8A8CC' }};
-  --color-accent-dark: {{ settings.color_accent_dark | default: '#E8A8CC' }};
+  --color-cream: #f5ebe8;
+  --color-blush: #fbf7f5;
+  --color-warm-gray: #8b7370;
+  --color-light-gray: #e8ded8;
+  --color-accent: {{ settings.color_accent }};
+  --color-accent-dark: #a86b62;
+  --color-rose-soft: #e8c4c4;
+  --color-champagne: #c9a87c;
   --color-text: {{ settings.color_text }};
   --color-bg: {{ settings.color_background }};
   --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
@@ -186,7 +185,7 @@ ul, ol {
 
 /* Announcement bar */
 .announcement-bar {
-  background: #E8A8CC;
+  background: linear-gradient(90deg, #8b5a52 0%, var(--color-accent) 100%);
   color: var(--color-white);
   text-align: center;
   font-size: 0.6875rem;
@@ -759,7 +758,7 @@ ul, ol {
 .newsletter {
   padding: 80px var(--gutter);
   text-align: center;
-  background: #E8A8CC;
+  background: linear-gradient(135deg, #4a3535 0%, #8b5a52 50%, var(--color-accent) 100%);
   color: var(--color-white);
 }
 
@@ -1400,7 +1399,7 @@ ul, ol {
 /* Bundle banner */
 .bundle-banner {
   padding: 80px var(--gutter);
-  background: #E8A8CC;
+  background: linear-gradient(135deg, #4a3535 0%, #8b5a52 100%);
   color: var(--color-white);
   text-align: center;
 }
@@ -1590,7 +1589,7 @@ ul, ol {
 
 /* Trust bar */
 .trust-bar {
-  background: #E8A8CC;
+  background: linear-gradient(90deg, #4a3535 0%, #8b5a52 100%);
   color: var(--color-white);
   padding: 14px var(--gutter);
 }
