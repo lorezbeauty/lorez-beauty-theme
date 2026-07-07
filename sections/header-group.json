@@ -13,18 +13,22 @@
   "sections": {
     "announcement": {
       "type": "announcement-bar",
+      "disabled": true,
       "settings": {
         "show_announcement": true,
-        "text": "Private label whitening · OEM/ODM · Free samples in 48 hours"
+        "text": "",
+        "link": ""
       }
     },
     "header": {
       "type": "header",
       "settings": {
-        "cta_label": "Request a quote →",
-        "cta_link": "/pages/contact"
+        "menu": "main-menu"
       }
     }
   },
-  "order": ["announcement", "header"]
+  "order": [
+    "announcement",
+    "header"
+  ]
 }
