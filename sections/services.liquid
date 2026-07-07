@@ -35,7 +35,9 @@
           {%- endcase -%}
         </div>
         <h3 class="service-card__title">{{ block.settings.title }}</h3>
-        {%- if block.settings.text != blank -%}
+        {%- if block.settings.text_mx != blank -%}
+          <p class="service-card__text" data-market-copy data-es="{{ block.settings.text | escape }}" data-mx="{{ block.settings.text_mx | escape }}">{{ block.settings.text }}</p>
+        {%- elsif block.settings.text != blank -%}
           <p class="service-card__text">{{ block.settings.text }}</p>
         {%- endif -%}
       </a>
@@ -83,6 +85,11 @@
           "id": "text",
           "label": "Description",
           "default": "Exclusive gift wrapping for every order"
+        },
+        {
+          "type": "text",
+          "id": "text_mx",
+          "label": "Description (México)"
         },
         {
           "type": "url",
