@@ -20,11 +20,11 @@
     },
     "header": {
       "type": "header",
-      "settings": {}
+      "settings": {
+        "cta_label": "Request a quote →",
+        "cta_link": "/pages/contact"
+      }
     }
   },
-  "order": [
-    "announcement",
-    "header"
-  ]
+  "order": ["announcement", "header"]
 }
