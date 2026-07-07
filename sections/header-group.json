@@ -13,17 +13,18 @@
   "sections": {
     "announcement": {
       "type": "announcement-bar",
-      "disabled": true,
       "settings": {
         "show_announcement": true,
-        "text": "",
-        "link": ""
+        "text": "GRATIS VERZENDING  -  30 DAGEN NIET-GOED-GELD-TERUG  -HALAL &  VEGAN AND CRUELTY-FREE",
+        "link": "shopify://collections/all"
       }
     },
     "header": {
       "type": "header",
       "settings": {
-        "menu": "main-menu"
+        "menu": "main-menu",
+        "cta_label": "Request a quote →",
+        "cta_link": ""
       }
     }
   },
