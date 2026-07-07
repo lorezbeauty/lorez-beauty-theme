@@ -9,9 +9,9 @@
  */
 {
   "current": {
-    "color_background": "#fbf7f5",
+    "color_background": "#fdf5f3",
     "color_text": "#3a2e2e",
-    "color_accent": "#c4847a",
+    "color_accent": "#c76b7e",
     "base_font_size": 16,
     "sections": {
       "header": {
@@ -22,6 +22,7 @@
         "type": "footer",
         "settings": {}
       }
-    }
+    },
+    "content_for_index": []
   }
 }
