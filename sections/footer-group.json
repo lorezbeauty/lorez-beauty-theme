@@ -11,6 +11,12 @@
   "name": "Footer group",
   "type": "footer",
   "sections": {
+    "oem_footer": {
+      "type": "oem-footer",
+      "settings": {
+        "tagline": "Private label whitening solutions for modern brands."
+      }
+    },
     "newsletter": {
       "type": "newsletter",
       "settings": {
@@ -23,5 +29,5 @@
       "settings": {}
     }
   },
-  "order": ["newsletter", "footer"]
+  "order": ["oem_footer", "newsletter", "footer"]
 }

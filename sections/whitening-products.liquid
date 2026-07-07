@@ -1,0 +1,66 @@
+<section class="oem-products" id="products">
+  <div class="oem-products__inner">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="oem-section-eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="oem-section-title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    <div class="oem-products-grid">
+      {%- for block in section.blocks -%}
+        {%- assign product = block.settings.product -%}
+        {%- if product != blank -%}
+          <article class="oem-product-card" {{ block.shopify_attributes }}>
+            <a href="{{ product.url }}" class="oem-product-card__img">
+              {%- if product.featured_media -%}
+                {{ product.featured_media | image_url: width: 600 | image_tag: loading: 'lazy', alt: product.title }}
+              {%- else -%}
+                <span class="oem-product-card__placeholder" aria-hidden="true">{{ block.settings.fallback_icon | default: '✨' }}</span>
+              {%- endif -%}
+              {%- if block.settings.badge != blank -%}
+                <span class="oem-product-card__badge">{{ block.settings.badge }}</span>
+              {%- endif -%}
+            </a>
+            <div class="oem-product-card__body">
+              <h4><a href="{{ product.url }}">{{ product.title }}</a></h4>
+              <p>{{ block.settings.description | default: product.description | strip_html | truncate: 100 }}</p>
+              <div class="oem-product-card__footer">
+                <span class="oem-product-card__price">{{ product.price | money }}</span>
+                <a href="{{ product.url }}" class="oem-product-card__btn">Bekijk</a>
+              </div>
+            </div>
+          </article>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Whitening products",
+  "tag": "section",
+  "max_blocks": 12,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Product range" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Featured whitening products" }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" },
+        { "type": "text", "id": "badge", "label": "Badge", "default": "Featured" },
+        { "type": "textarea", "id": "description", "label": "Short description (optional)" },
+        { "type": "text", "id": "fallback_icon", "label": "Fallback icon", "default": "✨" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Whitening products"
+    }
+  ]
+}
+{% endschema %}

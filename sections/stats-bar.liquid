@@ -1,0 +1,43 @@
+<section class="oem-stats">
+  <div class="oem-stats__inner">
+    {%- for block in section.blocks -%}
+      <div {{ block.shopify_attributes }}>
+        {%- if block.settings.number != blank -%}
+          <div class="oem-stat__number">{{ block.settings.number }}</div>
+        {%- endif -%}
+        {%- if block.settings.label != blank -%}
+          <div class="oem-stat__label">{{ block.settings.label }}</div>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Stats bar",
+  "tag": "section",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Number", "default": "72M+" },
+        { "type": "text", "id": "label", "label": "Label", "default": "annual production capacity" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stats bar",
+      "blocks": [
+        { "type": "stat", "settings": { "number": "72M+", "label": "annual production capacity" } },
+        { "type": "stat", "settings": { "number": "20+", "label": "R&D specialists on staff" } },
+        { "type": "stat", "settings": { "number": "GMP", "label": "ISO & CE certified manufacturing" } },
+        { "type": "stat", "settings": { "number": "Low", "label": "MOQ from 500 units" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

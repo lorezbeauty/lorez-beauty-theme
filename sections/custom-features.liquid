@@ -1,0 +1,63 @@
+<section class="oem-custom" id="customization">
+  <div class="oem-custom__inner">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="oem-section-eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="oem-section-title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <p class="oem-section-sub">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+    <div class="oem-cards-grid">
+      {%- for block in section.blocks -%}
+        <div class="oem-card" {{ block.shopify_attributes }}>
+          {%- if block.settings.icon != blank -%}
+            <div class="oem-card__icon">{{ block.settings.icon }}</div>
+          {%- endif -%}
+          {%- if block.settings.title != blank -%}
+            <h4>{{ block.settings.title }}</h4>
+          {%- endif -%}
+          {%- if block.settings.text != blank -%}
+            <p>{{ block.settings.text }}</p>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom features",
+  "tag": "section",
+  "max_blocks": 6,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Full customization" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Built for your brand from start to finish" },
+    { "type": "textarea", "id": "subtitle", "label": "Subtitle", "default": "Every element of your whitening product can be adjusted to your brand needs." }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Feature card",
+      "settings": [
+        { "type": "text", "id": "icon", "label": "Icon (emoji)", "default": "🧪" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Formula" },
+        { "type": "textarea", "id": "text", "label": "Description", "default": "PAP, carbamide peroxide, charcoal and sensitivity-free options." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom features",
+      "blocks": [
+        { "type": "card", "settings": { "icon": "🧪", "title": "Formula", "text": "PAP, carbamide peroxide, charcoal and sensitivity-free options." } },
+        { "type": "card", "settings": { "icon": "🌿", "title": "Taste & Scent", "text": "Mint, bubblegum, coconut and custom flavors for your audience." } },
+        { "type": "card", "settings": { "icon": "🗂", "title": "Mold & Shape", "text": "Standard or fully custom strip shapes, trays and applicators." } },
+        { "type": "card", "settings": { "icon": "📦", "title": "Packaging", "text": "Retail-ready boxes, sachets and eco-friendly options." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

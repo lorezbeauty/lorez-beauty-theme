@@ -1,0 +1,20 @@
+<footer class="oem-footer">
+  <p>&copy; {{ 'now' | date: '%Y' }} <strong>Lorez Beauty</strong>. {{ section.settings.tagline }}</p>
+</footer>
+
+{% schema %}
+{
+  "name": "OEM Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "Private label whitening solutions for modern brands."
+    }
+  ],
+  "presets": [
+    { "name": "OEM Footer" }
+  ]
+}
+{% endschema %}

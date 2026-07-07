@@ -15,7 +15,7 @@
       "type": "announcement-bar",
       "settings": {
         "show_announcement": true,
-        "text": "Buy 2 get 1 FREE · Code LOREZ · Free shipping from €50"
+        "text": "Private label whitening · OEM/ODM · Free samples in 48 hours"
       }
     },
     "header": {
@@ -23,5 +23,8 @@
       "settings": {}
     }
   },
-  "order": ["announcement", "header"]
+  "order": [
+    "announcement",
+    "header"
+  ]
 }
