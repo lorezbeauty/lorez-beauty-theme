@@ -1,52 +1,57 @@
 /*
- * Lorez Professional Whitening — Landing Page
- * Language: Dutch + English
- * Theme: Premium Teeth Whitening
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
  */
 {
   "sections": {
     "hero": {
       "type": "hero-banner",
       "settings": {
-        "eyebrow": "NIEUW - KLINISCH GETEST",
-        "title": "Een stralere glimlach in 10 dagen",
-        "subtitle": "Whitening zonder gevoelige tanden. Vegan, peroxide-arm en dermatologisch getest, ontworpen voor dagelijks gebruik.",
-        "trust_line": "",
-        "button_label": "Shop de kit",
+        "eyebrow": "Lorez Luxury · Premium Beauty",
+        "title": "Experience the art of luxury beauty",
+        "subtitle": "Discover a curated collection designed for the modern woman",
+        "trust_line": "✨ Premium craftsmanship · Effortless elegance · Timeless beauty",
+        "kit_price_eur": "179.95",
+        "button_label": "Explore collection",
         "button_link": "/collections/all",
-        "button_secondary_label": "Bekijk resultaten",
+        "button_secondary_label": "Learn more",
         "button_secondary_link": "/pages/about"
       }
     },
-    "features": {
+    "trust": {
       "type": "trust-bar",
       "blocks": {
         "t1": {
           "type": "item",
           "settings": {
-            "icon": "check",
-            "text": "Professioneel witmakers formule"
+            "icon": "shipping",
+            "text": "Complimentary shipping on orders over €60"
           }
         },
         "t2": {
           "type": "item",
           "settings": {
-            "icon": "bolt",
-            "text": "Resultaten in 10 dagen of geld terug"
+            "icon": "secure",
+            "text": "Secure checkout · Trusted by thousands"
           }
         },
         "t3": {
           "type": "item",
           "settings": {
-            "icon": "shield",
-            "text": "Klinisch getest & veilig voor tandglazuur"
+            "icon": "returns",
+            "text": "30-day returns · No questions asked"
           }
         },
         "t4": {
           "type": "item",
           "settings": {
-            "icon": "shipping",
-            "text": "Gratis verzending vanaf €40"
+            "icon": "check",
+            "text": "Subscribe & save 15% on every order"
           }
         }
       },
@@ -58,37 +63,35 @@
       ],
       "settings": {}
     },
-    "social-proof": {
-      "type": "social-proof",
-      "settings": {
-        "eyebrow": "Vertrouwd door duizenden",
-        "title": "Werkelijke resultaten van werkelijke klanten",
-        "stat_1": "50K+",
-        "stat_1_label": "Wit gemaakt",
-        "stat_2": "98%",
-        "stat_2_label": "Tevreden klanten",
-        "stat_3": "4.9★",
-        "stat_3_label": "Gemiddelde beoordeling"
-      }
-    },
     "editorial": {
       "type": "editorial-block",
       "settings": {
         "layout": "split",
-        "eyebrow": "Onze Science",
-        "title": "Professionele resultaten, thuis",
-        "text": "Onze gepatenteerde formule combineert geavanceerde whitening-technologie met zachte, tandglazuur-veilige ingrediënten. Klinisch getest en gebruikt door tandartsen wereldwijd.",
-        "button_label": "Leer over onze formule",
+        "eyebrow": "Our Story",
+        "title": "Luxury redefined for every woman",
+        "text": "At Lorez, we believe luxury is about feeling confident in your own skin. Every detail is crafted with intention—from the products we select to the experience we create. We're here to make beauty effortless, elegant, and entirely yours.",
+        "button_label": "Discover our mission",
         "button_link": "/pages/about"
+      }
+    },
+    "social-proof": {
+      "type": "social-proof",
+      "settings": {
+        "eyebrow": "Why Choose Lorez",
+        "title": "Trusted by women worldwide",
+        "stat_1": "15K+",
+        "stat_1_label": "Happy customers",
+        "stat_2": "98%",
+        "stat_2_label": "Would recommend",
+        "stat_3": "4.8★",
+        "stat_3_label": "Average rating"
       }
     },
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "title": "Exclusieve toegang",
-        "subtitle": "Sluit je aan bij onze community en krijg 15% korting op je eerste bestelling, plus vroege toegang tot nieuwe whitening-producten.",
-        "placeholder": "Voer je e-mailadres in",
-        "button_label": "Abonneren"
+        "title": "Join the Lorez community",
+        "subtitle": "Be the first to discover new collections and exclusive member benefits."
       }
     },
     "faq": {
@@ -97,29 +100,29 @@
         "q1": {
           "type": "question",
           "settings": {
-            "question": "Is de whitening-formule veilig?",
-            "answer": "Ja! Onze formule is door tandartsen goedgekeurd en klinisch getest. Het is veilig voor tandglazuur en zacht voor gevoelige tanden."
+            "question": "How do I find the right products for me?",
+            "answer": "We recommend starting with our consultation guide or reaching out to our team at hello@lorezbeauty.com. We're here to help you find what works best for your unique needs."
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "Hoe lang tot ik resultaten zie?",
-            "answer": "De meeste klanten zien opvallende resultaten binnen 3-7 dagen. Volledige resultaten verschijnen in 10 dagen met consistent gebruik."
+            "question": "What's your shipping policy?",
+            "answer": "We offer free shipping on orders over €60 worldwide. Standard delivery takes 5-7 business days. Express options are available at checkout."
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "Wat zit er in de kit?",
-            "answer": "Elke kit bevat ons geavanceerde LED-apparaat, professioneel whitening-gel, applicatietrays en een kleurengids."
+            "question": "Can I return products if I'm not satisfied?",
+            "answer": "Absolutely. We offer a 30-day returns guarantee on all purchases. If you're not completely happy, we'll make it right."
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "Bieden jullie garantie?",
-            "answer": "100% tevredenheidgarantie. Contacteer ons binnen 30 dagen als je niet blij bent - we betalen je volledig terug."
+            "question": "Do you offer subscriptions?",
+            "answer": "Yes! Subscribe to your favorite products and save 15% on every delivery. You can customize your subscription anytime."
           }
         }
       },
@@ -130,16 +133,150 @@
         "q4"
       ],
       "settings": {
-        "title": "Veelgestelde vragen"
+        "title": "Frequently asked questions",
+        "subtitle": "Answers before you buy",
+        "button_label": "Start my Clear Skin routine",
+        "button_link": ""
       }
+    },
+    "collection_showcase_dtNxfM": {
+      "type": "collection-showcase",
+      "name": "Collection showcase",
+      "settings": {
+        "section_id": "products",
+        "eyebrow": "Skincare Collection",
+        "title": "Summer 2026 Collection",
+        "subtitle": "",
+        "collection": "",
+        "products_to_show": 8,
+        "show_view_all": true
+      }
+    },
+    "newsletter_rdEtDd": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "title": "The exclusive universe of Lorez Beauty",
+        "subtitle": ""
+      }
+    },
+    "market_shipping_4Axm9G": {
+      "type": "market-shipping",
+      "name": "Market & shipping",
+      "settings": {
+        "bar_label": "We ship to",
+        "es_title": "Spain",
+        "es_shipping": "7–14 business days",
+        "es_free": "Free shipping on orders over €50",
+        "es_payment": "Card, PayPal & Bizum",
+        "mx_title": "Mexico",
+        "mx_shipping": "10–18 business days",
+        "mx_free": "Free shipping on orders over $999 MXN",
+        "mx_payment": "Tarjeta, PayPal y Mercado Pago"
+      }
+    },
+    "services_McED6A": {
+      "type": "services",
+      "blocks": {
+        "service_qqbLfN": {
+          "type": "service",
+          "settings": {
+            "icon": "gift",
+            "title": "The art of gifting",
+            "text": "Exclusive gift wrapping for every order",
+            "text_mx": "",
+            "link": ""
+          }
+        },
+        "service_gqt9Vh": {
+          "type": "service",
+          "settings": {
+            "icon": "sample",
+            "title": "Samples & miniatures",
+            "text": "Complimentary samples with every purchase",
+            "text_mx": "",
+            "link": ""
+          }
+        },
+        "service_jC8VEp": {
+          "type": "service",
+          "settings": {
+            "icon": "shipping",
+            "title": "Free shipping",
+            "text": "On all orders over €50",
+            "text_mx": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_qqbLfN",
+        "service_gqt9Vh",
+        "service_jC8VEp"
+      ],
+      "name": "Services",
+      "settings": {
+        "title": "Lorez Beauty Services"
+      }
+    },
+    "trust_bar_ict3kN": {
+      "type": "trust-bar",
+      "blocks": {
+        "item_PAYNaF": {
+          "type": "item",
+          "settings": {
+            "icon": "shipping",
+            "text": "Free shipping from €50 · $999 MXN"
+          }
+        },
+        "item_xizrGi": {
+          "type": "item",
+          "settings": {
+            "icon": "secure",
+            "text": "100% secure checkout"
+          }
+        },
+        "item_X3YPmh": {
+          "type": "item",
+          "settings": {
+            "icon": "returns",
+            "text": "30-day returns"
+          }
+        },
+        "item_pCwNEr": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "text": "Code LOREZ: buy 2 get 1 free"
+          }
+        }
+      },
+      "block_order": [
+        "item_PAYNaF",
+        "item_xizrGi",
+        "item_X3YPmh",
+        "item_pCwNEr"
+      ],
+      "name": "Trust bar",
+      "settings": {}
+    },
+    "17834195930953d5ad": {
+      "type": "apps",
+      "settings": {}
     }
   },
   "order": [
     "hero",
-    "features",
-    "social-proof",
+    "trust",
     "editorial",
+    "social-proof",
     "newsletter",
-    "faq"
+    "faq",
+    "collection_showcase_dtNxfM",
+    "newsletter_rdEtDd",
+    "market_shipping_4Axm9G",
+    "services_McED6A",
+    "trust_bar_ict3kN",
+    "17834195930953d5ad"
   ]
 }
