@@ -6,13 +6,13 @@
   --color-white: #ffffff;
   --color-cream: #faf8f7;
   --color-blush: #f5ede9;
-  --color-rose-primary: #F108C6;
-  --color-rose-light: #F98CE0;
-  --color-rose-dark: #C70A9A;
-  --color-rose-soft: #F9D4E8;
-  --color-accent: {{ settings.color_accent | default: '#F108C6' }};
-  --color-accent-light: {{ settings.color_accent_light | default: '#F98CE0' }};
-  --color-accent-dark: {{ settings.color_accent_dark | default: '#C70A9A' }};
+  --color-rose-primary: #E8A8CC;
+  --color-rose-light: #F5D5E3;
+  --color-rose-dark: #C68AA9;
+  --color-rose-soft: #F0E0E8;
+  --color-accent: {{ settings.color_accent | default: '#E8A8CC' }};
+  --color-accent-light: {{ settings.color_accent_light | default: '#F5D5E3' }};
+  --color-accent-dark: {{ settings.color_accent_dark | default: '#C68AA9' }};
   --color-text: {{ settings.color_text }};
   --color-bg: {{ settings.color_background }};
   --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
@@ -186,7 +186,7 @@ ul, ol {
 
 /* Announcement bar */
 .announcement-bar {
-  background: linear-gradient(90deg, #C70A9A 0%, var(--color-accent) 100%);
+  background: linear-gradient(90deg, #C68AA9 0%, var(--color-accent) 100%);
   color: var(--color-white);
   text-align: center;
   font-size: 0.6875rem;
@@ -759,7 +759,7 @@ ul, ol {
 .newsletter {
   padding: 80px var(--gutter);
   text-align: center;
-  background: linear-gradient(135deg, #7c0065 0%, #C70A9A 50%, var(--color-accent) 100%);
+  background: linear-gradient(135deg, #8b5a7e 0%, #C68AA9 50%, var(--color-accent) 100%);
   color: var(--color-white);
 }
 
@@ -1400,7 +1400,7 @@ ul, ol {
 /* Bundle banner */
 .bundle-banner {
   padding: 80px var(--gutter);
-  background: linear-gradient(135deg, #7c0065 0%, #C70A9A 100%);
+  background: linear-gradient(135deg, #8b5a7e 0%, #C68AA9 100%);
   color: var(--color-white);
   text-align: center;
 }
@@ -1590,7 +1590,7 @@ ul, ol {
 
 /* Trust bar */
 .trust-bar {
-  background: linear-gradient(90deg, #7c0065 0%, #C70A9A 100%);
+  background: linear-gradient(90deg, #8b5a7e 0%, #C68AA9 100%);
   color: var(--color-white);
   padding: 14px var(--gutter);
 }
