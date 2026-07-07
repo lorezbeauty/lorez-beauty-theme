@@ -10,17 +10,62 @@
 {
   "sections": {
     "hero": {
-      "type": "hero-banner",
+      "type": "oem-hero",
+      "blocks": {
+        "f1": {
+          "type": "feature",
+          "settings": {
+            "text": "Custom formulation support"
+          }
+        },
+        "f2": {
+          "type": "feature",
+          "settings": {
+            "text": "Low MOQ, fast sampling"
+          }
+        },
+        "f3": {
+          "type": "feature",
+          "settings": {
+            "text": "GMP / ISO / CE aligned"
+          }
+        },
+        "f4": {
+          "type": "feature",
+          "settings": {
+            "text": "Custom packaging & molds"
+          }
+        },
+        "f5": {
+          "type": "feature",
+          "settings": {
+            "text": "Free samples in 48 hours"
+          }
+        },
+        "f6": {
+          "type": "feature",
+          "settings": {
+            "text": "72M+ annual production capacity"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
       "settings": {
-        "eyebrow": "Lorez Luxury · Premium Beauty",
-        "title": "Experience the art of luxury beauty",
-        "subtitle": "Discover a curated collection designed for the modern woman",
-        "trust_line": "✨ Premium craftsmanship · Effortless elegance · Timeless beauty",
-        "kit_price_eur": "179.95",
-        "button_label": "Explore collection",
-        "button_link": "/collections/all",
-        "button_secondary_label": "Learn more",
-        "button_secondary_link": "/pages/about"
+        "eyebrow": "Factory direct · Private label",
+        "title": "Private label teeth whitening products for modern beauty brands",
+        "subtitle": "OEM and ODM solutions for whitening strips, gels, powders, LED kits and custom packaging built for retail growth.",
+        "button_label": "Request a quote",
+        "button_link": "/pages/contact",
+        "button_secondary_label": "Bekijk producten",
+        "button_secondary_link": "/#products",
+        "card_title": "OEM / ODM Solutions"
       }
     },
     "trust": {
@@ -29,29 +74,29 @@
         "t1": {
           "type": "item",
           "settings": {
-            "icon": "shipping",
-            "text": "Complimentary shipping on orders over €60"
+            "icon": "check",
+            "text": "OEM / ODM support"
           }
         },
         "t2": {
           "type": "item",
           "settings": {
-            "icon": "secure",
-            "text": "Secure checkout · Trusted by thousands"
+            "icon": "check",
+            "text": "Low MOQ and free samples"
           }
         },
         "t3": {
           "type": "item",
           "settings": {
-            "icon": "returns",
-            "text": "30-day returns · No questions asked"
+            "icon": "check",
+            "text": "GMP / ISO / CE aligned"
           }
         },
         "t4": {
           "type": "item",
           "settings": {
             "icon": "check",
-            "text": "Subscribe & save 15% on every order"
+            "text": "Custom packaging and molds"
           }
         }
       },
@@ -63,220 +108,189 @@
       ],
       "settings": {}
     },
-    "editorial": {
-      "type": "editorial-block",
-      "settings": {
-        "layout": "split",
-        "eyebrow": "Our Story",
-        "title": "Luxury redefined for every woman",
-        "text": "At Lorez, we believe luxury is about feeling confident in your own skin. Every detail is crafted with intention—from the products we select to the experience we create. We're here to make beauty effortless, elegant, and entirely yours.",
-        "button_label": "Discover our mission",
-        "button_link": "/pages/about"
-      }
-    },
-    "social-proof": {
-      "type": "social-proof",
-      "settings": {
-        "eyebrow": "Why Choose Lorez",
-        "title": "Trusted by women worldwide",
-        "stat_1": "15K+",
-        "stat_1_label": "Happy customers",
-        "stat_2": "98%",
-        "stat_2_label": "Would recommend",
-        "stat_3": "4.8★",
-        "stat_3_label": "Average rating"
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "title": "Join the Lorez community",
-        "subtitle": "Be the first to discover new collections and exclusive member benefits."
-      }
-    },
-    "faq": {
-      "type": "faq-accordion",
+    "custom": {
+      "type": "custom-features",
       "blocks": {
-        "q1": {
-          "type": "question",
+        "c1": {
+          "type": "card",
           "settings": {
-            "question": "How do I find the right products for me?",
-            "answer": "We recommend starting with our consultation guide or reaching out to our team at hello@lorezbeauty.com. We're here to help you find what works best for your unique needs."
+            "icon": "🧪",
+            "title": "Formula",
+            "text": "PAP, carbamide peroxide, charcoal and sensitivity-free options."
           }
         },
-        "q2": {
-          "type": "question",
+        "c2": {
+          "type": "card",
           "settings": {
-            "question": "What's your shipping policy?",
-            "answer": "We offer free shipping on orders over €60 worldwide. Standard delivery takes 5-7 business days. Express options are available at checkout."
+            "icon": "🌿",
+            "title": "Taste & Scent",
+            "text": "Mint, bubblegum, coconut and custom flavors for your audience."
           }
         },
-        "q3": {
-          "type": "question",
+        "c3": {
+          "type": "card",
           "settings": {
-            "question": "Can I return products if I'm not satisfied?",
-            "answer": "Absolutely. We offer a 30-day returns guarantee on all purchases. If you're not completely happy, we'll make it right."
+            "icon": "🗂",
+            "title": "Mold & Shape",
+            "text": "Standard or fully custom strip shapes, trays and applicators."
           }
         },
-        "q4": {
-          "type": "question",
+        "c4": {
+          "type": "card",
           "settings": {
-            "question": "Do you offer subscriptions?",
-            "answer": "Yes! Subscribe to your favorite products and save 15% on every delivery. You can customize your subscription anytime."
+            "icon": "📦",
+            "title": "Packaging",
+            "text": "Retail-ready boxes, sachets and eco-friendly options."
           }
         }
       },
       "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4"
+        "c1",
+        "c2",
+        "c3",
+        "c4"
       ],
       "settings": {
-        "title": "Frequently asked questions",
-        "subtitle": "Answers before you buy",
-        "button_label": "Start my Clear Skin routine",
-        "button_link": ""
+        "eyebrow": "Full customization",
+        "title": "Built for your brand from start to finish",
+        "subtitle": "Every element of your whitening product can be adjusted to your brand needs."
       }
     },
-    "collection_showcase_dtNxfM": {
-      "type": "collection-showcase",
-      "name": "Collection showcase",
-      "settings": {
-        "section_id": "products",
-        "eyebrow": "Skincare Collection",
-        "title": "Summer 2026 Collection",
-        "subtitle": "",
-        "collection": "",
-        "products_to_show": 8,
-        "show_view_all": true
-      }
-    },
-    "newsletter_rdEtDd": {
-      "type": "newsletter",
-      "name": "Newsletter",
-      "settings": {
-        "title": "The exclusive universe of Lorez Beauty",
-        "subtitle": ""
-      }
-    },
-    "market_shipping_4Axm9G": {
-      "type": "market-shipping",
-      "name": "Market & shipping",
-      "settings": {
-        "bar_label": "We ship to",
-        "es_title": "Spain",
-        "es_shipping": "7–14 business days",
-        "es_free": "Free shipping on orders over €50",
-        "es_payment": "Card, PayPal & Bizum",
-        "mx_title": "Mexico",
-        "mx_shipping": "10–18 business days",
-        "mx_free": "Free shipping on orders over $999 MXN",
-        "mx_payment": "Tarjeta, PayPal y Mercado Pago"
-      }
-    },
-    "services_McED6A": {
-      "type": "services",
+    "products": {
+      "type": "whitening-products",
       "blocks": {
-        "service_qqbLfN": {
-          "type": "service",
+        "p1": {
+          "type": "product",
           "settings": {
-            "icon": "gift",
-            "title": "The art of gifting",
-            "text": "Exclusive gift wrapping for every order",
-            "text_mx": "",
-            "link": ""
+            "product": "custom-teeth-whitening-led-home-kits",
+            "badge": "Bestseller",
+            "description": "Premium LED home whitening kit with retail-ready presentation.",
+            "fallback_icon": "💡"
           }
         },
-        "service_gqt9Vh": {
-          "type": "service",
+        "p2": {
+          "type": "product",
           "settings": {
-            "icon": "sample",
-            "title": "Samples & miniatures",
-            "text": "Complimentary samples with every purchase",
-            "text_mx": "",
-            "link": ""
+            "product": "u-type-teeth-whitening-strips",
+            "badge": "New",
+            "description": "U-shaped strips for easier application and strong whitening results.",
+            "fallback_icon": "🦷"
           }
         },
-        "service_jC8VEp": {
-          "type": "service",
+        "p3": {
+          "type": "product",
           "settings": {
-            "icon": "shipping",
-            "title": "Free shipping",
-            "text": "On all orders over €50",
-            "text_mx": "",
-            "link": ""
+            "product": "classic-mint-teeth-whitening-powder",
+            "badge": "Classic",
+            "description": "Mint-forward powder for daily use with a clean whitening routine.",
+            "fallback_icon": "✨"
+          }
+        },
+        "p4": {
+          "type": "product",
+          "settings": {
+            "product": "v34-teeth-whitening-strips",
+            "badge": "Popular",
+            "description": "Modern V34 format for a clean, branded product line.",
+            "fallback_icon": "⚡"
+          }
+        },
+        "p5": {
+          "type": "product",
+          "settings": {
+            "product": "v34-teeth-whitening-liquid",
+            "badge": "Liquid",
+            "description": "Precision liquid for daily use and convenient application.",
+            "fallback_icon": "💧"
+          }
+        },
+        "p6": {
+          "type": "product",
+          "settings": {
+            "product": "pap-non-alcohol-teeth-whitening-dry-strips",
+            "badge": "Sensitive",
+            "description": "Low-irritation PAP strips for sensitive-focused lines.",
+            "fallback_icon": "🌸"
           }
         }
       },
       "block_order": [
-        "service_qqbLfN",
-        "service_gqt9Vh",
-        "service_jC8VEp"
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
       ],
-      "name": "Services",
       "settings": {
-        "title": "Lorez Beauty Services"
+        "eyebrow": "Product range",
+        "title": "Featured whitening products"
       }
     },
-    "trust_bar_ict3kN": {
-      "type": "trust-bar",
+    "stats": {
+      "type": "stats-bar",
       "blocks": {
-        "item_PAYNaF": {
-          "type": "item",
+        "s1": {
+          "type": "stat",
           "settings": {
-            "icon": "shipping",
-            "text": "Free shipping from €50 · $999 MXN"
+            "number": "72M+",
+            "label": "annual production capacity"
           }
         },
-        "item_xizrGi": {
-          "type": "item",
+        "s2": {
+          "type": "stat",
           "settings": {
-            "icon": "secure",
-            "text": "100% secure checkout"
+            "number": "20+",
+            "label": "R&D specialists on staff"
           }
         },
-        "item_X3YPmh": {
-          "type": "item",
+        "s3": {
+          "type": "stat",
           "settings": {
-            "icon": "returns",
-            "text": "30-day returns"
+            "number": "GMP",
+            "label": "ISO & CE certified manufacturing"
           }
         },
-        "item_pCwNEr": {
-          "type": "item",
+        "s4": {
+          "type": "stat",
           "settings": {
-            "icon": "check",
-            "text": "Code LOREZ: buy 2 get 1 free"
+            "number": "Low",
+            "label": "MOQ from 500 units"
           }
         }
       },
       "block_order": [
-        "item_PAYNaF",
-        "item_xizrGi",
-        "item_X3YPmh",
-        "item_pCwNEr"
+        "s1",
+        "s2",
+        "s3",
+        "s4"
       ],
-      "name": "Trust bar",
       "settings": {}
     },
-    "17834195930953d5ad": {
-      "type": "apps",
-      "settings": {}
+    "quote": {
+      "type": "quote-cta",
+      "settings": {
+        "heading": "Ready to launch your whitening line?",
+        "description": "Connect with our team for samples, custom development and private label support.",
+        "feature_1": "Free samples in 48 hours",
+        "feature_2": "Custom formulation support",
+        "feature_3": "Low MOQ, fast production",
+        "feature_4": "Certified + compliant",
+        "icon": "📋",
+        "visual_text": "OEM / ODM Partnership Model\n\nSamples → Formulation → Packaging → Launch",
+        "button_text": "Get a quote",
+        "button_link": "/pages/contact",
+        "secondary_text": "Learn about OEM/ODM",
+        "secondary_link": "/#customization"
+      }
     }
   },
   "order": [
     "hero",
     "trust",
-    "editorial",
-    "social-proof",
-    "newsletter",
-    "faq",
-    "collection_showcase_dtNxfM",
-    "newsletter_rdEtDd",
-    "market_shipping_4Axm9G",
-    "services_McED6A",
-    "trust_bar_ict3kN",
-    "17834195930953d5ad"
+    "custom",
+    "products",
+    "stats",
+    "quote"
   ]
 }

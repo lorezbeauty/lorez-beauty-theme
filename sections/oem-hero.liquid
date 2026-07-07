@@ -1,0 +1,75 @@
+<section class="oem-hero" id="hero">
+  <div class="oem-hero__inner">
+    <div>
+      {%- if section.settings.eyebrow != blank -%}
+        <span class="oem-hero__eyebrow">{{ section.settings.eyebrow }}</span>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h1 class="oem-hero__title">{{ section.settings.title }}</h1>
+      {%- endif -%}
+      {%- if section.settings.subtitle != blank -%}
+        <p class="oem-hero__sub">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+      <div class="oem-hero__btns">
+        {%- if section.settings.button_label != blank -%}
+          <a href="{{ section.settings.button_link }}" class="oem-btn-primary">{{ section.settings.button_label }}</a>
+        {%- endif -%}
+        {%- if section.settings.button_secondary_label != blank -%}
+          <a href="{{ section.settings.button_secondary_link }}" class="oem-btn-outline">{{ section.settings.button_secondary_label }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="oem-hero__card">
+      {%- if section.settings.card_title != blank -%}
+        <h3>{{ section.settings.card_title }}</h3>
+      {%- endif -%}
+      <ul>
+        {%- for block in section.blocks -%}
+          {%- if block.settings.text != blank -%}
+            <li {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "OEM Hero",
+  "tag": "section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Factory direct · Private label" },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Private label teeth whitening products for modern beauty brands" },
+    { "type": "textarea", "id": "subtitle", "label": "Subtitle", "default": "OEM and ODM solutions for whitening strips, gels, powders, LED kits and custom packaging built for retail growth." },
+    { "type": "text", "id": "button_label", "label": "Primary button", "default": "Request a quote" },
+    { "type": "url", "id": "button_link", "label": "Primary button link" },
+    { "type": "text", "id": "button_secondary_label", "label": "Secondary button", "default": "Bekijk producten" },
+    { "type": "url", "id": "button_secondary_link", "label": "Secondary button link" },
+    { "type": "text", "id": "card_title", "label": "Card title", "default": "OEM / ODM Solutions" }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Card feature",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Text", "default": "Custom formulation support" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "OEM Hero",
+      "blocks": [
+        { "type": "feature", "settings": { "text": "Custom formulation support" } },
+        { "type": "feature", "settings": { "text": "Low MOQ, fast sampling" } },
+        { "type": "feature", "settings": { "text": "GMP / ISO / CE aligned" } },
+        { "type": "feature", "settings": { "text": "Custom packaging & molds" } },
+        { "type": "feature", "settings": { "text": "Free samples in 48 hours" } },
+        { "type": "feature", "settings": { "text": "72M+ annual production capacity" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
