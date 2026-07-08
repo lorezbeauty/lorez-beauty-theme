@@ -22,6 +22,14 @@
         "type": "footer",
         "settings": {}
       }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "16706268198842840686": {
+        "type": "shopify://apps/sternify/blocks/reset_css/fcc6e879-7d9e-4924-b387-68cfab68cec6",
+        "disabled": false,
+        "settings": {}
+      }
     }
   }
 }
