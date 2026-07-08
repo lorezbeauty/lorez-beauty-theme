@@ -9,9 +9,9 @@
  */
 {
   "current": {
-    "color_background": "#fbf7f5",
-    "color_text": "#3a2e2e",
-    "color_accent": "#c4847a",
+    "color_background": "#f8ede8",
+    "color_text": "#6b4f4f",
+    "color_accent": "#c99595",
     "base_font_size": 16,
     "sections": {
       "header": {
@@ -20,14 +20,6 @@
       },
       "footer": {
         "type": "footer",
-        "settings": {}
-      }
-    },
-    "content_for_index": [],
-    "blocks": {
-      "16706268198842840686": {
-        "type": "shopify://apps/sternify/blocks/reset_css/fcc6e879-7d9e-4924-b387-68cfab68cec6",
-        "disabled": false,
         "settings": {}
       }
     }

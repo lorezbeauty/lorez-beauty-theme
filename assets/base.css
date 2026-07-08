@@ -1,19 +1,25 @@
 /* Lorez Luxury — Dior-inspired theme */
 
 :root {
-  /* Lorez Blush — warm K-beauty palette (converts better for women 25–45 than cold black/white) */
-  --color-black: #3a2e2e;
+  /* Lorez Rose — dusty rose / mauve monochromatic palette */
+  --color-black: #6b4f4f;
   --color-white: #ffffff;
-  --color-cream: #f5ebe8;
-  --color-blush: #fbf7f5;
-  --color-warm-gray: #8b7370;
-  --color-light-gray: #e8ded8;
+  --color-cream: #f5e1dc;
+  --color-blush: #f8ede8;
+  --color-warm-gray: #a67b7b;
+  --color-light-gray: #edd5cf;
   --color-accent: {{ settings.color_accent }};
-  --color-accent-dark: #a86b62;
-  --color-rose-soft: #e8c4c4;
-  --color-champagne: #c9a87c;
+  --color-accent-dark: #9e6b6b;
+  --color-rose-dark: #9e6b6b;
+  --color-rose-mid: #c99595;
+  --color-rose-light: #f5e1dc;
+  --color-rose-soft: #f5d5d0;
+  --color-rose-deep: #a67b7b;
+  --color-champagne: #c99595;
   --color-text: {{ settings.color_text }};
   --color-bg: {{ settings.color_background }};
+  --gradient-hero: linear-gradient(180deg, #f5d5d0 0%, #c99595 50%, #a67b7b 100%);
+  --gradient-rose: linear-gradient(135deg, #9e6b6b 0%, #a67b7b 50%, #c99595 100%);
   --font-serif: 'Italiana', Georgia, 'Times New Roman', serif;
   --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-size-base: {{ settings.base_font_size }}px;
@@ -185,7 +191,7 @@ ul, ol {
 
 /* Announcement bar */
 .announcement-bar {
-  background: linear-gradient(90deg, #8b5a52 0%, var(--color-accent) 100%);
+  background: var(--color-rose-dark);
   color: var(--color-white);
   text-align: center;
   font-size: 0.6875rem;
@@ -232,30 +238,30 @@ ul, ol {
 .header--transparent {
   position: fixed;
   width: 100%;
-  background: transparent;
-  border-bottom-color: transparent;
-  color: var(--color-white);
+  background: var(--color-white);
+  border-bottom-color: var(--color-light-gray);
+  color: var(--color-rose-dark);
 }
 
 .header--transparent .header__icon,
 .header--transparent .header__menu-btn {
-  color: var(--color-white);
+  color: var(--color-rose-dark);
 }
 
 .header--transparent .header__logo-text {
-  color: var(--color-white);
+  color: var(--color-rose-dark);
 }
 
 .header--scrolled {
   background: var(--color-white);
   border-bottom-color: var(--color-light-gray);
-  color: var(--color-black);
+  color: var(--color-rose-dark);
 }
 
 .header--scrolled .header__icon,
 .header--scrolled .header__menu-btn,
 .header--scrolled .header__logo-text {
-  color: var(--color-black);
+  color: var(--color-rose-dark);
 }
 
 .header__inner {
@@ -281,7 +287,7 @@ ul, ol {
   font-size: 0.6875rem;
   letter-spacing: var(--letter-spacing-wide);
   text-transform: uppercase;
-  color: var(--color-black);
+  color: var(--color-rose-dark);
   padding: 8px 0;
 }
 
@@ -300,7 +306,7 @@ ul, ol {
   font-weight: 400;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--color-black);
+  color: var(--color-rose-dark);
 }
 
 .header__logo img {
@@ -319,7 +325,7 @@ ul, ol {
 .header__icon {
   display: flex;
   align-items: center;
-  color: var(--color-black);
+  color: var(--color-rose-dark);
   padding: 4px;
   position: relative;
 }
@@ -418,6 +424,7 @@ ul, ol {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+  background: var(--gradient-hero);
 }
 
 .hero__media {
@@ -435,7 +442,7 @@ ul, ol {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.05) 100%);
+  background: linear-gradient(180deg, rgba(245, 213, 208, 0.1) 0%, rgba(201, 149, 149, 0.25) 50%, rgba(166, 123, 123, 0.45) 100%);
 }
 
 .hero__content {
@@ -758,7 +765,7 @@ ul, ol {
 .newsletter {
   padding: 80px var(--gutter);
   text-align: center;
-  background: linear-gradient(135deg, #4a3535 0%, #8b5a52 50%, var(--color-accent) 100%);
+  background: var(--gradient-rose);
   color: var(--color-white);
 }
 
@@ -1411,7 +1418,7 @@ ul, ol {
 /* Bundle banner */
 .bundle-banner {
   padding: 80px var(--gutter);
-  background: linear-gradient(135deg, #4a3535 0%, #8b5a52 100%);
+  background: var(--gradient-rose);
   color: var(--color-white);
   text-align: center;
 }
@@ -1599,9 +1606,21 @@ ul, ol {
   color: var(--color-white);
 }
 
+.hero .btn--white {
+  background: var(--color-white);
+  color: var(--color-rose-dark);
+  border-color: var(--color-white);
+}
+
+.hero .btn--white:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
 /* Trust bar */
 .trust-bar {
-  background: linear-gradient(90deg, #4a3535 0%, #8b5a52 100%);
+  background: var(--color-rose-dark);
   color: var(--color-white);
   padding: 14px var(--gutter);
 }
@@ -1810,23 +1829,23 @@ ul, ol {
 }
 
 .ugc-proof__placeholder--1 {
-  background: linear-gradient(145deg, #e8c4c4 0%, #c4847a 55%, #8b5a52 100%);
+  background: linear-gradient(145deg, #f5d5d0 0%, #c99595 55%, #9e6b6b 100%);
 }
 
 .ugc-proof__placeholder--2 {
-  background: linear-gradient(145deg, #f5ebe8 0%, #e8c4c4 50%, #c4847a 100%);
+  background: linear-gradient(145deg, #f8ede8 0%, #f5e1dc 50%, #c99595 100%);
 }
 
 .ugc-proof__placeholder--3 {
-  background: linear-gradient(145deg, #c9a87c 0%, #c4847a 45%, #a86b62 100%);
+  background: linear-gradient(145deg, #f5e1dc 0%, #c99595 45%, #a67b7b 100%);
 }
 
 .ugc-proof__placeholder--4 {
-  background: linear-gradient(145deg, #fbf7f5 0%, #e8ded8 50%, #c4847a 100%);
+  background: linear-gradient(145deg, #f8ede8 0%, #edd5cf 50%, #c99595 100%);
 }
 
 .ugc-proof__placeholder--5 {
-  background: linear-gradient(145deg, #8b7370 0%, #c4847a 60%, #e8c4c4 100%);
+  background: linear-gradient(145deg, #a67b7b 0%, #c99595 60%, #f5d5d0 100%);
 }
 
 .ugc-proof__gradient {
@@ -1851,7 +1870,7 @@ ul, ol {
 }
 
 .ugc-proof__stars {
-  color: #e8c4c4;
+  color: #f5d5d0;
   font-size: 0.6875rem;
   letter-spacing: 0.12em;
   margin-bottom: 10px;
@@ -2094,9 +2113,7 @@ ul, ol {
 .hero__fallback-gradient {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(196, 132, 122, 0.35) 0%, transparent 60%),
-    linear-gradient(160deg, #3a2e2e 0%, #6b4f4a 40%, #c4847a 85%, #f5ebe8 100%);
+  background: var(--gradient-hero);
 }
 
 .hero__product-showcase {
@@ -2333,7 +2350,7 @@ ul, ol {
   position: relative;
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  background: linear-gradient(145deg, #f5ebe8 0%, #e8ded8 100%);
+  background: linear-gradient(145deg, #f8ede8 0%, #edd5cf 100%);
 }
 
 .smile-product-card__img--purple {
@@ -2357,7 +2374,7 @@ ul, ol {
 }
 
 .smile-product-card__img--pap {
-  background: linear-gradient(145deg, #fdf5f3 0%, #e8c4c4 50%, #c4847a 100%);
+  background: linear-gradient(145deg, #fdf5f3 0%, #f5d5d0 50%, #c99595 100%);
 }
 
 .smile-product-card__photo {
@@ -2467,7 +2484,7 @@ ul, ol {
 /* ── Final CTA (whitening) ── */
 .quote-cta--whitening {
   padding: 72px var(--gutter);
-  background: linear-gradient(135deg, #3a2e2e 0%, #6b4f4a 50%, #c4847a 100%);
+  background: var(--gradient-rose);
   color: var(--color-white);
 }
 
