@@ -1,109 +1,130 @@
-<section class="smile-products" id="products">
-  <div class="smile-products__inner">
-    {%- if section.settings.eyebrow != blank -%}
-      <p class="eyebrow smile-products__eyebrow">{{ section.settings.eyebrow }}</p>
-    {%- endif -%}
-    {%- if section.settings.title != blank -%}
-      <h2 class="heading-lg smile-products__title">{{ section.settings.title }}</h2>
-    {%- endif -%}
-    {%- if section.settings.subtitle != blank -%}
-      <p class="smile-products__subtitle">{{ section.settings.subtitle }}</p>
-    {%- endif -%}
-    <div class="smile-products-grid">
-      {%- for block in section.blocks -%}
-        {%- assign product = block.settings.product -%}
-        {%- if product == blank and block.settings.product_handle != blank -%}
-          {%- assign product = all_products[block.settings.product_handle] -%}
-        {%- endif -%}
-        {%- assign fallback_url = block.settings.fallback_image_url -%}
-        {%- assign fallback_asset = block.settings.fallback_asset -%}
-        {%- assign placeholder_class = block.settings.placeholder_style | default: 'default' -%}
-        {%- if product != blank -%}
-          <article class="smile-product-card" {{ block.shopify_attributes }}>
-            <a href="{{ product.url }}" class="smile-product-card__img smile-product-card__img--{{ placeholder_class }}">
-              {%- if product.featured_media -%}
-                {{ product.featured_media | image_url: width: 800 | image_tag: loading: 'lazy', alt: product.title, class: 'smile-product-card__photo' }}
-              {%- elsif fallback_asset != blank -%}
-                <img src="{{ fallback_asset | asset_url }}" alt="{{ product.title }}" loading="lazy" class="smile-product-card__photo" width="400" height="480">
-              {%- elsif fallback_url != blank -%}
-                <img src="{{ fallback_url }}" alt="{{ product.title }}" loading="lazy" class="smile-product-card__photo" width="400" height="480">
-              {%- else -%}
-                <div class="smile-product-card__placeholder" aria-hidden="true">
-                  <span class="smile-product-card__placeholder-icon">{{ block.settings.fallback_icon | default: '✨' }}</span>
-                  <span class="smile-product-card__placeholder-label">{{ product.title | truncate: 40 }}</span>
-                </div>
-              {%- endif -%}
-              {%- if block.settings.badge != blank -%}
-                <span class="smile-product-card__badge">{{ block.settings.badge }}</span>
-              {%- endif -%}
-            </a>
-            <div class="smile-product-card__body">
-              <h3 class="smile-product-card__name"><a href="{{ product.url }}">{{ product.title }}</a></h3>
-              <p class="smile-product-card__desc">{{ block.settings.description | default: product.description | strip_html | truncate: 110 }}</p>
-              <div class="smile-product-card__footer">
-                <span class="smile-product-card__price">{{ product.price | money }}</span>
-                <a href="{{ product.url }}" class="btn btn--smile">{{ section.settings.button_label | default: 'Shop now' }}</a>
-              </div>
-            </div>
-          </article>
-        {%- endif -%}
-      {%- endfor -%}
-    </div>
-    {%- if section.settings.footer_cta_label != blank -%}
-      <div class="smile-products__cta">
-        <a href="{{ section.settings.footer_cta_link }}" class="btn btn--filled">{{ section.settings.footer_cta_label }}</a>
-      </div>
-    {%- endif -%}
-  </div>
-</section>
-
-{% schema %}
-{
-  "name": "Whitening products",
-  "tag": "section",
-  "max_blocks": 12,
-  "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Shop smile care" },
-    { "type": "text", "id": "title", "label": "Title", "default": "Featured whitening products" },
-    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Tier A essentials — strips, patches, pen and daily care" },
-    { "type": "text", "id": "button_label", "label": "Card button label", "default": "Shop now" },
-    { "type": "text", "id": "footer_cta_label", "label": "Footer CTA label" },
-    { "type": "url", "id": "footer_cta_link", "label": "Footer CTA link" }
-  ],
-  "blocks": [
-    {
-      "type": "product",
-      "name": "Product",
-      "settings": [
-        { "type": "product", "id": "product", "label": "Product" },
-        { "type": "text", "id": "product_handle", "label": "Product handle (fallback lookup)" },
-        { "type": "text", "id": "badge", "label": "Badge", "default": "Featured" },
-        { "type": "textarea", "id": "description", "label": "Short description (optional)" },
-        { "type": "text", "id": "fallback_icon", "label": "Fallback icon", "default": "✨" },
-        { "type": "text", "id": "fallback_asset", "label": "Fallback theme asset filename", "info": "e.g. product-pack-pap-strips.jpg — used before CDN URL" },
-        { "type": "text", "id": "fallback_image_url", "label": "Fallback image URL (CDN)" },
-        {
-          "type": "select",
-          "id": "placeholder_style",
-          "label": "Placeholder gradient",
-          "options": [
-            { "value": "default", "label": "Blush" },
-            { "value": "purple", "label": "Purple strips" },
-            { "value": "coconut", "label": "Coconut mint" },
-            { "value": "charcoal", "label": "Charcoal" },
-            { "value": "pen", "label": "Whitening pen" },
-            { "value": "flosser", "label": "Water flosser" },
-            { "value": "pap", "label": "PAP+ flagship" }
-          ],
-          "default": "default"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Whitening products"
-    }
-  ]
-}
-{% endschema %}
+<section class="smile-products" id="products">
+  <div class="smile-products__inner">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="eyebrow smile-products__eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="heading-lg smile-products__title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <p class="smile-products__subtitle">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+    <div class="smile-products-grid">
+      {%- for block in section.blocks -%}
+        {%- assign product = block.settings.product -%}
+        {%- if product == blank and block.settings.product_handle != blank -%}
+          {%- assign product = all_products[block.settings.product_handle] -%}
+        {%- endif -%}
+        {%- assign fallback_url = block.settings.fallback_image_url -%}
+        {%- assign fallback_asset = block.settings.fallback_asset -%}
+        {%- assign placeholder_class = block.settings.placeholder_style | default: 'default' -%}
+        {%- assign card_title = block.settings.card_title -%}
+        {%- if card_title == blank and product != blank -%}
+          {%- assign card_title = product.title -%}
+        {%- endif -%}
+        {%- assign card_url = product.url -%}
+        {%- if card_url == blank and block.settings.product_handle != blank -%}
+          {%- assign card_url = '/products/' | append: block.settings.product_handle -%}
+        {%- endif -%}
+        {%- if product != blank or fallback_asset != blank or fallback_url != blank -%}
+          <article class="smile-product-card" {{ block.shopify_attributes }}>
+            <a href="{{ card_url | default: '#' }}" class="smile-product-card__img smile-product-card__img--{{ placeholder_class }}">
+              {%- if product.featured_media -%}
+                {{ product.featured_media | image_url: width: 800 | image_tag: loading: 'lazy', alt: card_title, class: 'smile-product-card__photo' }}
+              {%- elsif fallback_asset != blank -%}
+                <img src="{{ fallback_asset | asset_url }}" alt="{{ card_title }}" loading="lazy" class="smile-product-card__photo" width="400" height="480">
+              {%- elsif fallback_url != blank -%}
+                <img src="{{ fallback_url }}" alt="{{ card_title }}" loading="lazy" class="smile-product-card__photo" width="400" height="480">
+              {%- else -%}
+                <div class="smile-product-card__placeholder" aria-hidden="true">
+                  <span class="smile-product-card__placeholder-icon">{{ block.settings.fallback_icon | default: '✨' }}</span>
+                  <span class="smile-product-card__placeholder-label">{{ card_title | truncate: 40 }}</span>
+                </div>
+              {%- endif -%}
+              {%- if block.settings.badge != blank -%}
+                <span class="smile-product-card__badge">{{ block.settings.badge }}</span>
+              {%- endif -%}
+            </a>
+            <div class="smile-product-card__body">
+              {%- if card_title != blank -%}
+                <h3 class="smile-product-card__name"><a href="{{ card_url | default: '#' }}">{{ card_title }}</a></h3>
+              {%- endif -%}
+              {%- if block.settings.description != blank -%}
+                <p class="smile-product-card__desc">{{ block.settings.description }}</p>
+              {%- elsif product != blank -%}
+                <p class="smile-product-card__desc">{{ product.description | strip_html | truncate: 110 }}</p>
+              {%- endif -%}
+              <div class="smile-product-card__footer">
+                {%- if product != blank -%}
+                  <span class="smile-product-card__price">{{ product.price | money }}</span>
+                {%- elsif block.settings.card_price != blank -%}
+                  <span class="smile-product-card__price">{{ block.settings.card_price }}</span>
+                {%- endif -%}
+                <a href="{{ card_url | default: '#' }}" class="btn btn--smile">{{ section.settings.button_label | default: 'Shop now' }}</a>
+              </div>
+            </div>
+          </article>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.footer_cta_label != blank -%}
+      <div class="smile-products__cta">
+        <a href="{{ section.settings.footer_cta_link }}" class="btn btn--filled">{{ section.settings.footer_cta_label }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Whitening products",
+  "tag": "section",
+  "max_blocks": 12,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Shop smile care" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Featured whitening products" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Tier A essentials — strips, patches, pen and daily care" },
+    { "type": "text", "id": "button_label", "label": "Card button label", "default": "Shop now" },
+    { "type": "text", "id": "footer_cta_label", "label": "Footer CTA label" },
+    { "type": "url", "id": "footer_cta_link", "label": "Footer CTA link" }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" },
+        { "type": "text", "id": "product_handle", "label": "Product handle (fallback lookup)" },
+        { "type": "text", "id": "card_title", "label": "Card title (when product unavailable)" },
+        { "type": "text", "id": "card_price", "label": "Display price (when product unavailable)", "info": "e.g. €24.95" },
+        { "type": "text", "id": "badge", "label": "Badge", "default": "Featured" },
+        { "type": "textarea", "id": "description", "label": "Short description (optional)" },
+        { "type": "text", "id": "fallback_icon", "label": "Fallback icon", "default": "✨" },
+        { "type": "text", "id": "fallback_asset", "label": "Fallback theme asset filename", "info": "e.g. product-pack-pap-strips.jpg — used before CDN URL" },
+        { "type": "text", "id": "fallback_image_url", "label": "Fallback image URL (CDN)" },
+        {
+          "type": "select",
+          "id": "placeholder_style",
+          "label": "Placeholder gradient",
+          "options": [
+            { "value": "default", "label": "Blush" },
+            { "value": "purple", "label": "Purple strips" },
+            { "value": "coconut", "label": "Coconut mint" },
+            { "value": "charcoal", "label": "Charcoal" },
+            { "value": "pen", "label": "Whitening pen" },
+            { "value": "flosser", "label": "Water flosser" },
+            { "value": "pap", "label": "PAP+ flagship" }
+          ],
+          "default": "default"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Whitening products"
+    }
+  ]
+}
+{% endschema %}
+
