@@ -13,20 +13,20 @@
       {
         "type": "color",
         "id": "color_background",
-        "label": "Background (light blush)",
-        "default": "#f8ede8"
+        "label": "Background (warm ivory)",
+        "default": "#fbf7f5"
       },
       {
         "type": "color",
         "id": "color_text",
-        "label": "Text (dusty rose)",
-        "default": "#6b4f4f"
+        "label": "Text (warm espresso)",
+        "default": "#3a2e2e"
       },
       {
         "type": "color",
         "id": "color_accent",
-        "label": "Accent / CTA (rose mid)",
-        "default": "#c99595"
+        "label": "Accent / CTA (dusty rose)",
+        "default": "#c4847a"
       }
     ]
   },
