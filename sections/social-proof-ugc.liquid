@@ -28,8 +28,17 @@
                   loading: 'lazy',
                   class: 'ugc-proof__img',
                   sizes: '(max-width: 640px) 78vw, 280px',
-                  alt: block.settings.author | append: ' — Lorez Beauty customer review'
+                  alt: block.settings.author | append: ' — Lorez Beauty customer'
                 }}
+              {%- elsif block.settings.asset_image != blank -%}
+                <img
+                  class="ugc-proof__img"
+                  src="{{ block.settings.asset_image | asset_url }}"
+                  alt="{{ block.settings.author | escape }} — Lorez Beauty customer"
+                  loading="lazy"
+                  width="400"
+                  height="520"
+                >
               {%- elsif block.settings.fallback_image_url != blank -%}
                 <img
                   class="ugc-proof__img"
@@ -49,13 +58,15 @@
                   <blockquote class="ugc-proof__quote">"{{ block.settings.quote }}"</blockquote>
                 {%- endif -%}
                 <footer class="ugc-proof__footer">
-                  <span class="ugc-proof__verified">
-                    <svg class="ugc-proof__verified-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                      <circle cx="7" cy="7" r="7" fill="currentColor"/>
-                      <path d="M4 7l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Verified
-                  </span>
+                  {%- if section.settings.badge_label != blank -%}
+                    <span class="ugc-proof__verified">
+                      <svg class="ugc-proof__verified-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                        <circle cx="7" cy="7" r="7" fill="currentColor"/>
+                        <path d="M4 7l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      {{ section.settings.badge_label }}
+                    </span>
+                  {%- endif -%}
                   <cite class="ugc-proof__author">
                     <strong>{{ block.settings.author }}</strong>
                     {%- if block.settings.role != blank -%}
@@ -83,7 +94,8 @@
     { "type": "text", "id": "title_before", "label": "Title (before accent)", "default": "What " },
     { "type": "text", "id": "title_accent", "label": "Title accent (colored)", "default": "Daily Smile Lovers" },
     { "type": "text", "id": "title_after", "label": "Title (after accent)", "default": " Are Saying" },
-    { "type": "textarea", "id": "subtitle", "label": "Subtitle", "default": "Over 10,000+ customers have brightened their smile with Lorez Beauty — gentle PAP+ whitening, zero sensitivity." }
+    { "type": "textarea", "id": "subtitle", "label": "Subtitle", "default": "Join thousands of smile lovers discovering gentle PAP+ whitening — no peroxide, no sensitivity." },
+    { "type": "text", "id": "badge_label", "label": "Card badge", "default": "Lorez customer", "info": "Use \"Lorez customer\" for illustrative UGC. Switch to \"Verified buyer\" only with real Judge.me reviews." }
   ],
   "blocks": [
     {
@@ -91,7 +103,8 @@
       "name": "UGC review card",
       "settings": [
         { "type": "image_picker", "id": "image", "label": "Lifestyle photo", "info": "Replace with real UGC from Judge.me or creator shoots." },
-        { "type": "text", "id": "fallback_image_url", "label": "Placeholder image URL", "info": "Used until you upload a photo in the picker above." },
+        { "type": "text", "id": "asset_image", "label": "Theme asset filename", "info": "e.g. ugc-review-1.jpg — used if no image picker upload." },
+        { "type": "text", "id": "fallback_image_url", "label": "Fallback image URL", "info": "Used if neither image picker nor theme asset is set." },
         { "type": "textarea", "id": "quote", "label": "Quote" },
         { "type": "text", "id": "author", "label": "Name", "default": "Sarah M." },
         { "type": "text", "id": "role", "label": "Role / context", "default": "Busy Professional" }
@@ -105,46 +118,46 @@
         {
           "type": "review",
           "settings": {
-            "fallback_image_url": "https://images.unsplash.com/photo-1612892487496-74d4f90acd0e?w=600&h=780&fit=crop&q=80",
-            "quote": "Three coffees a day used to show on my teeth. After two weeks with the PAP+ strips, my smile looks noticeably brighter — and zero sensitivity.",
-            "author": "Sarah M.",
-            "role": "Busy Professional"
+            "asset_image": "ugc-review-1.jpg",
+            "quote": "I drink three coffees before lunch — my teeth used to show it. Two weeks with the PAP+ strips and colleagues keep asking what changed. No sensitivity at all.",
+            "author": "Emma T.",
+            "role": "Coffee lover"
           }
         },
         {
           "type": "review",
           "settings": {
-            "fallback_image_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&h=780&fit=crop&q=80",
-            "quote": "Wedding in six weeks — I needed something gentle that actually works. The Complete Smile Bundle gave me confidence without the salon price tag.",
-            "author": "Jessica T.",
+            "asset_image": "ugc-review-2.jpg",
+            "quote": "Six weeks until the wedding and I refused harsh peroxide kits. The Complete Smile Bundle fits my morning routine — brighter smile, zero drama.",
+            "author": "Sofia K.",
             "role": "Bride-to-be"
           }
         },
         {
           "type": "review",
           "settings": {
-            "fallback_image_url": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&h=780&fit=crop&q=80",
-            "quote": "I'm a coffee addict and my dentist noticed the difference. The strips stay put for 30 minutes while I answer emails. No sticky mess.",
+            "asset_image": "ugc-review-3.jpg",
+            "quote": "My barista friends roast me for ordering doubles. These strips stay put while I catch up on emails. Gradual brightening without that chemical sting.",
             "author": "Marco L.",
-            "role": "Coffee Lover"
+            "role": "Coffee lover"
           }
         },
         {
           "type": "review",
           "settings": {
-            "fallback_image_url": "https://images.unsplash.com/photo-1531746020798-e6953c6e8a04?w=600&h=780&fit=crop&q=80",
-            "quote": "Finally whitening that fits between school drop-off and meetings. Twenty minutes on the couch, done. My kids even asked why I'm smiling more.",
-            "author": "Emma K.",
-            "role": "Working Mom"
+            "asset_image": "ugc-review-4.jpg",
+            "quote": "School run, meetings, dinner — zero time for salon visits. Twenty minutes on the couch with Lorez and I'm done. My kids noticed I'm smiling more.",
+            "author": "Anna W.",
+            "role": "Working mom"
           }
         },
         {
           "type": "review",
           "settings": {
-            "fallback_image_url": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&h=780&fit=crop&q=80",
-            "quote": "The coconut mint patches are my Sunday ritual. Fresh breath and a gradual brightening — way better than harsh peroxide kits I tried before.",
+            "asset_image": "ugc-review-5.jpg",
+            "quote": "Coconut mint patches are my Sunday reset. Fresh breath, gradual brightening, and none of that harsh peroxide burn from old kits.",
             "author": "Lisa V.",
-            "role": "Self-care Enthusiast"
+            "role": "Self-care Sunday"
           }
         }
       ]
