@@ -1,4 +1,4 @@
-<section class="quote-cta" id="quote-cta-{{ section.id }}">
+<section class="quote-cta{% if section.settings.style == 'whitening' %} quote-cta--whitening{% endif %}" id="quote-cta-{{ section.id }}">
   <div class="quote-cta__inner">
     <div class="quote-cta__content">
       {%- if section.settings.heading != blank -%}
@@ -34,10 +34,14 @@
 </section>
 
 <style>
-  #quote-cta-{{ section.id }} {
+  #quote-cta-{{ section.id }}:not(.quote-cta--whitening) {
     padding: 56px var(--gutter);
     background: linear-gradient(120deg, #b84f68 0%, #d16b7b 100%);
     color: #fff;
+  }
+
+  #quote-cta-{{ section.id }}.quote-cta--whitening {
+    padding: 72px var(--gutter);
   }
 
   #quote-cta-{{ section.id }} .quote-cta__inner {
@@ -150,6 +154,10 @@
 {
   "name": "Request Quote CTA",
   "settings": [
+    { "type": "select", "id": "style", "label": "Style", "options": [
+      { "value": "default", "label": "Default" },
+      { "value": "whitening", "label": "Whitening sales" }
+    ], "default": "default" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Ready to launch your whitening line?" },
     { "type": "textarea", "id": "description", "label": "Description", "default": "Connect with our team for samples, custom development and private label support." },
     { "type": "text", "id": "feature_1", "label": "Feature 1", "default": "Free samples in 48 hours" },

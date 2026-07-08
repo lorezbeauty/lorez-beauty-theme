@@ -10,7 +10,7 @@
       <p class="routine-steps__subtitle">{{ section.settings.subtitle }}</p>
     {%- endif -%}
   </div>
-  <div class="routine-steps__grid">
+  <div class="routine-steps__grid routine-steps__grid--{{ section.blocks.size }}">
     {%- for block in section.blocks -%}
       <div class="routine-step" {{ block.shopify_attributes }}>
         {%- if block.settings.step_num != blank -%}

@@ -11,17 +11,11 @@
   "name": "Footer group",
   "type": "footer",
   "sections": {
-    "oem_footer": {
-      "type": "oem-footer",
-      "settings": {
-        "tagline": "Private label whitening solutions for modern brands."
-      }
-    },
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "title": "The exclusive world of Lorez Beauty",
-        "subtitle": "Subscribe for early access to new products and special offers."
+        "title": "Join the Lorez Beauty smile club",
+        "subtitle": "Early access to new products, whitening tips and exclusive offers."
       }
     },
     "footer": {
@@ -29,5 +23,5 @@
       "settings": {}
     }
   },
-  "order": ["oem_footer", "newsletter", "footer"]
+  "order": ["newsletter", "footer"]
 }

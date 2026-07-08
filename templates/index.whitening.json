@@ -14,11 +14,11 @@
       "settings": {
         "eyebrow": "Lorez Beauty · Smile Care",
         "title": "Whiter teeth in 30 minutes",
-        "subtitle": "PAP+ whitening strips · No peroxide · No sensitivity",
+        "subtitle": "PAP+ whitening strips — no peroxide, no sensitivity",
         "trust_line": "14 treatments · Free shipping from €50 · 14-day returns",
-        "kit_price_eur": "29.95",
-        "button_label": "Shop PAP+ strips",
-        "button_link": "/products/lorez-beauty-pap-whitening-strips",
+        "kit_price_eur": "42.95",
+        "button_label": "Shop Complete Smile Bundle",
+        "button_link": "/products/complete-smile-whitening-bundle",
         "button_secondary_label": "How it works",
         "button_secondary_link": "/#how-it-works"
       }
@@ -63,6 +63,55 @@
       ],
       "settings": {}
     },
+    "problem": {
+      "type": "custom-features",
+      "blocks": {
+        "b1": {
+          "type": "card",
+          "settings": {
+            "icon": "☕",
+            "title": "Surface stains",
+            "text": "Coffee, tea, red wine and smoking leave yellow tones that brushing alone cannot remove."
+          }
+        },
+        "b2": {
+          "type": "card",
+          "settings": {
+            "icon": "😬",
+            "title": "Sensitivity fears",
+            "text": "Many skip whitening because peroxide formulas cause pain. PAP+ is developed as a gentler alternative."
+          }
+        },
+        "b3": {
+          "type": "card",
+          "settings": {
+            "icon": "🏠",
+            "title": "Salon costs",
+            "text": "Professional whitening costs hundreds. Lorez brings salon-style results to your couch for under €50."
+          }
+        },
+        "b4": {
+          "type": "card",
+          "settings": {
+            "icon": "✨",
+            "title": "The Lorez solution",
+            "text": "PAP+ strips, coconut patches and a whitening pen — a complete 2-week routine with no sticky residue."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "section_id": "why-lorez",
+        "eyebrow": "The problem",
+        "title": "Coffee, wine & daily life stain your smile",
+        "subtitle": "Classic peroxide bleaching can cause sensitivity. Lorez Beauty is designed for gentle, effective whitening at home — without the burn."
+      }
+    },
     "how": {
       "type": "routine-steps",
       "blocks": {
@@ -72,7 +121,7 @@
             "step_num": "STEP 01",
             "time": "1 min",
             "title": "Dry your teeth",
-            "description": "Pat your teeth dry with a tissue for the best adhesion."
+            "description": "Pat your teeth dry with a tissue for the best strip adhesion."
           }
         },
         "step_2": {
@@ -81,7 +130,7 @@
             "step_num": "STEP 02",
             "time": "1 min",
             "title": "Apply the strips",
-            "description": "Place the strip on your upper and lower teeth. Press gently."
+            "description": "Place the strip on your upper and lower teeth. Press gently along the gum line."
           }
         },
         "step_3": {
@@ -90,7 +139,7 @@
             "step_num": "STEP 03",
             "time": "30 min",
             "title": "Wait & relax",
-            "description": "Read, work or watch TV — the PAP+ formula does the work."
+            "description": "Read, work or watch TV — the PAP+ formula does the work. No rinsing needed."
           }
         },
         "step_4": {
@@ -98,8 +147,8 @@
           "settings": {
             "step_num": "STEP 04",
             "time": "Done",
-            "title": "Remove the strip",
-            "description": "No rinsing needed. No sticky residue. Brighter smile."
+            "title": "Reveal your smile",
+            "description": "Remove the strip. No sticky residue. Use the pen for touch-ups between sessions."
           }
         }
       },
@@ -116,33 +165,151 @@
         "subtitle": "30 minutes per session · At home on your couch"
       }
     },
+    "products": {
+      "type": "whitening-products",
+      "blocks": {
+        "p1": {
+          "type": "product",
+          "settings": {
+            "product": "lorez-beauty-pap-whitening-strips",
+            "badge": "Flagship",
+            "description": "PAP+ formula — 14 treatments, 30 min per session. No peroxide, no sensitivity.",
+            "fallback_icon": "✨",
+            "placeholder_style": "pap"
+          }
+        },
+        "p2": {
+          "type": "product",
+          "settings": {
+            "product": "cj-purple-whitening-strips-stain-removal",
+            "badge": "Bestseller",
+            "description": "Purple stain-correcting strips for surface discoloration. From €5.95.",
+            "fallback_icon": "💜",
+            "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/35b2c425-af58-4904-83c3-1ddc3c915025.jpg?v=1783507915",
+            "placeholder_style": "purple"
+          }
+        },
+        "p3": {
+          "type": "product",
+          "settings": {
+            "product": "cj-coconut-mint-whitening-tooth-patches-14-pack",
+            "badge": "Fresh mint",
+            "description": "Coconut mint adhesive patches — 14 pieces for a refreshing whitening routine.",
+            "fallback_icon": "🥥",
+            "placeholder_style": "coconut"
+          }
+        },
+        "p4": {
+          "type": "product",
+          "settings": {
+            "product": "cj-whitening-tooth-pen-stain-yellowing-care",
+            "badge": "Touch-up",
+            "description": "Precision 4 ml pen for targeted stain and yellowing care between treatments.",
+            "fallback_icon": "🖊",
+            "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/1731854661218078720.jpg?v=1783507748",
+            "placeholder_style": "pen"
+          }
+        },
+        "p5": {
+          "type": "product",
+          "settings": {
+            "product": "cj-activated-charcoal-whitening-toothpaste",
+            "badge": "Daily care",
+            "description": "Activated charcoal paste to polish surface stains between whitening sessions.",
+            "fallback_icon": "🖤",
+            "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/98798b00-93b3-467c-a4bd-9e3f4c1bd279.jpg?v=1783508104",
+            "placeholder_style": "charcoal"
+          }
+        },
+        "p6": {
+          "type": "product",
+          "settings": {
+            "product": "cj-foldable-portable-water-flosser-electric",
+            "badge": "Premium",
+            "description": "Foldable electric water flosser — clean between teeth for a healthier, brighter smile.",
+            "fallback_icon": "💧",
+            "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/1612687247527.jpg?v=1783507679",
+            "placeholder_style": "flosser"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "settings": {
+        "eyebrow": "Shop smile care",
+        "title": "Our best whitening essentials",
+        "subtitle": "Tier A picks only — strips, patches, pen, charcoal paste and water flosser",
+        "button_label": "Shop now",
+        "footer_cta_label": "View Complete Smile Bundle — €42.95",
+        "footer_cta_link": "/products/complete-smile-whitening-bundle"
+      }
+    },
     "kit": {
       "type": "bundle-banner",
       "settings": {
-        "eyebrow": "Complete routine",
+        "eyebrow": "Best value",
         "title": "Complete Smile Whitening Bundle",
-        "subtitle": "PAP+ strips + Coconut Mint Patches + Whitening Tooth Pen · 2-week smile routine",
+        "subtitle": "PAP+ strips + Coconut Mint Patches + Whitening Tooth Pen — your full 2-week smile routine",
         "price": "€42.95",
         "compare_price": "",
         "save_text": "Save €3.90 vs. buying separately",
         "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ NL shipping 2–4 days",
         "product": "complete-smile-whitening-bundle",
         "button_link": "/products/complete-smile-whitening-bundle",
-        "button_label": "Shop bundle",
+        "button_label": "Add bundle to cart",
         "button_secondary_label": "Glow Starter Kit — €16.95",
         "button_secondary_link": "/products/glow-starter-kit",
         "includes": "PAP+ Whitening Strips · Coconut Mint Patches · Whitening Tooth Pen"
       }
     },
-    "editorial": {
-      "type": "editorial-block",
+    "social": {
+      "type": "social-proof",
+      "blocks": {
+        "r1": {
+          "type": "review",
+          "settings": {
+            "quote": "Finally whitening strips that don't hurt. I noticed a difference after the first session — and no sticky residue.",
+            "author": "Sophie V.",
+            "location": "Amsterdam"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "quote": "The Complete Smile Bundle is worth it. Strips for the routine, pen for touch-ups. My teeth look noticeably brighter.",
+            "author": "Emma K.",
+            "location": "Rotterdam"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "quote": "Love the coconut patches — fresh mint breath and whiter teeth. Ordered twice already.",
+            "author": "Lisa M.",
+            "location": "Utrecht"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
       "settings": {
-        "layout": "split",
-        "eyebrow": "Why PAP+",
-        "title": "Brighten without sensitivity",
-        "text": "Classic peroxide bleaching can cause sensitivity. Lorez Beauty PAP+ strips are designed for home use — gentle, effective and with no sticky residue after use.",
-        "button_label": "Order now",
-        "button_link": "/products/lorez-beauty-pap-whitening-strips"
+        "eyebrow": "Real smiles",
+        "title": "Trusted by smile care lovers across Europe",
+        "stat_1": "4.8/5",
+        "stat_1_label": "Average rating",
+        "stat_2": "14",
+        "stat_2_label": "Treatments per PAP+ box",
+        "stat_3": "30 min",
+        "stat_3_label": "Per whitening session"
       }
     },
     "faq": {
@@ -152,14 +319,14 @@
           "type": "question",
           "settings": {
             "question": "Is PAP+ safe for daily use?",
-            "answer": "Use once per day, for up to 14 consecutive days. Then take a 2-week break. Consult your dentist if unsure."
+            "answer": "Use once per day for up to 14 consecutive days, then take a 2-week break. Consult your dentist if unsure."
           }
         },
         "q2": {
           "type": "question",
           "settings": {
             "question": "How quickly will I see results?",
-            "answer": "Many users notice a fresher, brighter smile after the first session. Results vary by person."
+            "answer": "Many customers notice a fresher, brighter smile after the first session. Results vary by person and depend on your starting shade."
           }
         },
         "q3": {
@@ -173,7 +340,7 @@
           "type": "question",
           "settings": {
             "question": "Can I return my order?",
-            "answer": "Yes, within 14 days if the product is unopened. Contact support@lorezbeauty.com"
+            "answer": "Yes, within 14 days if the product is unopened. Contact support@lorezbeauty.com and we'll help you."
           }
         },
         "q5": {
@@ -182,6 +349,13 @@
             "question": "Does it contain peroxide?",
             "answer": "No. Our PAP+ formula is developed as an EU-friendly alternative without hydrogen peroxide."
           }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "How does code LOREZ work?",
+            "answer": "Buy 2 qualifying strip or patch products and get 1 free — the cheapest item is free. Enter LOREZ at checkout."
+          }
         }
       },
       "block_order": [
@@ -189,63 +363,44 @@
         "q2",
         "q3",
         "q4",
-        "q5"
+        "q5",
+        "q6"
       ],
       "settings": {
         "title": "Frequently asked questions",
         "subtitle": "Everything you need to know before you order",
-        "button_label": "Shop PAP+ strips",
-        "button_link": "/products/lorez-beauty-pap-whitening-strips"
+        "button_label": "Shop Complete Smile Bundle",
+        "button_link": "/products/complete-smile-whitening-bundle"
       }
     },
-    "services": {
-      "type": "services",
-      "blocks": {
-        "service_1": {
-          "type": "service",
-          "settings": {
-            "icon": "gift",
-            "title": "14 treatments",
-            "text": "Complete 2-week routine",
-            "link": "/products/lorez-beauty-pap-whitening-strips"
-          }
-        },
-        "service_2": {
-          "type": "service",
-          "settings": {
-            "icon": "shipping",
-            "title": "NL & BE shipping",
-            "text": "2–4 business days",
-            "link": "/policies/shipping-policy"
-          }
-        },
-        "service_3": {
-          "type": "service",
-          "settings": {
-            "icon": "sample",
-            "title": "Premium smile care",
-            "text": "PAP+ formula",
-            "link": "/#how-it-works"
-          }
-        }
-      },
-      "block_order": [
-        "service_1",
-        "service_2",
-        "service_3"
-      ],
+    "cta": {
+      "type": "quote-cta",
       "settings": {
-        "title": "Lorez Beauty services"
+        "style": "whitening",
+        "heading": "Ready for a brighter smile?",
+        "description": "Start with the Complete Smile Bundle — PAP+ strips, coconut patches and a whitening pen. Or try the Glow Starter Kit from €16.95.",
+        "feature_1": "Free shipping from €50",
+        "feature_2": "14-day returns",
+        "feature_3": "No peroxide · no sensitivity",
+        "feature_4": "Code LOREZ: buy 2 get 1 free",
+        "icon": "😁",
+        "visual_text": "Complete Smile Bundle\n\nPAP+ Strips → Patches → Pen\n\n€42.95 · Save €3.90",
+        "button_text": "Shop Complete Smile — €42.95",
+        "button_link": "/products/complete-smile-whitening-bundle",
+        "secondary_text": "Glow Starter Kit — €16.95",
+        "secondary_link": "/products/glow-starter-kit"
       }
     }
   },
   "order": [
     "hero",
     "trust",
+    "problem",
     "how",
+    "products",
     "kit",
-    "editorial",
+    "social",
     "faq",
-    "services"
+    "cta"
   ]
 }

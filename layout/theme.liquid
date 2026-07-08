@@ -3,17 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#b84f68">
+  <meta name="theme-color" content="#c4847a">
   <link rel="canonical" href="{{ canonical_url }}">
   {%- if settings.favicon != blank -%}
     <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
   {%- endif -%}
 
   <title>
-    {%- if template.name == 'index' and template.suffix == 'whitening' -%}
-      Lorez Beauty | PAP+ Whitening Strips — Wittere tanden in 30 min
-    {%- elsif template.name == 'index' -%}
-      Lorez Beauty | Private Label Teeth Whitening Products
+    {%- if template.name == 'index' -%}
+      Lorez Beauty | PAP+ Whitening — Whiter Teeth in 30 Minutes
     {%- else -%}
       {{ page_title }}
       {%- if current_tags %} &ndash; {{ 'general.meta.tags' | t: tags: current_tags.join(', ') }}{% endif -%}
@@ -22,10 +20,8 @@
     {%- endif -%}
   </title>
 
-  {%- if template.name == 'index' and template.suffix == 'whitening' -%}
-    <meta name="description" content="Lorez Beauty PAP+ Whitening Strips — wittere tanden in 30 minuten. Geen peroxide, geen gevoeligheid. 14 behandelingen. Gratis verzending vanaf €50. NL & BE.">
-  {%- elsif template.name == 'index' -%}
-    <meta name="description" content="Lorez Beauty offers private label teeth whitening products, OEM/ODM support and custom packaging for modern beauty brands. Low MOQ, fast sampling.">
+  {%- if template.name == 'index' -%}
+    <meta name="description" content="Lorez Beauty PAP+ whitening strips — whiter teeth in 30 minutes. No peroxide, no sensitivity. Complete Smile Bundle €42.95. Free shipping from €50.">
   {%- elsif page_description -%}
     <meta name="description" content="{{ page_description | escape }}">
   {%- endif -%}
@@ -34,12 +30,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   {{ 'base.css' | asset_url | stylesheet_tag }}
-  {%- if template.name == 'index' and template.suffix == blank -%}
-    {{ 'oem-preview.css' | asset_url | stylesheet_tag }}
-  {%- endif -%}
   <script src="{{ 'theme.js' | asset_url }}" defer></script>
 
   <script>

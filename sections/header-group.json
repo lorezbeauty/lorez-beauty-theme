@@ -15,14 +15,15 @@
       "type": "announcement-bar",
       "settings": {
         "show_announcement": true,
-        "text": "Private label whitening · OEM/ODM · Free samples in 48 hours"
+        "text": "Free shipping from €50 · PAP+ whitening · Code LOREZ: buy 2 get 1 free",
+        "link": "/#kit"
       }
     },
     "header": {
       "type": "header",
       "settings": {
-        "cta_label": "Request a quote →",
-        "cta_link": "/pages/contact"
+        "cta_label": "Shop bundles →",
+        "cta_link": "/#kit"
       }
     }
   },

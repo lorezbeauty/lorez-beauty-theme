@@ -3,9 +3,26 @@
     {%- if section.settings.video != blank -%}
       {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
     {%- elsif section.settings.image != blank -%}
-      {{ section.settings.image | image_url: width: 2000 | image_tag: loading: 'eager', sizes: '100vw' }}
+      {{ section.settings.image | image_url: width: 2000 | image_tag: loading: 'eager', sizes: '100vw', alt: section.settings.title }}
     {%- else -%}
-      <div style="width:100%;height:100%;background:linear-gradient(135deg,#8b5a52 0%,#c4847a 50%,#f5ebe8 100%);"></div>
+      <div class="hero__fallback" aria-hidden="true">
+        <div class="hero__fallback-gradient"></div>
+        <div class="hero__product-showcase">
+          <div class="hero__product-card hero__product-card--back">
+            <span class="hero__product-icon">🥥</span>
+            <span class="hero__product-name">Coconut Patches</span>
+          </div>
+          <div class="hero__product-card hero__product-card--front">
+            <span class="hero__product-icon">✨</span>
+            <span class="hero__product-name">PAP+ Whitening Strips</span>
+            <span class="hero__product-badge">14 treatments</span>
+          </div>
+          <div class="hero__product-card hero__product-card--side">
+            <span class="hero__product-icon">🖊</span>
+            <span class="hero__product-name">Whitening Pen</span>
+          </div>
+        </div>
+      </div>
     {%- endif -%}
   </div>
   <div class="hero__overlay"></div>
