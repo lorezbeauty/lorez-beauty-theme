@@ -22,7 +22,7 @@
     {%- if section.settings.menu.links.size > 0 -%}
       <nav class="header__nav" aria-label="{{ 'accessibility.menu' | t }}">
         {%- for link in section.settings.menu.links -%}
-          <a href="{{ link.url }}">{{ link.title }}</a>
+          <a href="{{ link.url }}">{% render 'nav-link-label', link: link %}</a>
         {%- endfor -%}
       </nav>
     {%- endif -%}
@@ -68,8 +68,11 @@
     </button>
     <nav>
       {%- for link in section.settings.menu.links -%}
-        <a href="{{ link.url }}" class="menu-drawer__nav-link">{{ link.title }}</a>
+        <a href="{{ link.url }}" class="menu-drawer__nav-link">{% render 'nav-link-label', link: link %}</a>
       {%- endfor -%}
+      {%- if section.settings.cta_label != blank -%}
+        <a href="{{ section.settings.cta_link }}" class="menu-drawer__cta">{{ section.settings.cta_label }}</a>
+      {%- endif -%}
     </nav>
   </div>
 </div>
@@ -108,7 +111,7 @@
       "type": "text",
       "id": "cta_label",
       "label": "Header CTA label",
-      "default": "Request a quote →"
+      "default": "Shop bundles →"
     },
     {
       "type": "url",

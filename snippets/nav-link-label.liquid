@@ -1,0 +1,48 @@
+{%- comment -%}
+  English nav labels — overrides Spanish titles from Shopify Admin Navigation.
+  URLs/handles stay from Admin; only display text is forced to English.
+{%- endcomment -%}
+{%- liquid
+  assign key = link.handle | downcase
+  assign title_key = link.title | strip | downcase
+
+  case key
+    when 'inicio', 'home'
+      echo 'Home'
+    when 'tienda', 'shop', 'all', 'all-products', 'catalog'
+      echo 'Shop'
+    when 'contacto', 'contact', 'contactenos', 'contact-us'
+      echo 'Contact'
+    when 'nuestra-historia', 'our-story', 'historia', 'about-us'
+      echo 'Our Story'
+    when 'preguntas-frecuentes', 'faq', 'faqs'
+      echo 'FAQ'
+    when 'results', 'resultados', 'how-it-works'
+      echo 'Results'
+    when 'reviews', 'resenas', 'reseñas', 'social-proof'
+      echo 'Reviews'
+    when 'about', 'acerca', 'about-lorez'
+      echo 'About'
+    else
+      case title_key
+        when 'inicio'
+          echo 'Home'
+        when 'tienda'
+          echo 'Shop'
+        when 'contacto', 'contáctenos', 'contactenos'
+          echo 'Contact'
+        when 'nuestra historia'
+          echo 'Our Story'
+        when 'preguntas frecuentes'
+          echo 'FAQ'
+        when 'resultados'
+          echo 'Results'
+        when 'reseñas', 'resenas'
+          echo 'Reviews'
+        when 'acerca', 'sobre nosotros'
+          echo 'About'
+        else
+          echo link.title
+      endcase
+  endcase
+-%}
