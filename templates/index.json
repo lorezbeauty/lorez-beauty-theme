@@ -175,7 +175,6 @@
             "badge": "Flagship",
             "description": "PAP+ formula — 14 treatments, 30 min per session. No peroxide, no sensitivity.",
             "fallback_icon": "✨",
-            "fallback_image_url": "",
             "placeholder_style": "pap"
           }
         },
@@ -197,7 +196,6 @@
             "badge": "Fresh mint",
             "description": "Coconut mint adhesive patches — 14 pieces for a refreshing whitening routine.",
             "fallback_icon": "🥥",
-            "fallback_image_url": "",
             "placeholder_style": "coconut"
           }
         },
@@ -264,7 +262,6 @@
         "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ NL shipping 2–4 days",
         "product": "complete-smile-whitening-bundle",
         "button_link": "/products/complete-smile-whitening-bundle",
-        "variant_ids": "",
         "button_label": "Add bundle to cart",
         "button_secondary_label": "Glow Starter Kit — €16.95",
         "button_secondary_link": "/products/glow-starter-kit",
@@ -277,9 +274,7 @@
         "r1": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-1.png",
-            "asset_image": "",
-            "fallback_image_url": "",
+            "asset_image": "ugc-review-1.jpg",
             "quote": "I drink three coffees before lunch — my teeth used to show it. Two weeks with the PAP+ strips and colleagues keep asking what changed. No sensitivity at all.",
             "author": "Emma T.",
             "role": "Coffee lover"
@@ -288,9 +283,7 @@
         "r2": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-2.png",
-            "asset_image": "",
-            "fallback_image_url": "",
+            "asset_image": "ugc-review-2.jpg",
             "quote": "Six weeks until the wedding and I refused harsh peroxide kits. The Complete Smile Bundle fits my morning routine — brighter smile, zero drama.",
             "author": "Sofia K.",
             "role": "Bride-to-be"
@@ -299,10 +292,8 @@
         "r3": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-3.png",
-            "asset_image": "",
-            "fallback_image_url": "",
-            "quote": "My barista friends roast me for ordering doubles. These strips stay put while I catch up on emails. Gradual brightening without that chemical sting.",
+            "asset_image": "ugc-review-3.jpg",
+            "quote": "My barista friends roast me for ordering doubles. Quick pen swipe after my morning latte while I catch up on emails. Gradual brightening without that chemical sting.",
             "author": "Marco L.",
             "role": "Coffee lover"
           }
@@ -310,9 +301,7 @@
         "r4": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-4.png",
-            "asset_image": "",
-            "fallback_image_url": "",
+            "asset_image": "ugc-review-4.jpg",
             "quote": "School run, meetings, dinner — zero time for salon visits. Twenty minutes on the couch with Lorez and I'm done. My kids noticed I'm smiling more.",
             "author": "Anna W.",
             "role": "Working mom"
@@ -321,9 +310,7 @@
         "r5": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-5.png",
-            "asset_image": "",
-            "fallback_image_url": "",
+            "asset_image": "ugc-review-5.jpg",
             "quote": "Coconut mint patches are my Sunday reset. Fresh breath, gradual brightening, and none of that harsh peroxide burn from old kits.",
             "author": "Lisa V.",
             "role": "Self-care Sunday"
@@ -339,9 +326,9 @@
       ],
       "settings": {
         "eyebrow": "Real smiles",
-        "title_before": "What",
+        "title_before": "What ",
         "title_accent": "Daily Smile Lovers",
-        "title_after": "Are Saying",
+        "title_after": " Are Saying",
         "subtitle": "Join thousands of smile lovers discovering gentle PAP+ whitening — no peroxide, no sensitivity.",
         "badge_label": "Lorez customer"
       }
@@ -424,104 +411,6 @@
         "secondary_text": "Glow Starter Kit — €16.95",
         "secondary_link": "/products/glow-starter-kit"
       }
-    },
-    "st_image_testimonials_H9pKFM": {
-      "type": "st_image-testimonials",
-      "blocks": {
-        "testimonial_zYkJfm": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/ugc-review-1.png",
-            "rating": 5,
-            "text": "Finally whitening that doesn't sting. I use the strips before work no sticky residue and my smile looks fresher after a week.",
-            "name": "Sarah M. | Busy Professional",
-            "show_verified_badge": true
-          }
-        },
-        "testimonial_PAJKPE": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/ugc-review-2.png",
-            "rating": 5,
-            "text": "Using these before my wedding gentle on my sensitive teeth and my smile photographs so much better.",
-            "name": "Jessica T. | Bride-to-be",
-            "show_verified_badge": true
-          }
-        },
-        "testimonial_jF3wVx": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/ugc-review-3.png",
-            "rating": 4.5,
-            "text": "I drink two coffees a day. The pen is perfect for touch-ups between strip sessions.",
-            "name": " Marco L. | Coffee Lover",
-            "show_verified_badge": true
-          }
-        },
-        "testimonial_A3ambR": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/ugc-review-4.png",
-            "rating": 5,
-            "text": "Twenty minutes on the couch after the kids are in bed. Easy routine, real difference.",
-            "name": "Emma K. | Working Mom",
-            "show_verified_badge": true
-          }
-        },
-        "testimonial_qbMkhH": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/ugc-review-5.png",
-            "rating": 4.5,
-            "text": "The coconut patches are my Sunday ritual. Fresh breath and noticeably brighter teeth.",
-            "name": " Lisa V. | Self-care Sunday",
-            "show_verified_badge": true
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_zYkJfm",
-        "testimonial_PAJKPE",
-        "testimonial_jF3wVx",
-        "testimonial_A3ambR",
-        "testimonial_qbMkhH"
-      ],
-      "name": "💫: Image Testimonials",
-      "settings": {
-        "margin_top": 50,
-        "margin_bottom": 50,
-        "bg_color_mode": "solid",
-        "section_bg_color": "#f9f9f9",
-        "section_bg_gradient": "linear-gradient(180deg, #f9f9f9 0%, #eaeaea 100%)",
-        "desktop_card_layout": true,
-        "max_width": 1400,
-        "show_header": true,
-        "header_alignment": "left",
-        "content_gap": 30,
-        "header_title": "What [Real Customers] Are Saying",
-        "header_title_color": "#1a1a1a",
-        "header_title_highlight_mode": "solid",
-        "header_title_highlight_color_solid": "#dbbd21",
-        "header_title_highlight_color_gradient": "linear-gradient(0deg, rgba(247, 222, 94, 1), rgba(219, 189, 33, 1) 100%)",
-        "header_title_font": "poppins_n6",
-        "header_title_fontsize_desktop": 34,
-        "header_title_fontsize_mobile": 24,
-        "header_subtitle": "Gentle PAP+ whitening — no peroxide, no sensitivity",
-        "header_subtitle_color": "#666666",
-        "header_subtitle_font": "poppins_n4",
-        "header_subtitle_fontsize_desktop": 16,
-        "header_subtitle_fontsize_mobile": 14,
-        "image_aspect_ratio": "4 / 6",
-        "star_color": "#ffffff",
-        "review_text_color": "#ffffff",
-        "review_text_font": "poppins_n4",
-        "review_text_fontsize_desktop": 13,
-        "review_text_fontsize_mobile": 14,
-        "name_color": "#ffffff",
-        "name_font": "poppins_n6",
-        "name_fontsize": 14,
-        "verified_badge_color": "#1d9bf0"
-      }
     }
   },
   "order": [
@@ -533,7 +422,6 @@
     "kit",
     "social",
     "faq",
-    "cta",
-    "st_image_testimonials_H9pKFM"
+    "cta"
   ]
 }
