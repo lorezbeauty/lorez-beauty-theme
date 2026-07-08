@@ -9,9 +9,9 @@
  */
 {
   "current": {
-    "color_background": "#fbf7f5",
-    "color_text": "#3a2e2e",
-    "color_accent": "#c4847a",
+    "color_background": "#FFF8FA",
+    "color_text": "#4A3038",
+    "color_accent": "#B84F68",
     "base_font_size": 16,
     "sections": {
       "header": {

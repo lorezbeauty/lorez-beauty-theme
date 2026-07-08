@@ -13,20 +13,20 @@
       {
         "type": "color",
         "id": "color_background",
-        "label": "Background (warm ivory)",
-        "default": "#fbf7f5"
+        "label": "Background (page)",
+        "default": "#FFF8FA"
       },
       {
         "type": "color",
         "id": "color_text",
-        "label": "Text (warm espresso)",
-        "default": "#3a2e2e"
+        "label": "Body text",
+        "default": "#4A3038"
       },
       {
         "type": "color",
         "id": "color_accent",
-        "label": "Accent / CTA (dusty rose)",
-        "default": "#c4847a"
+        "label": "Accent / CTA (primary rose)",
+        "default": "#B84F68"
       }
     ]
   },

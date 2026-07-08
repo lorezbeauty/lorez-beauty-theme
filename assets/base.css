@@ -1,19 +1,33 @@
-/* Lorez Luxury — Dior-inspired theme */
+/* Lorez Luxury — Official blush palette (colors only, 2026-07)
+ * Mapping:
+ *   --color-bg / page background       → #FFF8FA
+ *   --color-blush / section alt bg     → #FCE4EA
+ *   --color-cream / section surfaces   → #FCE4EA
+ *   --color-black / logo & headings    → #B84F68
+ *   --color-text / body (settings)     → #4A3038
+ *   --color-accent / primary CTA       → #B84F68
+ *   --color-champagne                  → #B84F68
+ *   --color-rose-mid / badges & bands  → #D9738C
+ *   --color-light-gray / borders       → #F6DDE3
+ *   --gradient-hero                    → #FBC7D4 → #F7A9BE
+ */
 
 :root {
-  /* Lorez Blush — warm K-beauty palette (converts better for women 25–45 than cold black/white) */
-  --color-black: #3a2e2e;
+  --color-black: #B84F68;
   --color-white: #ffffff;
-  --color-cream: #f5ebe8;
-  --color-blush: #fbf7f5;
-  --color-warm-gray: #8b7370;
-  --color-light-gray: #e8ded8;
+  --color-cream: #FCE4EA;
+  --color-blush: #FCE4EA;
+  --color-warm-gray: #9B7A84;
+  --color-light-gray: #F6DDE3;
   --color-accent: {{ settings.color_accent }};
-  --color-accent-dark: #a86b62;
-  --color-rose-soft: #e8c4c4;
-  --color-champagne: #c9a87c;
+  --color-accent-dark: #9A3F56;
+  --color-rose-mid: #D9738C;
+  --color-rose-soft: #FBC7D4;
+  --color-champagne: #B84F68;
+  --color-charcoal: #4A3038;
   --color-text: {{ settings.color_text }};
   --color-bg: {{ settings.color_background }};
+  --gradient-hero: linear-gradient(180deg, #FBC7D4 0%, #F7A9BE 100%);
   --font-serif: 'Italiana', Georgia, 'Times New Roman', serif;
   --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-size-base: {{ settings.base_font_size }}px;
@@ -185,7 +199,7 @@ ul, ol {
 
 /* Announcement bar */
 .announcement-bar {
-  background: linear-gradient(90deg, #8b5a52 0%, var(--color-accent) 100%);
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-rose-mid) 100%);
   color: var(--color-white);
   text-align: center;
   font-size: 0.6875rem;
@@ -226,6 +240,7 @@ ul, ol {
   z-index: 100;
   background: var(--color-white);
   border-bottom: 1px solid var(--color-light-gray);
+  color: var(--color-black);
   transition: background var(--transition);
 }
 
@@ -307,6 +322,11 @@ ul, ol {
   height: 28px;
   width: auto;
   margin: 0 auto;
+}
+
+.header__nav a,
+.header__cta {
+  color: var(--color-black);
 }
 
 .header__right {
@@ -758,7 +778,7 @@ ul, ol {
 .newsletter {
   padding: 80px var(--gutter);
   text-align: center;
-  background: linear-gradient(135deg, #4a3535 0%, #8b5a52 50%, var(--color-accent) 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-rose-mid) 100%);
   color: var(--color-white);
 }
 
@@ -1277,7 +1297,7 @@ ul, ol {
 /* Routine steps */
 .routine-steps {
   padding: 80px var(--gutter);
-  background: var(--color-cream);
+  background: var(--color-bg);
 }
 
 .routine-steps__header {
@@ -1346,7 +1366,7 @@ ul, ol {
   font-size: 0.625rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-rose-mid);
   margin-bottom: 12px;
 }
 
@@ -1386,7 +1406,7 @@ ul, ol {
   font-size: 0.625rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-rose-mid);
   margin-bottom: 6px;
 }
 
@@ -1411,7 +1431,7 @@ ul, ol {
 /* Bundle banner */
 .bundle-banner {
   padding: 80px var(--gutter);
-  background: linear-gradient(135deg, #4a3535 0%, #8b5a52 100%);
+  background: var(--color-rose-mid);
   color: var(--color-white);
   text-align: center;
 }
@@ -1601,7 +1621,7 @@ ul, ol {
 
 /* Trust bar */
 .trust-bar {
-  background: linear-gradient(90deg, #4a3535 0%, #8b5a52 100%);
+  background: var(--color-rose-mid);
   color: var(--color-white);
   padding: 14px var(--gutter);
 }
@@ -1689,7 +1709,7 @@ ul, ol {
 }
 
 .social-proof__stars {
-  color: var(--color-accent);
+  color: var(--color-rose-mid);
   font-size: 0.75rem;
   margin-bottom: 12px;
 }
@@ -1709,7 +1729,7 @@ ul, ol {
 /* UGC social proof — photo cards */
 .ugc-proof {
   padding: clamp(56px, 8vw, 96px) 0;
-  background: var(--color-blush);
+  background: var(--color-bg);
   overflow: hidden;
 }
 
@@ -1810,23 +1830,23 @@ ul, ol {
 }
 
 .ugc-proof__placeholder--1 {
-  background: linear-gradient(145deg, #e8c4c4 0%, #c4847a 55%, #8b5a52 100%);
+  background: linear-gradient(145deg, #FBC7D4 0%, #D9738C 55%, #B84F68 100%);
 }
 
 .ugc-proof__placeholder--2 {
-  background: linear-gradient(145deg, #f5ebe8 0%, #e8c4c4 50%, #c4847a 100%);
+  background: linear-gradient(145deg, #FFF8FA 0%, #FBC7D4 50%, #D9738C 100%);
 }
 
 .ugc-proof__placeholder--3 {
-  background: linear-gradient(145deg, #c9a87c 0%, #c4847a 45%, #a86b62 100%);
+  background: linear-gradient(145deg, #F7A9BE 0%, #D9738C 45%, #B84F68 100%);
 }
 
 .ugc-proof__placeholder--4 {
-  background: linear-gradient(145deg, #fbf7f5 0%, #e8ded8 50%, #c4847a 100%);
+  background: linear-gradient(145deg, #FFF8FA 0%, #FCE4EA 50%, #D9738C 100%);
 }
 
 .ugc-proof__placeholder--5 {
-  background: linear-gradient(145deg, #8b7370 0%, #c4847a 60%, #e8c4c4 100%);
+  background: linear-gradient(145deg, #F6DDE3 0%, #D9738C 60%, #FBC7D4 100%);
 }
 
 .ugc-proof__gradient {
@@ -1851,7 +1871,7 @@ ul, ol {
 }
 
 .ugc-proof__stars {
-  color: #e8c4c4;
+  color: var(--color-rose-soft);
   font-size: 0.6875rem;
   letter-spacing: 0.12em;
   margin-bottom: 10px;
@@ -1920,7 +1940,7 @@ ul, ol {
 /* FAQ */
 .faq {
   padding: 72px var(--gutter);
-  background: var(--color-white);
+  background: var(--color-blush);
 }
 
 .faq__inner {
@@ -2094,9 +2114,7 @@ ul, ol {
 .hero__fallback-gradient {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(196, 132, 122, 0.35) 0%, transparent 60%),
-    linear-gradient(160deg, #3a2e2e 0%, #6b4f4a 40%, #c4847a 85%, #f5ebe8 100%);
+  background: var(--gradient-hero);
 }
 
 .hero__product-showcase {
@@ -2109,7 +2127,7 @@ ul, ol {
 
 .hero__product-card {
   position: absolute;
-  background: rgba(251, 247, 245, 0.95);
+  background: rgba(255, 248, 250, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   padding: 24px 20px;
@@ -2167,7 +2185,7 @@ ul, ol {
   font-size: 0.625rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  background: var(--color-accent);
+  background: var(--color-rose-mid);
   color: var(--color-white);
   padding: 4px 10px;
   border-radius: 999px;
@@ -2266,7 +2284,7 @@ ul, ol {
 /* ── Whitening product grid (consumer) ── */
 .smile-products {
   padding: 80px var(--gutter);
-  background: var(--color-white);
+  background: var(--color-blush);
 }
 
 .smile-products__inner {
@@ -2333,7 +2351,7 @@ ul, ol {
   position: relative;
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  background: linear-gradient(145deg, #f5ebe8 0%, #e8ded8 100%);
+  background: linear-gradient(145deg, #FFF8FA 0%, #FCE4EA 100%);
 }
 
 .smile-product-card__img--purple {
@@ -2357,7 +2375,7 @@ ul, ol {
 }
 
 .smile-product-card__img--pap {
-  background: linear-gradient(145deg, #fdf5f3 0%, #e8c4c4 50%, #c4847a 100%);
+  background: linear-gradient(145deg, #FFF8FA 0%, #FBC7D4 50%, #D9738C 100%);
 }
 
 .smile-product-card__photo {
@@ -2399,7 +2417,7 @@ ul, ol {
   position: absolute;
   top: 14px;
   left: 14px;
-  background: var(--color-accent);
+  background: var(--color-rose-mid);
   color: var(--color-white);
   font-size: 0.625rem;
   font-weight: 500;
@@ -2467,7 +2485,7 @@ ul, ol {
 /* ── Final CTA (whitening) ── */
 .quote-cta--whitening {
   padding: 72px var(--gutter);
-  background: linear-gradient(135deg, #3a2e2e 0%, #6b4f4a 50%, #c4847a 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-rose-mid) 100%);
   color: var(--color-white);
 }
 
