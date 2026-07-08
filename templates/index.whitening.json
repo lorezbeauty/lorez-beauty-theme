@@ -269,47 +269,67 @@
       }
     },
     "social": {
-      "type": "social-proof",
+      "type": "social-proof-ugc",
       "blocks": {
         "r1": {
           "type": "review",
           "settings": {
-            "quote": "Finally whitening strips that don't hurt. I noticed a difference after the first session — and no sticky residue.",
-            "author": "Sophie V.",
-            "location": "Amsterdam"
+            "fallback_image_url": "https://images.unsplash.com/photo-1612892487496-74d4f90acd0e?w=600&h=780&fit=crop&q=80",
+            "quote": "Three coffees a day used to show on my teeth. After two weeks with the PAP+ strips, my smile looks noticeably brighter — and zero sensitivity.",
+            "author": "Sarah M.",
+            "role": "Busy Professional"
           }
         },
         "r2": {
           "type": "review",
           "settings": {
-            "quote": "The Complete Smile Bundle is worth it. Strips for the routine, pen for touch-ups. My teeth look noticeably brighter.",
-            "author": "Emma K.",
-            "location": "Rotterdam"
+            "fallback_image_url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&h=780&fit=crop&q=80",
+            "quote": "Wedding in six weeks — I needed something gentle that actually works. The Complete Smile Bundle gave me confidence without the salon price tag.",
+            "author": "Jessica T.",
+            "role": "Bride-to-be"
           }
         },
         "r3": {
           "type": "review",
           "settings": {
-            "quote": "Love the coconut patches — fresh mint breath and whiter teeth. Ordered twice already.",
-            "author": "Lisa M.",
-            "location": "Utrecht"
+            "fallback_image_url": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&h=780&fit=crop&q=80",
+            "quote": "I'm a coffee addict and my dentist noticed the difference. The strips stay put for 30 minutes while I answer emails. No sticky mess.",
+            "author": "Marco L.",
+            "role": "Coffee Lover"
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "fallback_image_url": "https://images.unsplash.com/photo-1531746020798-e6953c6e8a04?w=600&h=780&fit=crop&q=80",
+            "quote": "Finally whitening that fits between school drop-off and meetings. Twenty minutes on the couch, done. My kids even asked why I'm smiling more.",
+            "author": "Emma K.",
+            "role": "Working Mom"
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "fallback_image_url": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&h=780&fit=crop&q=80",
+            "quote": "The coconut mint patches are my Sunday ritual. Fresh breath and a gradual brightening — way better than harsh peroxide kits I tried before.",
+            "author": "Lisa V.",
+            "role": "Self-care Enthusiast"
           }
         }
       },
       "block_order": [
         "r1",
         "r2",
-        "r3"
+        "r3",
+        "r4",
+        "r5"
       ],
       "settings": {
         "eyebrow": "Real smiles",
-        "title": "Trusted by smile care lovers across Europe",
-        "stat_1": "4.8/5",
-        "stat_1_label": "Average rating",
-        "stat_2": "14",
-        "stat_2_label": "Treatments per PAP+ box",
-        "stat_3": "30 min",
-        "stat_3_label": "Per whitening session"
+        "title_before": "What ",
+        "title_accent": "Daily Smile Lovers",
+        "title_after": " Are Saying",
+        "subtitle": "Over 10,000+ customers have brightened their smile with Lorez Beauty — gentle PAP+ whitening, zero sensitivity."
       }
     },
     "faq": {
