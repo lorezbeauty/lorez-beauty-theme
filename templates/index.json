@@ -12,10 +12,7 @@
     "hero": {
       "type": "hero-banner",
       "settings": {
-        "product_image_front": "product-pack-pap-strips.jpg",
-        "product_image_back": "product-pack-coconut-patches.jpg",
-        "product_image_side": "product-pack-whitening-pen.jpg",
-        "product_badge": "14 treatments",
+        "background_asset": "hero-products-collage.jpg",
         "eyebrow": "Lorez Beauty · Smile Care",
         "title": "Whiter teeth in 30 minutes",
         "subtitle": "PAP+ whitening strips — no peroxide, no sensitivity",
@@ -97,7 +94,7 @@
         "b4": {
           "type": "card",
           "settings": {
-            "image_asset": "product-pack-pap-strips.jpg",
+            "image_asset": "product-pap-strips.jpg",
             "title": "The Lorez solution",
             "text": "PAP+ strips, coconut patches and a whitening pen — a complete 2-week routine with no sticky residue."
           }
@@ -181,7 +178,7 @@
             "card_price": "€24.95",
             "badge": "Flagship",
             "description": "PAP+ formula — 14 treatments, 30 min per session. No peroxide, no sensitivity.",
-            "fallback_asset": "product-pack-pap-strips.jpg",
+            "fallback_asset": "product-pap-strips.jpg",
             "placeholder_style": "pap"
           }
         },
@@ -194,7 +191,7 @@
             "card_price": "€5.95",
             "badge": "Bestseller",
             "description": "Purple stain-correcting strips for surface discoloration. From €5.95.",
-            "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/35b2c425-af58-4904-83c3-1ddc3c915025.jpg?v=1783507915",
+            "fallback_asset": "product-purple-strips.jpg",
             "placeholder_style": "purple"
           }
         },
@@ -207,7 +204,7 @@
             "card_price": "€12.95",
             "badge": "Fresh mint",
             "description": "Coconut mint adhesive patches — 14 pieces for a refreshing whitening routine.",
-            "fallback_asset": "product-pack-coconut-patches.jpg",
+            "fallback_asset": "product-coconut-patches.jpg",
             "placeholder_style": "coconut"
           }
         },
@@ -220,8 +217,7 @@
             "card_price": "€9.95",
             "badge": "Touch-up",
             "description": "Precision 4 ml pen for targeted stain and yellowing care between treatments.",
-            "fallback_asset": "product-pack-whitening-pen.jpg",
-            "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/1731854661218078720.jpg?v=1783507748",
+            "fallback_asset": "product-pen.jpg",
             "placeholder_style": "pen"
           }
         },
@@ -234,7 +230,7 @@
             "card_price": "€8.95",
             "badge": "Daily care",
             "description": "Activated charcoal paste to polish surface stains between whitening sessions.",
-            "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/98798b00-93b3-467c-a4bd-9e3f4c1bd279.jpg?v=1783508104",
+            "fallback_asset": "product-charcoal-paste.jpg",
             "placeholder_style": "charcoal"
           }
         },
@@ -247,7 +243,7 @@
             "card_price": "€34.95",
             "badge": "Premium",
             "description": "Foldable electric water flosser — clean between teeth for a healthier, brighter smile.",
-            "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/1612687247527.jpg?v=1783507679",
+            "fallback_asset": "product-flosser.jpg",
             "placeholder_style": "flosser"
           }
         }
