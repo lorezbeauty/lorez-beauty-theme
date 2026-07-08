@@ -119,16 +119,19 @@
     "kit": {
       "type": "bundle-banner",
       "settings": {
-        "eyebrow": "Most popular",
-        "title": "Lorez Beauty PAP+ Whitening Strips",
-        "subtitle": "14 treatments · PAP+ formula · Residue-free · No peroxide",
-        "price": "€29.95",
-        "compare_price": "€44.95",
-        "save_text": "Save €15 vs. RRP · 2-week routine",
+        "eyebrow": "Complete routine",
+        "title": "Complete Smile Whitening Bundle",
+        "subtitle": "PAP+ strips + Coconut Mint Patches + Whitening Tooth Pen · 2-week smile routine",
+        "price": "€42.95",
+        "compare_price": "",
+        "save_text": "Save €3.90 vs. buying separately",
         "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ NL shipping 2–4 days",
-        "product": "lorez-beauty-pap-whitening-strips",
-        "button_label": "Add to cart",
-        "includes": "14 PAP+ whitening strips · Instructions · Premium packaging"
+        "product": "complete-smile-whitening-bundle",
+        "button_link": "/products/complete-smile-whitening-bundle",
+        "button_label": "Shop bundle",
+        "button_secondary_label": "Glow Starter Kit — €16.95",
+        "button_secondary_link": "/products/glow-starter-kit",
+        "includes": "PAP+ Whitening Strips · Coconut Mint Patches · Whitening Tooth Pen"
       }
     },
     "editorial": {

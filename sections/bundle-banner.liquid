@@ -25,19 +25,28 @@
     <p class="bundle-banner__guarantee">{{ section.settings.guarantee }}</p>
   {%- endif -%}
 
-  {%- if section.settings.product != blank -%}
-    {%- assign kit_product = all_products[section.settings.product] -%}
-    {%- if kit_product != blank -%}
-      <form method="post" action="/cart/add" class="bundle-banner__form">
-        <input type="hidden" name="id" value="{{ kit_product.selected_or_first_available_variant.id }}">
-        <button type="submit" class="btn btn--white">{{ section.settings.button_label }}</button>
-      </form>
+  <div class="bundle-banner__actions">
+    {%- if section.settings.product != blank -%}
+      {%- assign kit_product = all_products[section.settings.product] -%}
+      {%- if kit_product != blank -%}
+        <form method="post" action="/cart/add" class="bundle-banner__form">
+          <input type="hidden" name="id" value="{{ kit_product.selected_or_first_available_variant.id }}">
+          <button type="submit" class="btn btn--white">{{ section.settings.button_label }}</button>
+        </form>
+      {%- elsif section.settings.button_link != blank -%}
+        <a href="{{ section.settings.button_link }}" class="btn btn--white">{{ section.settings.button_label }}</a>
+      {%- endif -%}
+    {%- elsif section.settings.button_link != blank -%}
+      <a href="{{ section.settings.button_link }}" class="btn btn--white">{{ section.settings.button_label }}</a>
+    {%- else -%}
+      <button type="button" class="btn btn--white" id="add-kit-btn" data-kit-variants="{{ section.settings.variant_ids }}" data-kit-label="Add kit to cart — " data-price-eur="{{ price_num }}">
+        {{ section.settings.button_label }} — {{ section.settings.price }}
+      </button>
     {%- endif -%}
-  {%- else -%}
-    <button type="button" class="btn btn--white" id="add-kit-btn" data-kit-variants="{{ section.settings.variant_ids }}" data-kit-label="Add kit to cart — " data-price-eur="{{ price_num }}">
-      {{ section.settings.button_label }} — {{ section.settings.price }}
-    </button>
-  {%- endif -%}
+    {%- if section.settings.button_secondary_label != blank and section.settings.button_secondary_link != blank -%}
+      <a href="{{ section.settings.button_secondary_link }}" class="btn btn--ghost-white">{{ section.settings.button_secondary_label }}</a>
+    {%- endif -%}
+  </div>
 
   {%- if section.settings.includes != blank -%}
     <p class="bundle-banner__includes">{{ section.settings.includes }}</p>
@@ -49,17 +58,20 @@
   "name": "Bundle banner",
   "tag": "section",
   "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Kit Clear Skin" },
-    { "type": "text", "id": "title", "label": "Heading", "default": "Complete Clear Skin Routine" },
-    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "7 products · Usage guide included · Code LOREZ: buy 2 get 1 free" },
-    { "type": "text", "id": "price", "label": "Price display", "default": "€179,95" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Complete routine" },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Complete Smile Whitening Bundle" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "PAP+ strips + Coconut Mint Patches + Whitening Tooth Pen · 2-week smile routine" },
+    { "type": "text", "id": "price", "label": "Price display", "default": "€42,95" },
     { "type": "text", "id": "compare_price", "label": "Compare price (leave blank for Omnibus compliance)" },
-    { "type": "text", "id": "save_text", "label": "Save text", "default": "7 essential products · Routine guide included" },
-    { "type": "text", "id": "guarantee", "label": "Guarantee line", "default": "✓ 30-day returns · ✓ Secure checkout · ✓ Guide included" },
-    { "type": "product", "id": "product", "label": "Kit product (optional)" },
-    { "type": "text", "id": "variant_ids", "label": "Variant IDs (comma-separated, if no kit product)", "default": "54181662032209,54114582724945,54114575614289,54114589016401,54114559623505,54181662064977,54181662163281" },
-    { "type": "text", "id": "button_label", "label": "Button label", "default": "Add kit to cart" },
-    { "type": "text", "id": "includes", "label": "Includes list", "default": "Tea Tree Gel · Toner Pads · Collagen Cream · SPF50 · Centella Set · SOS Patches · Collagen Masks" }
+    { "type": "text", "id": "save_text", "label": "Save text", "default": "Save €3.90 vs. buying separately" },
+    { "type": "text", "id": "guarantee", "label": "Guarantee line", "default": "✓ 14-day returns · ✓ Secure checkout · ✓ NL shipping 2–4 days" },
+    { "type": "product", "id": "product", "label": "Bundle product (optional)" },
+    { "type": "url", "id": "button_link", "label": "Button link (fallback if product not published)" },
+    { "type": "text", "id": "variant_ids", "label": "Variant IDs (comma-separated, legacy multi-add)" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop bundle" },
+    { "type": "text", "id": "button_secondary_label", "label": "Secondary button label" },
+    { "type": "url", "id": "button_secondary_link", "label": "Secondary button link" },
+    { "type": "text", "id": "includes", "label": "Includes list", "default": "PAP+ Whitening Strips · Coconut Mint Patches · Whitening Tooth Pen" }
   ],
   "presets": [{ "name": "Bundle banner" }]
 }

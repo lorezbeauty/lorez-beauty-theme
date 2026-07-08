@@ -1793,6 +1793,18 @@ ul, ol {
   margin-bottom: 24px;
 }
 
+.bundle-banner__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bundle-banner__form {
+  margin: 0;
+}
+
 /* Product page trust */
 .product-page__trust {
   list-style: none;
