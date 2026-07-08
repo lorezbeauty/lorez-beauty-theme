@@ -299,6 +299,7 @@
         "r3": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-3.png",
             "asset_image": "ugc-review-3.jpg",
             "fallback_image_url": "",
             "quote": "My barista friends roast me for ordering doubles. Quick pen swipe after my morning latte while I catch up on emails. Gradual brightening without that chemical sting.",
