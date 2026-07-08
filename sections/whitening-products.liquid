@@ -17,7 +17,7 @@
             assign product_ref = all_products[block.settings.product_handle]
           endif
           assign is_product = false
-          if product_ref and product_ref.id
+          if product_ref.handle != blank
             assign is_product = true
           endif
         -%}
@@ -37,12 +37,12 @@
         {%- if is_product or fallback_asset != blank or fallback_url != blank -%}
           <article class="smile-product-card" {{ block.shopify_attributes }}>
             <a href="{{ card_url | default: '#' }}" class="smile-product-card__img smile-product-card__img--{{ placeholder_class }}">
-              {%- if is_product and product_ref.featured_media -%}
-                {{ product_ref.featured_media | image_url: width: 800 | image_tag: loading: 'lazy', alt: card_title, class: 'smile-product-card__photo' }}
-              {%- elsif fallback_asset != blank -%}
+              {%- if fallback_asset != blank -%}
                 <img src="{{ fallback_asset | asset_url }}" alt="{{ card_title }}" loading="lazy" class="smile-product-card__photo" width="400" height="480">
               {%- elsif fallback_url != blank -%}
                 <img src="{{ fallback_url }}" alt="{{ card_title }}" loading="lazy" class="smile-product-card__photo" width="400" height="480">
+              {%- elsif is_product and product_ref.featured_media -%}
+                {{ product_ref.featured_media | image_url: width: 800 | image_tag: loading: 'lazy', alt: card_title, class: 'smile-product-card__photo' }}
               {%- else -%}
                 <div class="smile-product-card__placeholder" aria-hidden="true">
                   <span class="smile-product-card__placeholder-icon">{{ block.settings.fallback_icon | default: '✨' }}</span>
