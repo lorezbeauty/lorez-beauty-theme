@@ -12,9 +12,12 @@
     <div class="smile-products-grid">
       {%- for block in section.blocks -%}
         {%- liquid
-          assign product_ref = block.settings.product
-          if product_ref == blank and block.settings.product_handle != blank
+          assign product_ref = blank
+          if block.settings.product_handle != blank
             assign product_ref = all_products[block.settings.product_handle]
+          endif
+          if product_ref == blank and block.settings.product != blank
+            assign product_ref = block.settings.product
           endif
           assign is_product = false
           if product_ref.handle != blank
@@ -29,10 +32,10 @@
           {%- assign card_title = product_ref.title -%}
         {%- endif -%}
         {%- assign card_url = '' -%}
-        {%- if is_product -%}
-          {%- assign card_url = product_ref.url -%}
-        {%- elsif block.settings.product_handle != blank -%}
+        {%- if block.settings.product_handle != blank -%}
           {%- assign card_url = '/products/' | append: block.settings.product_handle -%}
+        {%- elsif is_product -%}
+          {%- assign card_url = product_ref.url -%}
         {%- endif -%}
         {%- if is_product or fallback_asset != blank or fallback_url != blank -%}
           <article class="smile-product-card" {{ block.shopify_attributes }}>
