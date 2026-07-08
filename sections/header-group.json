@@ -33,6 +33,7 @@
         "testimonial_LeLEYC": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-1.png",
             "rating": 5,
             "text": "Finally whitening that doesn't sting. I use the strips before work — no sticky residue and my smile looks fresher after a week.",
             "name": "Sarah M. Busy Professional",
@@ -42,6 +43,7 @@
         "testimonial_gxXmbf": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-2.png",
             "rating": 5,
             "text": "Using these before my wedding — gentle on my sensitive teeth and my smile photographs so much better.",
             "name": "Jessica T. · Bride-to-be",
@@ -51,6 +53,7 @@
         "testimonial_Q8ULmR": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-3.png",
             "rating": 4.5,
             "text": "I drink two coffees a day. The pen is perfect for touch-ups between strip sessions.",
             "name": "Marco L. · Coffee Lover",
@@ -60,6 +63,7 @@
         "testimonial_DArXFN": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-4.png",
             "rating": 5,
             "text": "Twenty minutes on the couch after the kids are in bed. Easy routine, real difference.",
             "name": "Emma K. · Working Mom",
@@ -69,6 +73,7 @@
         "testimonial_XeJnKH": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-5.png",
             "rating": 4.5,
             "text": "The coconut patches are my Sunday ritual. Fresh breath and noticeably brighter teeth.",
             "name": "Lisa V. · Self-care Sunday",
