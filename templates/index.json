@@ -277,6 +277,7 @@
         "r1": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-1.png",
             "asset_image": "",
             "fallback_image_url": "",
             "quote": "I drink three coffees before lunch — my teeth used to show it. Two weeks with the PAP+ strips and colleagues keep asking what changed. No sensitivity at all.",
@@ -287,6 +288,7 @@
         "r2": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-2.png",
             "asset_image": "",
             "fallback_image_url": "",
             "quote": "Six weeks until the wedding and I refused harsh peroxide kits. The Complete Smile Bundle fits my morning routine — brighter smile, zero drama.",
@@ -297,6 +299,7 @@
         "r3": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-3.png",
             "asset_image": "",
             "fallback_image_url": "",
             "quote": "My barista friends roast me for ordering doubles. These strips stay put while I catch up on emails. Gradual brightening without that chemical sting.",
@@ -307,6 +310,7 @@
         "r4": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-4.png",
             "asset_image": "",
             "fallback_image_url": "",
             "quote": "School run, meetings, dinner — zero time for salon visits. Twenty minutes on the couch with Lorez and I'm done. My kids noticed I'm smiling more.",
@@ -317,6 +321,7 @@
         "r5": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/ugc-review-5.png",
             "asset_image": "",
             "fallback_image_url": "",
             "quote": "Coconut mint patches are my Sunday reset. Fresh breath, gradual brightening, and none of that harsh peroxide burn from old kits.",
