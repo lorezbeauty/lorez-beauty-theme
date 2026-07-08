@@ -2318,6 +2318,7 @@ ul, ol {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  position: absolute;
 }
 
 .hero__product-card--side {

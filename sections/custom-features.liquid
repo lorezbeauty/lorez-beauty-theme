@@ -12,7 +12,11 @@
     <div class="smile-benefits__grid">
       {%- for block in section.blocks -%}
         <div class="smile-benefit-card" {{ block.shopify_attributes }}>
-          {%- if block.settings.icon != blank -%}
+          {%- if block.settings.image_asset != blank -%}
+            <div class="smile-benefit-card__visual">
+              <img src="{{ block.settings.image_asset | asset_url }}" alt="{{ block.settings.title }}" loading="lazy" width="120" height="120" class="smile-benefit-card__photo">
+            </div>
+          {%- elsif block.settings.icon != blank -%}
             <div class="smile-benefit-card__icon">{{ block.settings.icon }}</div>
           {%- endif -%}
           {%- if block.settings.title != blank -%}
@@ -43,6 +47,7 @@
       "type": "card",
       "name": "Feature card",
       "settings": [
+        { "type": "text", "id": "image_asset", "label": "Product image asset (optional)", "info": "Theme asset filename — overrides emoji when set" },
         { "type": "text", "id": "icon", "label": "Icon (emoji)", "default": "🧪" },
         { "type": "text", "id": "title", "label": "Title", "default": "Formula" },
         { "type": "textarea", "id": "text", "label": "Description", "default": "PAP, carbamide peroxide, charcoal and sensitivity-free options." }

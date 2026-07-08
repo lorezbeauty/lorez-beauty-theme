@@ -13,12 +13,15 @@
       {%- for block in section.blocks -%}
         {%- assign product = block.settings.product -%}
         {%- assign fallback_url = block.settings.fallback_image_url -%}
+        {%- assign fallback_asset = block.settings.fallback_asset -%}
         {%- assign placeholder_class = block.settings.placeholder_style | default: 'default' -%}
         {%- if product != blank -%}
           <article class="smile-product-card" {{ block.shopify_attributes }}>
             <a href="{{ product.url }}" class="smile-product-card__img smile-product-card__img--{{ placeholder_class }}">
               {%- if product.featured_media -%}
                 {{ product.featured_media | image_url: width: 800 | image_tag: loading: 'lazy', alt: product.title, class: 'smile-product-card__photo' }}
+              {%- elsif fallback_asset != blank -%}
+                <img src="{{ fallback_asset | asset_url }}" alt="{{ product.title }}" loading="lazy" class="smile-product-card__photo" width="400" height="480">
               {%- elsif fallback_url != blank -%}
                 <img src="{{ fallback_url }}" alt="{{ product.title }}" loading="lazy" class="smile-product-card__photo" width="400" height="480">
               {%- else -%}
@@ -73,6 +76,7 @@
         { "type": "text", "id": "badge", "label": "Badge", "default": "Featured" },
         { "type": "textarea", "id": "description", "label": "Short description (optional)" },
         { "type": "text", "id": "fallback_icon", "label": "Fallback icon", "default": "✨" },
+        { "type": "text", "id": "fallback_asset", "label": "Fallback theme asset filename", "info": "e.g. product-pack-pap-strips.jpg — used before CDN URL" },
         { "type": "text", "id": "fallback_image_url", "label": "Fallback image URL (CDN)" },
         {
           "type": "select",

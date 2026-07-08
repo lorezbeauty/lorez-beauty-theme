@@ -1,137 +1,190 @@
-<section class="hero">
-  <div class="hero__media">
-    {%- if section.settings.video != blank -%}
-      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
-    {%- elsif section.settings.image != blank -%}
-      {{ section.settings.image | image_url: width: 2000 | image_tag: loading: 'eager', sizes: '100vw', alt: section.settings.title }}
-    {%- else -%}
-      <div class="hero__fallback" aria-hidden="true">
-        <div class="hero__fallback-gradient"></div>
-        <div class="hero__product-showcase">
-          <div class="hero__product-card hero__product-card--back">
-            <span class="hero__product-icon">🥥</span>
-            <span class="hero__product-name">Coconut Patches</span>
-          </div>
-          <div class="hero__product-card hero__product-card--front">
-            <span class="hero__product-icon">✨</span>
-            <span class="hero__product-name">PAP+ Whitening Strips</span>
-            <span class="hero__product-badge">14 treatments</span>
-          </div>
-          <div class="hero__product-card hero__product-card--side">
-            <span class="hero__product-icon">🖊</span>
-            <span class="hero__product-name">Whitening Pen</span>
-          </div>
-        </div>
-      </div>
-    {%- endif -%}
-  </div>
-  <div class="hero__overlay"></div>
-  <div class="hero__content">
-    {%- if section.settings.eyebrow != blank -%}
-      <p class="hero__eyebrow eyebrow">{{ section.settings.eyebrow }}</p>
-    {%- endif -%}
-    {%- if section.settings.title != blank -%}
-      <h1 class="hero__title heading-display">{{ section.settings.title }}</h1>
-    {%- endif -%}
-    {%- if section.settings.subtitle != blank -%}
-      <p class="hero__subtitle">{{ section.settings.subtitle }}</p>
-    {%- endif -%}
-    {%- if section.settings.trust_line != blank -%}
-      <p class="hero__trust">{{ section.settings.trust_line }}</p>
-    {%- endif -%}
-    <div class="hero__actions">
-      {%- if section.settings.button_label != blank -%}
-        <a href="{{ section.settings.button_link }}" class="btn btn--white btn--lg"{% if section.settings.kit_price_eur != blank %} data-hero-kit-btn data-price-eur="{{ section.settings.kit_price_eur }}" data-label-prefix="{{ section.settings.button_label }} — "{% endif %}>
-          {%- if section.settings.kit_price_eur != blank -%}
-            {{ section.settings.button_label }} — €{{ section.settings.kit_price_eur | replace: '.', ',' }}
-          {%- else -%}
-            {{ section.settings.button_label }}
-          {%- endif -%}
-        </a>
-      {%- endif -%}
-      {%- if section.settings.button_secondary_label != blank -%}
-        <a href="{{ section.settings.button_secondary_link }}" class="btn btn--ghost-white">
-          {{ section.settings.button_secondary_label }}
-        </a>
-      {%- endif -%}
-    </div>
-  </div>
-</section>
-
-{% schema %}
-{
-  "name": "Hero banner",
-  "tag": "section",
-  "class": "section-hero",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Background image"
-    },
-    {
-      "type": "video",
-      "id": "video",
-      "label": "Background video"
-    },
-    {
-      "type": "text",
-      "id": "eyebrow",
-      "label": "Eyebrow text",
-      "default": "Lorez Beauty"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "A golden escape under the sun"
-    },
-    {
-      "type": "text",
-      "id": "subtitle",
-      "label": "Subheading",
-      "default": "Discover the summer collection"
-    },
-    {
-      "type": "text",
-      "id": "trust_line",
-      "label": "Trust line under subtitle",
-      "default": "★★★★★ 4.8/5 · Free shipping from €50 · 30-day returns"
-    },
-    {
-      "type": "text",
-      "id": "kit_price_eur",
-      "label": "Kit price (EUR number for market toggle)",
-      "default": "179.95"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Primary button label",
-      "default": "Discover"
-    },
-    {
-      "type": "text",
-      "id": "button_link",
-      "label": "Primary button link",
-      "default": "/#kit"
-    },
-    {
-      "type": "text",
-      "id": "button_secondary_label",
-      "label": "Secondary button label"
-    },
-    {
-      "type": "text",
-      "id": "button_secondary_link",
-      "label": "Secondary button link",
-      "default": "/#routine"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Hero banner"
-    }
-  ]
-}
-{% endschema %}
+<section class="hero">
+  <div class="hero__media">
+    {%- if section.settings.video != blank -%}
+      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+    {%- elsif section.settings.image != blank -%}
+      {{ section.settings.image | image_url: width: 2000 | image_tag: loading: 'eager', sizes: '100vw', alt: section.settings.title }}
+    {%- else -%}
+      <div class="hero__fallback" aria-hidden="true">
+        <div class="hero__fallback-gradient"></div>
+        <div class="hero__product-showcase">
+          {%- assign img_back = section.settings.product_image_back | default: 'product-pack-coconut-patches.jpg' -%}
+          {%- assign img_front = section.settings.product_image_front | default: 'product-pack-pap-strips.jpg' -%}
+          {%- assign img_side = section.settings.product_image_side | default: 'product-pack-whitening-pen.jpg' -%}
+          <div class="hero__product-card hero__product-card--back">
+            <img
+              src="{{ img_back | asset_url }}"
+              alt="{{ section.settings.product_label_back | default: 'Coconut Mint Patches' }}"
+              class="hero__product-photo"
+              loading="eager"
+              width="280"
+              height="350"
+            >
+          </div>
+          <div class="hero__product-card hero__product-card--front">
+            <img
+              src="{{ img_front | asset_url }}"
+              alt="{{ section.settings.product_label_front | default: 'PAP+ Whitening Strips' }}"
+              class="hero__product-photo"
+              loading="eager"
+              width="320"
+              height="400"
+            >
+            {%- if section.settings.product_badge != blank -%}
+              <span class="hero__product-badge">{{ section.settings.product_badge }}</span>
+            {%- endif -%}
+          </div>
+          <div class="hero__product-card hero__product-card--side">
+            <img
+              src="{{ img_side | asset_url }}"
+              alt="{{ section.settings.product_label_side | default: 'Whitening Pen' }}"
+              class="hero__product-photo"
+              loading="eager"
+              width="200"
+              height="280"
+            >
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+  <div class="hero__overlay{% unless section.settings.image != blank or section.settings.video != blank %} hero__overlay--rose{% endunless %}"></div>
+  <div class="hero__content">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="hero__eyebrow eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h1 class="hero__title heading-display">{{ section.settings.title }}</h1>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <p class="hero__subtitle">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+    {%- if section.settings.trust_line != blank -%}
+      <p class="hero__trust">{{ section.settings.trust_line }}</p>
+    {%- endif -%}
+    <div class="hero__actions">
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link }}" class="btn btn--white btn--lg"{% if section.settings.kit_price_eur != blank %} data-hero-kit-btn data-price-eur="{{ section.settings.kit_price_eur }}" data-label-prefix="{{ section.settings.button_label }} — "{% endif %}>
+          {%- if section.settings.kit_price_eur != blank -%}
+            {{ section.settings.button_label }} — €{{ section.settings.kit_price_eur | replace: '.', ',' }}
+          {%- else -%}
+            {{ section.settings.button_label }}
+          {%- endif -%}
+        </a>
+      {%- endif -%}
+      {%- if section.settings.button_secondary_label != blank -%}
+        <a href="{{ section.settings.button_secondary_link }}" class="btn btn--ghost-white">
+          {{ section.settings.button_secondary_label }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero banner",
+  "tag": "section",
+  "class": "section-hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Background video"
+    },
+    {
+      "type": "header",
+      "content": "Product showcase (when no background image)"
+    },
+    {
+      "type": "text",
+      "id": "product_image_front",
+      "label": "Center product asset filename",
+      "default": "product-pack-pap-strips.jpg",
+      "info": "Theme asset in /assets — PAP+ strips pack shot"
+    },
+    {
+      "type": "text",
+      "id": "product_image_back",
+      "label": "Left product asset filename",
+      "default": "product-pack-coconut-patches.jpg"
+    },
+    {
+      "type": "text",
+      "id": "product_image_side",
+      "label": "Right product asset filename",
+      "default": "product-pack-whitening-pen.jpg"
+    },
+    {
+      "type": "text",
+      "id": "product_badge",
+      "label": "Center product badge",
+      "default": "14 treatments"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "Lorez Beauty"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "A golden escape under the sun"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Discover the summer collection"
+    },
+    {
+      "type": "text",
+      "id": "trust_line",
+      "label": "Trust line under subtitle",
+      "default": "★★★★★ 4.8/5 · Free shipping from €50 · 30-day returns"
+    },
+    {
+      "type": "text",
+      "id": "kit_price_eur",
+      "label": "Kit price (EUR number for market toggle)",
+      "default": "179.95"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Primary button label",
+      "default": "Discover"
+    },
+    {
+      "type": "text",
+      "id": "button_link",
+      "label": "Primary button link",
+      "default": "/#kit"
+    },
+    {
+      "type": "text",
+      "id": "button_secondary_label",
+      "label": "Secondary button label"
+    },
+    {
+      "type": "text",
+      "id": "button_secondary_link",
+      "label": "Secondary button link",
+      "default": "/#routine"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero banner"
+    }
+  ]
+}
+{% endschema %}
+

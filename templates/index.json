@@ -93,7 +93,6 @@
         "b4": {
           "type": "card",
           "settings": {
-            "icon": "✨",
             "title": "The Lorez solution",
             "text": "PAP+ strips, coconut patches and a whitening pen — a complete 2-week routine with no sticky residue."
           }
@@ -174,8 +173,6 @@
             "product": "lorez-beauty-pap-whitening-strips",
             "badge": "Flagship",
             "description": "PAP+ formula — 14 treatments, 30 min per session. No peroxide, no sensitivity.",
-            "fallback_icon": "✨",
-            "fallback_image_url": "",
             "placeholder_style": "pap"
           }
         },
@@ -185,7 +182,6 @@
             "product": "cj-purple-whitening-strips-stain-removal",
             "badge": "Bestseller",
             "description": "Purple stain-correcting strips for surface discoloration. From €5.95.",
-            "fallback_icon": "💜",
             "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/35b2c425-af58-4904-83c3-1ddc3c915025.jpg?v=1783507915",
             "placeholder_style": "purple"
           }
@@ -196,8 +192,6 @@
             "product": "cj-coconut-mint-whitening-tooth-patches-14-pack",
             "badge": "Fresh mint",
             "description": "Coconut mint adhesive patches — 14 pieces for a refreshing whitening routine.",
-            "fallback_icon": "🥥",
-            "fallback_image_url": "",
             "placeholder_style": "coconut"
           }
         },
@@ -207,7 +201,6 @@
             "product": "cj-whitening-tooth-pen-stain-yellowing-care",
             "badge": "Touch-up",
             "description": "Precision 4 ml pen for targeted stain and yellowing care between treatments.",
-            "fallback_icon": "🖊",
             "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/1731854661218078720.jpg?v=1783507748",
             "placeholder_style": "pen"
           }
@@ -218,7 +211,6 @@
             "product": "cj-activated-charcoal-whitening-toothpaste",
             "badge": "Daily care",
             "description": "Activated charcoal paste to polish surface stains between whitening sessions.",
-            "fallback_icon": "🖤",
             "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/98798b00-93b3-467c-a4bd-9e3f4c1bd279.jpg?v=1783508104",
             "placeholder_style": "charcoal"
           }
@@ -229,7 +221,6 @@
             "product": "cj-foldable-portable-water-flosser-electric",
             "badge": "Premium",
             "description": "Foldable electric water flosser — clean between teeth for a healthier, brighter smile.",
-            "fallback_icon": "💧",
             "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/1612687247527.jpg?v=1783507679",
             "placeholder_style": "flosser"
           }
@@ -261,10 +252,9 @@
         "price": "€42.95",
         "compare_price": "",
         "save_text": "Save €3.90 vs. buying separately",
-        "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ NL shipping 2–4 days",
+        "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ Fast EU delivery · 2–4 business days",
         "product": "complete-smile-whitening-bundle",
         "button_link": "/products/complete-smile-whitening-bundle",
-        "variant_ids": "",
         "button_label": "Add bundle to cart",
         "button_secondary_label": "Glow Starter Kit — €16.95",
         "button_secondary_link": "/products/glow-starter-kit",
@@ -277,9 +267,7 @@
         "r1": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-1.png",
             "asset_image": "ugc-review-1.jpg",
-            "fallback_image_url": "",
             "quote": "I drink three coffees before lunch — my teeth used to show it. Two weeks with the PAP+ strips and colleagues keep asking what changed. No sensitivity at all.",
             "author": "Emma T.",
             "role": "Coffee lover"
@@ -288,9 +276,7 @@
         "r2": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-2.png",
             "asset_image": "ugc-review-2.jpg",
-            "fallback_image_url": "",
             "quote": "Six weeks until the wedding and I refused harsh peroxide kits. The Complete Smile Bundle fits my morning routine — brighter smile, zero drama.",
             "author": "Sofia K.",
             "role": "Bride-to-be"
@@ -299,9 +285,7 @@
         "r3": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-3.png",
             "asset_image": "ugc-review-3.jpg",
-            "fallback_image_url": "",
             "quote": "My barista friends roast me for ordering doubles. Quick pen swipe after my morning latte while I catch up on emails. Gradual brightening without that chemical sting.",
             "author": "Marco L.",
             "role": "Coffee lover"
@@ -310,9 +294,7 @@
         "r4": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-4.png",
             "asset_image": "ugc-review-4.jpg",
-            "fallback_image_url": "",
             "quote": "School run, meetings, dinner — zero time for salon visits. Twenty minutes on the couch with Lorez and I'm done. My kids noticed I'm smiling more.",
             "author": "Anna W.",
             "role": "Working mom"
@@ -321,9 +303,7 @@
         "r5": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-5.png",
             "asset_image": "ugc-review-5.jpg",
-            "fallback_image_url": "",
             "quote": "Coconut mint patches are my Sunday reset. Fresh breath, gradual brightening, and none of that harsh peroxide burn from old kits.",
             "author": "Lisa V.",
             "role": "Self-care Sunday"
@@ -339,9 +319,9 @@
       ],
       "settings": {
         "eyebrow": "Real smiles",
-        "title_before": "What",
+        "title_before": "What ",
         "title_accent": "Daily Smile Lovers",
-        "title_after": "Are Saying",
+        "title_after": " Are Saying",
         "subtitle": "Join thousands of smile lovers discovering gentle PAP+ whitening — no peroxide, no sensitivity.",
         "badge_label": "Lorez customer"
       }
