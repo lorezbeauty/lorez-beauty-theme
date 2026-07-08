@@ -21,6 +21,10 @@
     {%- if section.blocks.size > 0 -%}
       <div class="ugc-proof__track" tabindex="0" role="region" aria-label="{{ section.settings.title_accent | default: 'Customer reviews' }}">
         {%- for block in section.blocks -%}
+          {%- assign ugc_asset = block.settings.asset_image -%}
+          {%- if ugc_asset == blank and forloop.index <= 5 -%}
+            {%- assign ugc_asset = 'ugc-review-' | append: forloop.index | append: '.jpg' -%}
+          {%- endif -%}
           <article class="ugc-proof__card" {{ block.shopify_attributes }}>
             <div class="ugc-proof__photo">
               {%- if block.settings.image != blank -%}
@@ -30,10 +34,10 @@
                   sizes: '(max-width: 640px) 78vw, 280px',
                   alt: block.settings.author | append: ' — Lorez Beauty customer'
                 }}
-              {%- elsif block.settings.asset_image != blank -%}
+              {%- elsif ugc_asset != blank -%}
                 <img
                   class="ugc-proof__img"
-                  src="{{ block.settings.asset_image | asset_url }}"
+                  src="{{ ugc_asset | asset_url }}"
                   alt="{{ block.settings.author | escape }} — Lorez Beauty customer"
                   loading="lazy"
                   width="400"
