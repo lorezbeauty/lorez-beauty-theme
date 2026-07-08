@@ -12,6 +12,9 @@
     <div class="smile-products-grid">
       {%- for block in section.blocks -%}
         {%- assign product = block.settings.product -%}
+        {%- if product == blank and block.settings.product_handle != blank -%}
+          {%- assign product = all_products[block.settings.product_handle] -%}
+        {%- endif -%}
         {%- assign fallback_url = block.settings.fallback_image_url -%}
         {%- assign fallback_asset = block.settings.fallback_asset -%}
         {%- assign placeholder_class = block.settings.placeholder_style | default: 'default' -%}
@@ -73,6 +76,7 @@
       "name": "Product",
       "settings": [
         { "type": "product", "id": "product", "label": "Product" },
+        { "type": "text", "id": "product_handle", "label": "Product handle (fallback lookup)" },
         { "type": "text", "id": "badge", "label": "Badge", "default": "Featured" },
         { "type": "textarea", "id": "description", "label": "Short description (optional)" },
         { "type": "text", "id": "fallback_icon", "label": "Fallback icon", "default": "✨" },

@@ -12,6 +12,10 @@
     "hero": {
       "type": "hero-banner",
       "settings": {
+        "product_image_front": "product-pack-pap-strips.jpg",
+        "product_image_back": "product-pack-coconut-patches.jpg",
+        "product_image_side": "product-pack-whitening-pen.jpg",
+        "product_badge": "14 treatments",
         "eyebrow": "Lorez Beauty · Smile Care",
         "title": "Whiter teeth in 30 minutes",
         "subtitle": "PAP+ whitening strips — no peroxide, no sensitivity",
@@ -93,6 +97,7 @@
         "b4": {
           "type": "card",
           "settings": {
+            "image_asset": "product-pack-pap-strips.jpg",
             "title": "The Lorez solution",
             "text": "PAP+ strips, coconut patches and a whitening pen — a complete 2-week routine with no sticky residue."
           }
@@ -173,6 +178,7 @@
             "product": "lorez-beauty-pap-whitening-strips",
             "badge": "Flagship",
             "description": "PAP+ formula — 14 treatments, 30 min per session. No peroxide, no sensitivity.",
+            "fallback_asset": "product-pack-pap-strips.jpg",
             "placeholder_style": "pap"
           }
         },
@@ -192,6 +198,7 @@
             "product": "cj-coconut-mint-whitening-tooth-patches-14-pack",
             "badge": "Fresh mint",
             "description": "Coconut mint adhesive patches — 14 pieces for a refreshing whitening routine.",
+            "fallback_asset": "product-pack-coconut-patches.jpg",
             "placeholder_style": "coconut"
           }
         },
@@ -201,6 +208,7 @@
             "product": "cj-whitening-tooth-pen-stain-yellowing-care",
             "badge": "Touch-up",
             "description": "Precision 4 ml pen for targeted stain and yellowing care between treatments.",
+            "fallback_asset": "product-pack-whitening-pen.jpg",
             "fallback_image_url": "https://cdn.shopify.com/s/files/1/1054/1108/4625/files/1731854661218078720.jpg?v=1783507748",
             "placeholder_style": "pen"
           }
