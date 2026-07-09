@@ -176,14 +176,14 @@
         "p1": {
           "type": "product",
           "settings": {
-            "product": "lorez-beauty-pap-whitening-strips",
+            "product": "activated-carbon-whitening-tooth-paste",
             "product_handle": "lorez-beauty-pap-whitening-strips",
             "card_title": "PAP+ Whitening Strips",
             "card_price": "€24.95",
             "badge": "Flagship",
             "description": "PAP+ formula — 14 treatments, 30 min per session. No peroxide, no sensitivity.",
             "fallback_icon": "✨",
-            "fallback_asset": "product-pap-strips.jpg",
+            "fallback_asset": "",
             "fallback_image_url": "",
             "placeholder_style": "pap"
           }
