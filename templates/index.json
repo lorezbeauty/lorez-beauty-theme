@@ -251,14 +251,14 @@
         "p6": {
           "type": "product",
           "settings": {
-            "product": "cj-foldable-portable-water-flosser-electric",
-            "product_handle": "cj-foldable-portable-water-flosser-electric",
-            "card_title": "Foldable Water Flosser",
-            "card_price": "€34.95",
-            "badge": "Premium",
-            "description": "Foldable electric water flosser — clean between teeth for a healthier, brighter smile.",
+            "product": "childrens-mousse-toothpaste-fluorine-free-anticavity-press-type-tooth-cleaning-foam",
+            "product_handle": "",
+            "card_title": "",
+            "card_price": "",
+            "badge": "premium",
+            "description": "",
             "fallback_icon": "✨",
-            "fallback_asset": "product-flosser.jpg",
+            "fallback_asset": "",
             "fallback_image_url": "",
             "placeholder_style": "flosser"
           }
