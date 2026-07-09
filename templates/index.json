@@ -286,18 +286,18 @@
       "settings": {
         "eyebrow": "Best value",
         "title": "Complete Smile Whitening Bundle",
-        "subtitle": "PAP+ strips + Coconut Mint Patches + Whitening Tooth Pen — your full 2-week smile routine",
-        "price": "€42.95",
+        "subtitle": "",
+        "price": "",
         "compare_price": "",
-        "save_text": "Save €3.90 vs. buying separately",
-        "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ Fast EU delivery · 2–4 business days",
-        "product": "complete-smile-whitening-bundle",
-        "button_link": "/products/complete-smile-whitening-bundle",
+        "save_text": "Save €10,15 vs. buying separately",
+        "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ Fast EU delivery ·",
+        "product": "bubdel-actie",
+        "button_link": "shopify://products/bubdel-actie",
         "variant_ids": "",
         "button_label": "Add bundle to cart",
-        "button_secondary_label": "Glow Starter Kit — €16.95",
-        "button_secondary_link": "/products/glow-starter-kit",
-        "includes": "PAP+ Whitening Strips · Coconut Mint Patches · Whitening Tooth Pen"
+        "button_secondary_label": "Glow Starter Kit — €140,-",
+        "button_secondary_link": "shopify://products/bubdel-actie",
+        "includes": ""
       }
     },
     "social": {
