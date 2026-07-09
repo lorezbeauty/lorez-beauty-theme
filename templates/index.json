@@ -236,14 +236,14 @@
         "p5": {
           "type": "product",
           "settings": {
-            "product": "cj-activated-charcoal-whitening-toothpaste",
+            "product": "childrens-foam-tooth-cleaning-mousse-toothpaste",
             "product_handle": "cj-activated-charcoal-whitening-toothpaste",
             "card_title": "Charcoal Whitening Toothpaste",
-            "card_price": "€8.95",
+            "card_price": "",
             "badge": "Daily care",
             "description": "Activated charcoal paste to polish surface stains between whitening sessions.",
             "fallback_icon": "✨",
-            "fallback_asset": "product-charcoal-paste.jpg",
+            "fallback_asset": "",
             "fallback_image_url": "",
             "placeholder_style": "charcoal"
           }
