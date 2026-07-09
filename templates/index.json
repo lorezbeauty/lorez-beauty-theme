@@ -221,14 +221,14 @@
         "p4": {
           "type": "product",
           "settings": {
-            "product": "cj-whitening-tooth-pen-stain-yellowing-care",
+            "product": "mouth-type-food-grade-silicone-brush-head-u-shaped-tooth-scaler",
             "product_handle": "cj-whitening-tooth-pen-stain-yellowing-care",
-            "card_title": "Whitening Tooth Pen",
-            "card_price": "€9.95",
+            "card_title": "",
+            "card_price": "",
             "badge": "Touch-up",
             "description": "Precision 4 ml pen for targeted stain and yellowing care between treatments.",
             "fallback_icon": "✨",
-            "fallback_asset": "product-pen.jpg",
+            "fallback_asset": "",
             "fallback_image_url": "",
             "placeholder_style": "pen"
           }
