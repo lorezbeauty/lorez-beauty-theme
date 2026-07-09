@@ -191,14 +191,14 @@
         "p2": {
           "type": "product",
           "settings": {
-            "product": "cj-purple-whitening-strips-stain-removal",
+            "product": "tooth-whitening-instrument-cold-blue-tooth-cleaner-set-tooth-whitening-instrument",
             "product_handle": "cj-purple-whitening-strips-stain-removal",
-            "card_title": "Purple Whitening Strips",
-            "card_price": "€5.95",
+            "card_title": "",
+            "card_price": "",
             "badge": "Bestseller",
             "description": "Purple stain-correcting strips for surface discoloration. From €5.95.",
             "fallback_icon": "✨",
-            "fallback_asset": "product-purple-strips.jpg",
+            "fallback_asset": "",
             "fallback_image_url": "",
             "placeholder_style": "purple"
           }
@@ -206,14 +206,14 @@
         "p3": {
           "type": "product",
           "settings": {
-            "product": "cj-coconut-mint-whitening-tooth-patches-14-pack",
+            "product": "ultrasonic-electric-toothbrush-automatic-tooth-cleaner-lazy-u-shaped-toothbrush",
             "product_handle": "cj-coconut-mint-whitening-tooth-patches-14-pack",
-            "card_title": "Coconut Mint Patches",
-            "card_price": "€12.95",
+            "card_title": "",
+            "card_price": "",
             "badge": "Fresh mint",
             "description": "Coconut mint adhesive patches — 14 pieces for a refreshing whitening routine.",
             "fallback_icon": "✨",
-            "fallback_asset": "product-coconut-patches.jpg",
+            "fallback_asset": "",
             "fallback_image_url": "",
             "placeholder_style": "coconut"
           }
