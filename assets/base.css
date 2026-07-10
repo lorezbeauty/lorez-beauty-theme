@@ -588,7 +588,7 @@ ul, ol {
   --hero-focal-y: 42%;
   --hero-focal-x-mobile: 50%;
   --hero-focal-y-mobile: 48%;
-  --hero-overlay-opacity: 0.88;
+  --hero-overlay-opacity: 0.9;
   position: relative;
   min-height: clamp(560px, 100vh, 960px);
   display: flex;
