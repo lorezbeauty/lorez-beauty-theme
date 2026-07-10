@@ -13,6 +13,11 @@
       "type": "hero-banner",
       "settings": {
         "background_asset": "hero-products-collage.jpg",
+        "focal_x": 50,
+        "focal_y": 42,
+        "focal_x_mobile": 50,
+        "focal_y_mobile": 48,
+        "overlay_opacity": 90,
         "eyebrow": "Lorez Beauty · Smile Care",
         "title": "Whiter teeth in 30 minutes",
         "subtitle": "PAP+ whitening strips — no peroxide, no sensitivity",

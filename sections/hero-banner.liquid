@@ -1,33 +1,76 @@
-<section class="hero">
+<section
+  class="hero"
+  style="
+    --hero-focal-x: {{ section.settings.focal_x }}%;
+    --hero-focal-y: {{ section.settings.focal_y }}%;
+    --hero-focal-x-mobile: {{ section.settings.focal_x_mobile }}%;
+    --hero-focal-y-mobile: {{ section.settings.focal_y_mobile }}%;
+    --hero-overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+  "
+>
 
   <div class="hero__media">
 
     {%- if section.settings.video != blank -%}
 
-      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, class: 'hero__bg' }}
 
     {%- elsif section.settings.image != blank -%}
 
-      {{ section.settings.image | image_url: width: 2000 | image_tag: loading: 'eager', sizes: '100vw', alt: section.settings.title }}
+      <picture class="hero__picture">
+        {%- if section.settings.image_mobile != blank -%}
+          <source
+            media="(max-width: 749px)"
+            srcset="{{ section.settings.image_mobile | image_url: width: 1400 }}"
+          >
+        {%- endif -%}
+        {{
+          section.settings.image
+          | image_url: width: 2000
+          | image_tag:
+            loading: 'eager',
+            sizes: '100vw',
+            alt: section.settings.title,
+            class: 'hero__bg'
+        }}
+      </picture>
 
     {%- else -%}
 
       {%- assign collage = section.settings.background_asset | default: 'hero-products-collage.jpg' -%}
+      {%- assign collage_mobile = section.settings.background_asset_mobile | default: collage -%}
+      {%- assign has_mobile_bg = false -%}
+
+      {%- if section.settings.image_mobile != blank -%}
+        {%- assign has_mobile_bg = true -%}
+        {{
+          section.settings.image_mobile
+          | image_url: width: 1400
+          | image_tag:
+            loading: 'eager',
+            sizes: '100vw',
+            alt: section.settings.title,
+            class: 'hero__bg hero__bg--mobile'
+        }}
+      {%- elsif collage_mobile != collage -%}
+        {%- assign has_mobile_bg = true -%}
+        <img
+          src="{{ collage_mobile | asset_url }}"
+          alt=""
+          class="hero__collage-bg hero__bg hero__bg--mobile"
+          loading="eager"
+          width="1400"
+          height="1800"
+        >
+      {%- endif -%}
 
       <img
-
         src="{{ collage | asset_url }}"
-
         alt=""
-
-        class="hero__collage-bg"
-
+        class="hero__collage-bg hero__bg{% if has_mobile_bg %} hero__bg--desktop{% endif %}"
         loading="eager"
-
         width="2000"
-
         height="1125"
-
       >
 
     {%- endif -%}
@@ -35,7 +78,6 @@
   </div>
 
   <div class="hero__overlay{% unless section.settings.image != blank or section.settings.video != blank %} hero__overlay--rose{% endunless %}"></div>
-
   <div class="hero__content">
 
     {%- if section.settings.eyebrow != blank -%}
@@ -66,11 +108,11 @@
 
       {%- if section.settings.button_label != blank -%}
 
-        <a href="{{ section.settings.button_link }}" class="btn btn--white btn--lg"{% if section.settings.kit_price_eur != blank %} data-hero-kit-btn data-price-eur="{{ section.settings.kit_price_eur }}" data-label-prefix="{{ section.settings.button_label }} — "{% endif %}>
+        <a href="{{ section.settings.button_link }}" class="btn btn--white btn--lg">
 
           {%- if section.settings.kit_price_eur != blank -%}
 
-            {{ section.settings.button_label }} — €{{ section.settings.kit_price_eur | replace: '.', ',' }}
+            {{ section.settings.button_label }} — €{{ section.settings.kit_price_eur }}
 
           {%- else -%}
 
@@ -158,6 +200,140 @@
 
       "type": "text",
 
+      "id": "background_asset_mobile",
+
+      "label": "Mobile collage asset filename",
+
+      "info": "Optional portrait crop for phones. Leave blank to reuse desktop collage."
+
+    },
+
+    {
+
+      "type": "image_picker",
+
+      "id": "image_mobile",
+
+      "label": "Mobile background image",
+
+      "info": "Overrides collage on screens under 750px. Upload a tighter crop for best results."
+
+    },
+
+    {
+
+      "type": "header",
+
+      "content": "Image framing"
+
+    },
+
+    {
+
+      "type": "range",
+
+      "id": "focal_x",
+
+      "label": "Desktop focus — horizontal",
+
+      "min": 0,
+
+      "max": 100,
+
+      "step": 1,
+
+      "unit": "%",
+
+      "default": 50
+
+    },
+
+    {
+
+      "type": "range",
+
+      "id": "focal_y",
+
+      "label": "Desktop focus — vertical",
+
+      "min": 0,
+
+      "max": 100,
+
+      "step": 1,
+
+      "unit": "%",
+
+      "default": 42
+
+    },
+
+    {
+
+      "type": "range",
+
+      "id": "focal_x_mobile",
+
+      "label": "Mobile focus — horizontal",
+
+      "min": 0,
+
+      "max": 100,
+
+      "step": 1,
+
+      "unit": "%",
+
+      "default": 50
+
+    },
+
+    {
+
+      "type": "range",
+
+      "id": "focal_y_mobile",
+
+      "label": "Mobile focus — vertical",
+
+      "min": 0,
+
+      "max": 100,
+
+      "step": 1,
+
+      "unit": "%",
+
+      "default": 48
+
+    },
+
+    {
+
+      "type": "range",
+
+      "id": "overlay_opacity",
+
+      "label": "Overlay strength",
+
+      "min": 50,
+
+      "max": 100,
+
+      "step": 5,
+
+      "unit": "%",
+
+      "default": 90,
+
+      "info": "Higher = darker overlay, better text contrast"
+
+    },
+
+    {
+
+      "type": "text",
+
       "id": "eyebrow",
 
       "label": "Eyebrow text",
@@ -208,9 +384,9 @@
 
       "id": "kit_price_eur",
 
-      "label": "Kit price (EUR number for market toggle)",
+      "label": "Kit price (EUR display)",
 
-      "default": "179.95"
+      "default": "42.95"
 
     },
 
