@@ -11,17 +11,17 @@
   "name": "Footer group",
   "type": "footer",
   "sections": {
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "title": "Join the Lorez Beauty smile club",
-        "subtitle": "Early access to new products, whitening tips and exclusive offers."
-      }
-    },
     "footer": {
       "type": "footer",
-      "settings": {}
+      "settings": {
+        "menu_contact": "",
+        "menu_shipping": "",
+        "menu_faq": "",
+        "menu_legal": ""
+      }
     }
   },
-  "order": ["newsletter", "footer"]
+  "order": [
+    "footer"
+  ]
 }
