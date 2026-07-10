@@ -11,18 +11,13 @@
   "sections": {
     "hero": {
       "type": "hero-banner",
-      "custom_css": [
-        "#template--30640790634833__hero img,#template--30640790634833__hero .hero__media img {object-fit: contain !important; width: 100%; height: 100%;}",
-        "#template--30640790634833__hero .hero__media {background-size: contain !important; background-repeat: no-repeat !important; background-position: center !important;}"
-      ],
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_10_jul_2026_07_26_30.png",
         "background_asset": "hero-products-collage.jpg",
         "eyebrow": "Lorez Beauty · Smile Care",
-        "title": "",
-        "subtitle": "",
-        "trust_line": "Whiter teeth in 30 minutes",
-        "kit_price_eur": "140,-",
+        "title": "Whiter teeth in 30 minutes",
+        "subtitle": "PAP+ whitening strips — no peroxide, no sensitivity",
+        "trust_line": "14 treatments · Free shipping from €50 · 14-day returns",
+        "kit_price_eur": "42.95",
         "button_label": "Shop Complete Smile Bundle",
         "button_link": "/products/complete-smile-whitening-bundle",
         "button_secondary_label": "How it works",
@@ -36,7 +31,7 @@
           "type": "item",
           "settings": {
             "icon": "shipping",
-            "text": "Free shipping from €35"
+            "text": "Free shipping from €50"
           }
         },
         "t2": {
@@ -75,7 +70,6 @@
         "b1": {
           "type": "card",
           "settings": {
-            "image_asset": "",
             "icon": "☕",
             "title": "Surface stains",
             "text": "Coffee, tea, red wine and smoking leave yellow tones that brushing alone cannot remove."
@@ -84,7 +78,6 @@
         "b2": {
           "type": "card",
           "settings": {
-            "image_asset": "",
             "icon": "😬",
             "title": "Sensitivity fears",
             "text": "Many skip whitening because peroxide formulas cause pain. PAP+ is developed as a gentler alternative."
@@ -93,7 +86,6 @@
         "b3": {
           "type": "card",
           "settings": {
-            "image_asset": "",
             "icon": "🏠",
             "title": "Salon costs",
             "text": "Professional whitening costs hundreds. Lorez brings salon-style results to your couch for under €50."
@@ -102,8 +94,7 @@
         "b4": {
           "type": "card",
           "settings": {
-            "image_asset": "",
-            "icon": "🧪",
+            "image_asset": "product-pap-strips.jpg",
             "title": "The Lorez solution",
             "text": "PAP+ strips, coconut patches and a whitening pen — a complete 2-week routine with no sticky residue."
           }
@@ -181,90 +172,78 @@
         "p1": {
           "type": "product",
           "settings": {
-            "product": "activated-carbon-whitening-tooth-paste",
+            "product": "lorez-beauty-pap-whitening-strips",
             "product_handle": "lorez-beauty-pap-whitening-strips",
             "card_title": "PAP+ Whitening Strips",
             "card_price": "€24.95",
             "badge": "Flagship",
             "description": "PAP+ formula — 14 treatments, 30 min per session. No peroxide, no sensitivity.",
-            "fallback_icon": "✨",
-            "fallback_asset": "",
-            "fallback_image_url": "",
+            "fallback_asset": "product-pap-strips.jpg",
             "placeholder_style": "pap"
           }
         },
         "p2": {
           "type": "product",
           "settings": {
-            "product": "tooth-whitening-instrument-cold-blue-tooth-cleaner-set-tooth-whitening-instrument",
+            "product": "cj-purple-whitening-strips-stain-removal",
             "product_handle": "cj-purple-whitening-strips-stain-removal",
-            "card_title": "",
-            "card_price": "",
+            "card_title": "Purple Whitening Strips",
+            "card_price": "€5.95",
             "badge": "Bestseller",
             "description": "Purple stain-correcting strips for surface discoloration. From €5.95.",
-            "fallback_icon": "✨",
-            "fallback_asset": "",
-            "fallback_image_url": "",
+            "fallback_asset": "product-purple-strips.jpg",
             "placeholder_style": "purple"
           }
         },
         "p3": {
           "type": "product",
           "settings": {
-            "product": "ultrasonic-electric-toothbrush-automatic-tooth-cleaner-lazy-u-shaped-toothbrush",
+            "product": "cj-coconut-mint-whitening-tooth-patches-14-pack",
             "product_handle": "cj-coconut-mint-whitening-tooth-patches-14-pack",
-            "card_title": "",
-            "card_price": "",
+            "card_title": "Coconut Mint Patches",
+            "card_price": "€12.95",
             "badge": "Fresh mint",
             "description": "Coconut mint adhesive patches — 14 pieces for a refreshing whitening routine.",
-            "fallback_icon": "✨",
-            "fallback_asset": "",
-            "fallback_image_url": "",
+            "fallback_asset": "product-coconut-patches.jpg",
             "placeholder_style": "coconut"
           }
         },
         "p4": {
           "type": "product",
           "settings": {
-            "product": "mouth-type-food-grade-silicone-brush-head-u-shaped-tooth-scaler",
+            "product": "cj-whitening-tooth-pen-stain-yellowing-care",
             "product_handle": "cj-whitening-tooth-pen-stain-yellowing-care",
-            "card_title": "",
-            "card_price": "",
+            "card_title": "Whitening Tooth Pen",
+            "card_price": "€9.95",
             "badge": "Touch-up",
             "description": "Precision 4 ml pen for targeted stain and yellowing care between treatments.",
-            "fallback_icon": "✨",
-            "fallback_asset": "",
-            "fallback_image_url": "",
+            "fallback_asset": "product-pen.jpg",
             "placeholder_style": "pen"
           }
         },
         "p5": {
           "type": "product",
           "settings": {
-            "product": "childrens-foam-tooth-cleaning-mousse-toothpaste",
-            "product_handle": "",
-            "card_title": "",
-            "card_price": "",
+            "product": "cj-activated-charcoal-whitening-toothpaste",
+            "product_handle": "cj-activated-charcoal-whitening-toothpaste",
+            "card_title": "Charcoal Whitening Toothpaste",
+            "card_price": "€8.95",
             "badge": "Daily care",
             "description": "Activated charcoal paste to polish surface stains between whitening sessions.",
-            "fallback_icon": "✨",
-            "fallback_asset": "",
-            "fallback_image_url": "",
+            "fallback_asset": "product-charcoal-paste.jpg",
             "placeholder_style": "charcoal"
           }
         },
         "p6": {
           "type": "product",
           "settings": {
-            "product": "childrens-mousse-toothpaste-fluorine-free-anticavity-press-type-tooth-cleaning-foam",
-            "product_handle": "",
-            "card_title": "",
-            "card_price": "",
-            "badge": "premium",
-            "description": "",
-            "fallback_icon": "✨",
-            "fallback_asset": "",
-            "fallback_image_url": "",
+            "product": "cj-foldable-portable-water-flosser-electric",
+            "product_handle": "cj-foldable-portable-water-flosser-electric",
+            "card_title": "Foldable Water Flosser",
+            "card_price": "€34.95",
+            "badge": "Premium",
+            "description": "Foldable electric water flosser — clean between teeth for a healthier, brighter smile.",
+            "fallback_asset": "product-flosser.jpg",
             "placeholder_style": "flosser"
           }
         }
@@ -282,7 +261,7 @@
         "title": "Our best whitening essentials",
         "subtitle": "Tier A picks only — strips, patches, pen, charcoal paste and water flosser",
         "button_label": "Shop now",
-        "footer_cta_label": "View Complete Smile Bundle — €140,-",
+        "footer_cta_label": "View Complete Smile Bundle — €42.95",
         "footer_cta_link": "/products/complete-smile-whitening-bundle"
       }
     },
@@ -291,18 +270,17 @@
       "settings": {
         "eyebrow": "Best value",
         "title": "Complete Smile Whitening Bundle",
-        "subtitle": "",
-        "price": "",
+        "subtitle": "PAP+ strips + Coconut Mint Patches + Whitening Tooth Pen — your full 2-week smile routine",
+        "price": "€42.95",
         "compare_price": "",
-        "save_text": "Save €10,15 vs. buying separately",
-        "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ Fast EU delivery ·",
-        "product": "bubdel-actie",
-        "button_link": "shopify://products/bubdel-actie",
-        "variant_ids": "",
+        "save_text": "Save €3.90 vs. buying separately",
+        "guarantee": "✓ 14-day returns · ✓ Secure checkout · ✓ Fast EU delivery · 2–4 business days",
+        "product": "complete-smile-whitening-bundle",
+        "button_link": "/products/complete-smile-whitening-bundle",
         "button_label": "Add bundle to cart",
-        "button_secondary_label": "Glow Starter Kit — €140,-",
-        "button_secondary_link": "shopify://products/bubdel-actie",
-        "includes": ""
+        "button_secondary_label": "Glow Starter Kit — €16.95",
+        "button_secondary_link": "/products/glow-starter-kit",
+        "includes": "PAP+ Whitening Strips · Coconut Mint Patches · Whitening Tooth Pen"
       }
     },
     "social": {
@@ -311,9 +289,7 @@
         "r1": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-1.png",
             "asset_image": "ugc-review-1.jpg",
-            "fallback_image_url": "",
             "quote": "I drink three coffees before lunch — my teeth used to show it. Two weeks with the PAP+ strips and colleagues keep asking what changed. No sensitivity at all.",
             "author": "Emma T.",
             "role": "Coffee lover"
@@ -322,9 +298,7 @@
         "r2": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-2.png",
             "asset_image": "ugc-review-2.jpg",
-            "fallback_image_url": "",
             "quote": "Six weeks until the wedding and I refused harsh peroxide kits. The Complete Smile Bundle fits my morning routine — brighter smile, zero drama.",
             "author": "Sofia K.",
             "role": "Bride-to-be"
@@ -334,7 +308,6 @@
           "type": "review",
           "settings": {
             "asset_image": "ugc-review-3.jpg",
-            "fallback_image_url": "",
             "quote": "My barista friends roast me for ordering doubles. Quick pen swipe after my morning latte while I catch up on emails. Gradual brightening without that chemical sting.",
             "author": "Marco L.",
             "role": "Coffee lover"
@@ -343,9 +316,7 @@
         "r4": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-4.png",
             "asset_image": "ugc-review-4.jpg",
-            "fallback_image_url": "",
             "quote": "School run, meetings, dinner — zero time for salon visits. Twenty minutes on the couch with Lorez and I'm done. My kids noticed I'm smiling more.",
             "author": "Anna W.",
             "role": "Working mom"
@@ -354,9 +325,7 @@
         "r5": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/ugc-review-5.png",
             "asset_image": "ugc-review-5.jpg",
-            "fallback_image_url": "",
             "quote": "Coconut mint patches are my Sunday reset. Fresh breath, gradual brightening, and none of that harsh peroxide burn from old kits.",
             "author": "Lisa V.",
             "role": "Self-care Sunday"
@@ -372,9 +341,9 @@
       ],
       "settings": {
         "eyebrow": "Real smiles",
-        "title_before": "What",
+        "title_before": "What ",
         "title_accent": "Daily Smile Lovers",
-        "title_after": "Are Saying",
+        "title_after": " Are Saying",
         "subtitle": "Join thousands of smile lovers discovering gentle PAP+ whitening — no peroxide, no sensitivity.",
         "badge_label": "Lorez customer"
       }
@@ -439,6 +408,24 @@
         "button_label": "Shop Complete Smile Bundle",
         "button_link": "/products/complete-smile-whitening-bundle"
       }
+    },
+    "cta": {
+      "type": "quote-cta",
+      "settings": {
+        "style": "whitening",
+        "heading": "Ready for a brighter smile?",
+        "description": "Start with the Complete Smile Bundle — PAP+ strips, coconut patches and a whitening pen. Or try the Glow Starter Kit from €16.95.",
+        "feature_1": "Free shipping from €50",
+        "feature_2": "14-day returns",
+        "feature_3": "No peroxide · no sensitivity",
+        "feature_4": "Code LOREZ: buy 2 get 1 free",
+        "icon": "😁",
+        "visual_text": "Complete Smile Bundle\n\nPAP+ Strips → Patches → Pen\n\n€42.95 · Save €3.90",
+        "button_text": "Shop Complete Smile — €42.95",
+        "button_link": "/products/complete-smile-whitening-bundle",
+        "secondary_text": "Glow Starter Kit — €16.95",
+        "secondary_link": "/products/glow-starter-kit"
+      }
     }
   },
   "order": [
@@ -449,6 +436,7 @@
     "products",
     "kit",
     "social",
-    "faq"
+    "faq",
+    "cta"
   ]
 }
