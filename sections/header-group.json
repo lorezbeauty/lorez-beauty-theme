@@ -14,13 +14,57 @@
     "announcement": {
       "type": "announcement-bar",
       "settings": {
-        "show_announcement": false,
+        "show_announcement": true,
         "text": "Free shipping from €50 · PAP+ whitening · Code LOREZ: buy 2 get 1 free",
         "link": "/#kit"
       }
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "nav_home": {
+          "type": "nav_link",
+          "settings": {
+            "label": "Home",
+            "link": "/"
+          }
+        },
+        "nav_shop": {
+          "type": "nav_link",
+          "settings": {
+            "label": "Shop",
+            "link": "/collections/all"
+          }
+        },
+        "nav_contact": {
+          "type": "nav_link",
+          "settings": {
+            "label": "Contact",
+            "link": "/pages/contact"
+          }
+        },
+        "nav_story": {
+          "type": "nav_link",
+          "settings": {
+            "label": "Our Story",
+            "link": "/pages/nuestra-historia"
+          }
+        },
+        "nav_faq": {
+          "type": "nav_link",
+          "settings": {
+            "label": "FAQ",
+            "link": "/pages/faq"
+          }
+        }
+      },
+      "block_order": [
+        "nav_home",
+        "nav_shop",
+        "nav_contact",
+        "nav_story",
+        "nav_faq"
+      ],
       "settings": {
         "menu": "main-menu",
         "cta_label": "Shop bundles →",
@@ -28,8 +72,5 @@
       }
     }
   },
-  "order": [
-    "announcement",
-    "header"
-  ]
+  "order": ["announcement", "header"]
 }
