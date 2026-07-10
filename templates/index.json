@@ -442,6 +442,7 @@
     },
     "cta": {
       "type": "quote-cta",
+      "custom_css": [],
       "settings": {
         "style": "whitening",
         "heading": "Ready for a brighter smile?",
