@@ -12,7 +12,8 @@
     "hero": {
       "type": "hero-banner",
       "custom_css": [
-        "#template--30640790634833__hero img,#template--30640790634833__hero .hero__media img {object-fit: contain !important; background-size: contain !important;}"
+        "#template--30640790634833__hero img,#template--30640790634833__hero .hero__media img {object-fit: contain !important; width: 100%; height: 100%;}",
+        "#template--30640790634833__hero .hero__media {background-size: contain !important; background-repeat: no-repeat !important; background-position: center !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/ChatGPTImage10jul2026_00_39_21.png",
