@@ -14,7 +14,7 @@
     "announcement": {
       "type": "announcement-bar",
       "settings": {
-        "show_announcement": true,
+        "show_announcement": false,
         "text": "Free shipping from €50 · PAP+ whitening · Code LOREZ: buy 2 get 1 free",
         "link": "/#kit"
       }
@@ -28,5 +28,8 @@
       }
     }
   },
-  "order": ["announcement", "header"]
+  "order": [
+    "announcement",
+    "header"
+  ]
 }
